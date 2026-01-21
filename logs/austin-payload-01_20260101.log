@@ -1,0 +1,324 @@
+2026-01-01 11:15:41 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 11:15:41 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 11:15:41 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 11:15:41 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 11:15:41 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 11:15:41 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-01 11:15:41 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-01 11:15:41 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 11:15:41 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 11:15:41 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 11:15:41 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 11:15:41 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-01 11:15:41 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-01 11:15:41 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 11:15:41 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 11:15:41 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 11:15:41 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 11:15:41 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 11:15:41 [SUCCESS] [0;32mDrone script started (PID: 6701)[0m
+2026-01-01 11:27:48 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 11:27:48 [INFO] [0;34mKilling drone script (PID: 6701)...[0m
+2026-01-01 11:27:49 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 11:27:49 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 15:41:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:41:46 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 15:41:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:41:46 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 15:41:46 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 15:41:46 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 15:41:46 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:41:46 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:41:46 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 15:41:46 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 15:41:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:41:46 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 15:41:46 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:41:46 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 15:41:46 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 15:41:46 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 15:41:46 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 15:41:46 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:41:46 [SUCCESS] [0;32mDrone script started (PID: 4235)[0m
+2026-01-01 15:42:36 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:42:37 [INFO] [0;34mKilling drone script (PID: 4235)...[0m
+2026-01-01 15:42:37 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:42:37 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 15:42:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:42:42 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 15:42:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:42:42 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 15:42:42 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 15:42:42 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 15:42:42 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:42:42 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:42:42 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 15:42:42 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 15:42:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:42:42 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 15:42:42 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:42:42 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 15:42:42 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 15:42:42 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 15:42:42 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 15:42:42 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:42:42 [SUCCESS] [0;32mDrone script started (PID: 4498)[0m
+2026-01-01 15:44:00 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:44:00 [INFO] [0;34mKilling drone script (PID: 4498)...[0m
+2026-01-01 15:44:00 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:44:00 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 15:44:06 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:44:06 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 15:44:06 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:44:06 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 15:44:06 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 15:44:06 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 15:44:06 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:44:06 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:44:06 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 15:44:06 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 15:44:06 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:44:06 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 15:44:06 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:44:07 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 15:44:07 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 15:44:07 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 15:44:07 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 15:44:07 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:44:07 [SUCCESS] [0;32mDrone script started (PID: 4755)[0m
+2026-01-01 15:45:17 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:45:17 [INFO] [0;34mKilling drone script (PID: 4755)...[0m
+2026-01-01 15:45:18 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:45:18 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 15:45:23 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:45:23 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 15:45:23 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:45:23 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 15:45:23 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 15:45:23 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 15:45:23 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:45:23 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:45:23 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 15:45:23 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 15:45:23 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:45:23 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 15:45:23 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:45:23 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 15:45:23 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 15:45:23 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 15:45:23 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 15:45:23 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:45:23 [SUCCESS] [0;32mDrone script started (PID: 5130)[0m
+2026-01-01 15:48:37 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:48:37 [INFO] [0;34mKilling drone script (PID: 5130)...[0m
+2026-01-01 15:48:37 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:48:37 [INFO] [0;34mKilling drone script (PID: 5130)...[0m
+2026-01-01 15:48:37 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:48:37 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 15:48:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:48:42 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 15:48:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:48:42 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 15:48:42 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 15:48:42 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 15:48:42 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:48:42 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:48:42 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 15:48:42 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 15:48:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:48:42 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 15:48:42 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:48:42 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 15:48:42 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 15:48:42 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 15:48:42 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 15:48:42 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:48:42 [SUCCESS] [0;32mDrone script started (PID: 5745)[0m
+2026-01-01 15:49:49 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:49:49 [INFO] [0;34mKilling drone script (PID: 5745)...[0m
+2026-01-01 15:49:51 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 15:49:55 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:49:55 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 15:49:55 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:49:55 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 15:49:55 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 15:49:55 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 15:49:55 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:49:55 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:49:55 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 15:49:55 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 15:49:55 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:49:55 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 15:49:55 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:49:55 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 15:49:55 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 15:49:55 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 15:49:55 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 15:49:55 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:49:55 [SUCCESS] [0;32mDrone script started (PID: 6184)[0m
+2026-01-01 15:50:23 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:50:23 [INFO] [0;34mKilling drone script (PID: 6184)...[0m
+2026-01-01 15:50:23 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:50:23 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 15:51:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:51:02 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 15:51:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:51:02 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 15:51:02 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 15:51:02 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 15:51:02 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:51:02 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:51:02 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 15:51:02 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 15:51:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:51:02 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 15:51:02 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:51:02 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 15:51:02 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 15:51:02 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 15:51:02 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 15:51:02 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:51:02 [SUCCESS] [0;32mDrone script started (PID: 6680)[0m
+2026-01-01 15:56:33 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:56:33 [INFO] [0;34mKilling drone script (PID: 6680)...[0m
+2026-01-01 15:56:33 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 15:56:33 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 15:56:40 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:56:40 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 15:56:40 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:56:40 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 15:56:40 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 15:56:40 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 15:56:40 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:56:40 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:56:40 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 15:56:40 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 15:56:40 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 15:56:40 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 15:56:40 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 15:56:40 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 15:56:40 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 15:56:40 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 15:56:40 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 15:56:40 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 15:56:40 [SUCCESS] [0;32mDrone script started (PID: 7539)[0m
+2026-01-01 16:00:21 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:00:21 [INFO] [0;34mKilling drone script (PID: 7539)...[0m
+2026-01-01 16:00:22 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:00:22 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 16:02:17 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:02:17 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 16:02:17 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:02:17 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 16:02:17 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 16:02:17 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 16:02:17 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:02:17 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:02:17 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 16:02:17 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 16:02:17 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:02:17 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 16:02:17 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:02:17 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 16:02:17 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 16:02:17 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 16:02:17 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 16:02:17 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:02:17 [SUCCESS] [0;32mDrone script started (PID: 8639)[0m
+2026-01-01 16:04:02 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:04:02 [INFO] [0;34mKilling drone script (PID: 8639)...[0m
+2026-01-01 16:04:02 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:04:02 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 16:04:06 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:04:06 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 16:04:06 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:04:06 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 16:04:06 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 16:04:06 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 16:04:06 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:04:06 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:04:06 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 16:04:06 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 16:04:06 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:04:06 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 16:04:06 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:04:07 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 16:04:07 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 16:04:07 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 16:04:07 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 16:04:07 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:04:07 [SUCCESS] [0;32mDrone script started (PID: 9104)[0m
+2026-01-01 16:07:32 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:07:32 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:07:33 [INFO] [0;34mKilling drone script (PID: 9104)...[0m
+2026-01-01 16:07:33 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:07:33 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       2026-01-01 16:12:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:12:05 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 16:12:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:12:05 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 16:12:05 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 16:12:05 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 16:12:05 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:12:05 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:12:05 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 16:12:05 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 16:12:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:12:05 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 16:12:05 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:12:06 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 16:12:06 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 16:12:06 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 16:12:06 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 16:12:06 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:12:06 [SUCCESS] [0;32mDrone script started (PID: 3600)[0m
+2026-01-01 16:16:36 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:16:36 [INFO] [0;34mKilling drone script (PID: 3600)...[0m
+2026-01-01 16:16:37 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:16:37 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 16:16:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:16:44 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 16:16:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:16:44 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 16:16:44 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 16:16:44 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 16:16:44 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:16:44 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:16:44 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 16:16:44 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 16:16:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:16:44 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 16:16:44 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:16:44 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 16:16:44 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 16:16:44 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 16:16:44 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 16:16:44 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:16:44 [SUCCESS] [0;32mDrone script started (PID: 4691)[0m
+2026-01-01 16:23:25 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:23:25 [INFO] [0;34mKilling drone script (PID: 4691)...[0m
+2026-01-01 16:23:25 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:23:25 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-01 16:33:29 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:33:29 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-01 16:33:29 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:33:29 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-01 16:33:29 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-01 16:33:29 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-01 16:33:29 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:33:29 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:33:29 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-01 16:33:29 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260101.log[0m
+2026-01-01 16:33:29 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-01 16:33:29 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-01 16:33:29 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-01 16:33:29 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-01 16:33:29 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-01 16:33:29 [INFO] [0;34mNo existing processes found[0m
+2026-01-01 16:33:29 [INFO] [0;34mStarting drone script...[0m
+2026-01-01 16:33:29 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-01 16:33:29 [SUCCESS] [0;32mDrone script started (PID: 7776)[0m
+2026-01-01 16:34:47 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:34:47 [INFO] [0;34mKilling drone script (PID: 7776)...[0m
+2026-01-01 16:34:49 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-01 16:34:49 [SUCCESS] [0;32mCleanup complete. Exiting.[0m

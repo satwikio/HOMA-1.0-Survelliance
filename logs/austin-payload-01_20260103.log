@@ -1,0 +1,21 @@
+2026-01-03 12:03:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-03 12:03:44 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-03 12:03:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-03 12:03:44 [INFO] [0;34mDrone ID: austin-payload-01[0m
+2026-01-03 12:03:44 [INFO] [0;34mDrone Type: rescue[0m
+2026-01-03 12:03:44 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-03 12:03:44 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-03 12:03:44 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-03 12:03:44 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-03 12:03:44 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-payload-01_20260103.log[0m
+2026-01-03 12:03:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-03 12:03:44 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-03 12:03:44 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-03 12:03:45 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2026-01-03 12:03:45 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-03 12:03:45 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-03 12:03:51 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2026-01-03 12:03:51 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-03 12:03:51 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-03 12:03:55 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-03 12:03:55 [SUCCESS] [0;32mCleanup complete. Exiting.[0m

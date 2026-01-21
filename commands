@@ -1,0 +1,24 @@
+# Make the script executable
+  chmod +x /home/homa1/homa1/code_base/HOMA-1.0/run_drone1.sh
+
+  # Copy service file to systemd directory
+  sudo cp /home/homa1/homa1/code_base/HOMA-1.0/drone1.service /etc/systemd/system/
+
+  # Reload systemd to recognize the new service
+  sudo systemctl daemon-reload
+
+  # Enable the service to start on boot
+  sudo systemctl enable drone1.service
+
+  # Start the service now
+  sudo systemctl start drone1.service
+
+  # Check service status
+  sudo systemctl status drone1.service
+
+
+  To view logs: sudo journalctl -u drone1.service -f
+
+  To stop the service: sudo systemctl stop drone1.service
+
+  To disable auto-start: sudo systemctl disable drone1.service

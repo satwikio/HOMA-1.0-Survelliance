@@ -1,0 +1,292 @@
+2026-01-07 15:03:23 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:03:23 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:03:23 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:03:23 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:03:23 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:03:23 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-07 15:03:23 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-07 15:03:23 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:03:23 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:03:23 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:03:23 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:03:23 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-07 15:03:23 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-07 15:03:36 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2026-01-07 15:03:36 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-07 15:03:36 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-07 15:03:54 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2026-01-07 15:03:54 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-07 15:03:54 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-07 15:04:12 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2026-01-07 15:04:12 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-07 15:04:12 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-07 15:04:30 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:04:30 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:04:43 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:04:43 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:04:43 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:04:43 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:04:43 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:04:43 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-07 15:04:43 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-07 15:04:43 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:04:43 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:04:43 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:04:43 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:04:43 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-07 15:04:43 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-07 15:04:56 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2026-01-07 15:04:56 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-07 15:04:56 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-07 15:05:14 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:05:14 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:05:15 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:05:15 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:05:15 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:05:15 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:05:15 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:05:15 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:05:15 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:05:15 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:05:15 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:05:15 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:05:15 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:05:15 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:05:15 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:05:15 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:05:15 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:05:15 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:05:15 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:05:15 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:05:15 [SUCCESS] [0;32mDrone script started (PID: 5084)[0m
+2026-01-07 15:05:25 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:05:25 [INFO] [0;34mKilling drone script (PID: 5084)...[0m
+2026-01-07 15:05:25 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:05:25 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:08:18 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:08:18 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:08:18 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:08:18 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:08:18 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:08:18 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:08:18 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:08:18 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:08:18 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:08:18 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:08:18 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:08:18 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:08:18 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:08:19 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:08:19 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:08:19 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:08:19 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:08:19 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:08:19 [SUCCESS] [0;32mDrone script started (PID: 6097)[0m
+2026-01-07 15:08:25 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:08:25 [INFO] [0;34mKilling drone script (PID: 6097)...[0m
+2026-01-07 15:08:25 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:08:25 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:09:52 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:09:52 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:09:52 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:09:52 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:09:52 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:09:52 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:09:52 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:09:52 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:09:52 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:09:52 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:09:52 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:09:52 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:09:52 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:09:52 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:09:52 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:09:52 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:09:52 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:09:52 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:09:52 [SUCCESS] [0;32mDrone script started (PID: 6517)[0m
+2026-01-07 15:10:00 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:10:00 [INFO] [0;34mKilling drone script (PID: 6517)...[0m
+2026-01-07 15:10:00 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:10:00 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:12:03 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:12:03 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:12:03 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:12:03 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:12:03 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:12:03 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:12:03 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:12:03 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:12:03 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:12:03 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:12:03 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:12:03 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:12:03 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:12:04 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:12:04 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:12:04 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:12:04 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:12:04 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:12:04 [SUCCESS] [0;32mDrone script started (PID: 7104)[0m
+2026-01-07 15:12:12 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:12:12 [INFO] [0;34mKilling drone script (PID: 7104)...[0m
+2026-01-07 15:12:13 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:12:13 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:16:03 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:03 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:16:03 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:03 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:16:03 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:16:03 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:16:03 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:16:03 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:16:03 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:16:03 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:16:03 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:03 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:16:03 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:16:03 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:16:03 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:16:03 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:16:03 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:16:04 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:16:04 [SUCCESS] [0;32mDrone script started (PID: 7423)[0m
+2026-01-07 15:16:09 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:16:09 [INFO] [0;34mKilling drone script (PID: 7423)...[0m
+2026-01-07 15:16:11 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:16:33 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:33 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:16:33 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:33 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:16:33 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:16:33 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:16:33 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:16:33 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:16:33 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:16:33 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:16:33 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:33 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:16:33 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:16:33 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:16:33 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:16:33 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:16:33 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:16:33 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:16:33 [SUCCESS] [0;32mDrone script started (PID: 7612)[0m
+2026-01-07 15:16:38 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:16:38 [INFO] [0;34mKilling drone script (PID: 7612)...[0m
+2026-01-07 15:16:40 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:16:50 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:50 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:16:50 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:50 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:16:50 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:16:50 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:16:50 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:16:50 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:16:50 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:16:50 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:16:50 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:16:50 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:16:50 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:16:50 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:16:50 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:16:50 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:16:50 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:16:50 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:16:50 [SUCCESS] [0;32mDrone script started (PID: 7796)[0m
+2026-01-07 15:19:56 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:19:56 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:19:56 [INFO] [0;34mKilling drone script (PID: 7796)...[0m
+2026-01-07 15:19:56 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:19:56 [INFO] [0;34mKilling drone script (PID: 7796)...[0m
+2026-01-07 15:19:58 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:25:27 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:25:27 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:25:27 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:25:27 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:25:27 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:25:27 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:25:27 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:25:27 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:25:27 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:25:27 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:25:27 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:25:27 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:25:27 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:25:27 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:25:27 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:25:27 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:25:27 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:25:27 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:25:27 [SUCCESS] [0;32mDrone script started (PID: 9413)[0m
+2026-01-07 15:26:30 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:26:30 [INFO] [0;34mKilling drone script (PID: 9413)...[0m
+2026-01-07 15:26:30 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:26:30 [INFO] [0;34mKilling drone script (PID: 9413)...[0m
+2026-01-07 15:26:32 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:40:52 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:40:52 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:40:52 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:40:52 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:40:52 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:40:52 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:40:52 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:40:52 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:40:52 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:40:52 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:40:52 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:40:52 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:40:52 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:40:52 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:40:52 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:40:52 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:40:52 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:40:52 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:40:52 [SUCCESS] [0;32mDrone script started (PID: 2932)[0m
+2026-01-07 15:41:11 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:41:11 [INFO] [0;34mKilling drone script (PID: 2932)...[0m
+2026-01-07 15:41:11 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:41:11 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:42:04 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:42:04 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:42:04 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:42:04 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:42:04 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:42:04 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:42:04 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:42:04 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:42:04 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:42:04 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:42:04 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:42:04 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:42:04 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:42:04 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:42:04 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:42:04 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:42:04 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:42:04 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:42:04 [SUCCESS] [0;32mDrone script started (PID: 3225)[0m
+2026-01-07 15:45:17 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:45:17 [INFO] [0;34mKilling drone script (PID: 3225)...[0m
+2026-01-07 15:45:18 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-07 15:45:18 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-07 15:45:21 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:45:21 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-07 15:45:21 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:45:21 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-07 15:45:21 [INFO] [0;34mDrone Type: recon[0m
+2026-01-07 15:45:21 [INFO] [0;34mBackend URL: http://100.88.6.111:8001[0m
+2026-01-07 15:45:21 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:45:21 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:45:21 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2026-01-07 15:45:21 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20260107.log[0m
+2026-01-07 15:45:21 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-07 15:45:21 [INFO] [0;34mChecking if backend is available at http://100.88.6.111:8001...[0m
+2026-01-07 15:45:21 [INFO] [0;34mWebSocket URL: ws://100.88.6.111:8001[0m
+2026-01-07 15:45:21 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-07 15:45:21 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-07 15:45:21 [INFO] [0;34mNo existing processes found[0m
+2026-01-07 15:45:21 [INFO] [0;34mStarting drone script...[0m
+2026-01-07 15:45:21 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/drone.py[0m
+2026-01-07 15:45:21 [SUCCESS] [0;32mDrone script started (PID: 4291)[0m

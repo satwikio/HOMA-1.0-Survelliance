@@ -1,0 +1,842 @@
+2026-01-13 11:13:57 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:13:57 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:13:57 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:13:57 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:13:57 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:13:57 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-13 11:13:57 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-13 11:13:57 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:13:57 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:13:57 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:13:57 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:13:57 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-13 11:13:57 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-13 11:14:00 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2026-01-13 11:14:00 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-13 11:14:00 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-13 11:14:08 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2026-01-13 11:14:08 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-13 11:14:08 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-13 11:14:16 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2026-01-13 11:14:16 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-13 11:14:16 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-13 11:14:24 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2026-01-13 11:14:31 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:14:31 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:24:08 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:24:08 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:24:08 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:24:08 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:24:08 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:24:08 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:24:08 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:24:08 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:24:08 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:24:08 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:24:08 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:24:08 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:24:08 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:24:09 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:24:09 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:24:09 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:24:09 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:24:09 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:24:09 [SUCCESS] [0;32mDrone script started (PID: 7513)[0m
+2026-01-13 11:24:09 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:24:09 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:24:09 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:24:12 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:24:12 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:24:12 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:24:12 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:24:12 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:24:12 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:24:12 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:24:12 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:24:12 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:24:12 [SUCCESS] [0;32mDrone script started (PID: 7597)[0m
+2026-01-13 11:24:12 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:24:12 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 11:24:12 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:24:15 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:24:15 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:24:15 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:24:16 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:24:16 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:24:16 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:24:16 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:24:16 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:24:16 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:24:16 [SUCCESS] [0;32mDrone script started (PID: 7654)[0m
+2026-01-13 11:24:16 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:24:16 [ERROR] [0;31mConsecutive failures: 3[0m
+2026-01-13 11:24:16 [WARN] [1;33mToo many consecutive failures. Waiting 30s before restart...[0m
+2026-01-13 11:24:20 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:24:20 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:25:35 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:25:35 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:25:35 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:25:35 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:25:35 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:25:35 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:25:35 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:25:35 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:25:35 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:25:35 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:25:35 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:25:35 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:25:35 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:25:35 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:25:35 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:25:35 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:25:35 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:25:35 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:25:35 [SUCCESS] [0;32mDrone script started (PID: 8005)[0m
+2026-01-13 11:25:36 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:25:36 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:25:36 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:25:39 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:25:39 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:25:39 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:25:39 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:25:39 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:25:39 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:25:39 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:25:39 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:25:39 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:25:39 [SUCCESS] [0;32mDrone script started (PID: 8095)[0m
+2026-01-13 11:25:39 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:25:39 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 11:25:39 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:25:41 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:25:41 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:26:11 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:26:11 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:26:11 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:26:11 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:26:11 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:26:11 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:26:11 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:26:11 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:26:11 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:26:11 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:26:11 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:26:11 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:26:11 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:26:11 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:26:11 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:26:11 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:26:11 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:26:11 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:26:11 [SUCCESS] [0;32mDrone script started (PID: 8268)[0m
+2026-01-13 11:26:12 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:26:12 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:26:12 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:26:15 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:26:15 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:26:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:26:42 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:26:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:26:42 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:26:42 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:26:42 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:26:42 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:26:42 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:26:42 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:26:42 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:26:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:26:42 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:26:42 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:26:42 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:26:42 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:26:42 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:26:42 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:26:42 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:26:42 [SUCCESS] [0;32mDrone script started (PID: 8469)[0m
+2026-01-13 11:26:43 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:26:43 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:26:43 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:26:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:26:46 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:26:46 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:26:46 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:26:46 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:26:46 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:26:46 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:26:46 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:26:46 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:26:46 [SUCCESS] [0;32mDrone script started (PID: 8544)[0m
+2026-01-13 11:26:47 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:26:47 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 11:26:47 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:26:48 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:26:48 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:31:51 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:31:51 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:31:51 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:31:51 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:31:51 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:31:51 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:31:51 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:31:51 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:31:51 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:31:51 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:31:51 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:31:51 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:31:51 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:31:51 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:31:51 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:31:51 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:31:51 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:31:51 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:31:51 [SUCCESS] [0;32mDrone script started (PID: 9997)[0m
+2026-01-13 11:31:52 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:31:52 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:31:52 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:31:55 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:31:55 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:31:55 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:31:55 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:31:55 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:31:55 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:32:47 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:32:47 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:32:47 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:32:47 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:32:47 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:32:47 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:32:47 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:32:47 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:32:47 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:32:47 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:32:47 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:32:47 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:32:47 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:32:47 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:32:47 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:32:47 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:32:47 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:32:47 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:32:47 [SUCCESS] [0;32mDrone script started (PID: 10288)[0m
+2026-01-13 11:32:48 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:32:48 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:32:48 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:32:51 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:32:51 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:32:51 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:32:51 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:32:51 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:32:51 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:32:51 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:32:51 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:32:51 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:32:51 [SUCCESS] [0;32mDrone script started (PID: 10404)[0m
+2026-01-13 11:32:52 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:32:52 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 11:32:52 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:32:53 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:32:53 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:34:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:34:05 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:34:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:34:05 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:34:05 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:34:05 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:34:05 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:34:05 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:34:05 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:34:05 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:34:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:34:05 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:34:05 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:34:05 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:34:05 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:34:05 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:34:05 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:34:05 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:34:05 [SUCCESS] [0;32mDrone script started (PID: 10701)[0m
+2026-01-13 11:34:06 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:34:06 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:34:06 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:34:09 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:34:09 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:34:09 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:34:09 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:34:09 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:34:09 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:34:32 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:34:32 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:34:32 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:34:32 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:34:32 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:34:32 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:34:32 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:34:32 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:34:32 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:34:32 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:34:32 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:34:32 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:34:32 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:34:33 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:34:33 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:34:33 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:34:33 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:34:33 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:34:33 [SUCCESS] [0;32mDrone script started (PID: 10927)[0m
+2026-01-13 11:34:34 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:34:34 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:34:34 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:34:36 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:34:36 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:35:49 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:35:49 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:35:49 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:35:49 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:35:49 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:35:49 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:35:49 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:35:49 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:35:49 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:35:49 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:35:49 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:35:49 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:35:49 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:35:49 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:35:49 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:35:49 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:35:49 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:35:49 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:35:49 [SUCCESS] [0;32mDrone script started (PID: 11275)[0m
+2026-01-13 11:35:50 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:35:50 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:35:50 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:35:53 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:35:53 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:36:12 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:36:12 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:36:12 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:36:12 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:36:12 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:36:12 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:36:12 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:36:12 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:36:12 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:36:12 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:36:12 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:36:12 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:36:12 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:36:12 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:36:12 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:36:12 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:36:12 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:36:12 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:36:12 [SUCCESS] [0;32mDrone script started (PID: 11461)[0m
+2026-01-13 11:36:14 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:36:14 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:36:14 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:36:17 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:36:17 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:37:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:37:19 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:37:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:37:19 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:37:19 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:37:19 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:37:19 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:37:19 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:37:19 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:37:19 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:37:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:37:19 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:37:19 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:37:20 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:37:20 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:37:20 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:37:20 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:37:20 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:37:20 [SUCCESS] [0;32mDrone script started (PID: 11801)[0m
+2026-01-13 11:37:21 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:37:21 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:37:21 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:37:24 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:37:24 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:37:24 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:37:24 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:37:24 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:37:24 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:37:24 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:37:24 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:37:24 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:37:24 [SUCCESS] [0;32mDrone script started (PID: 11870)[0m
+2026-01-13 11:37:26 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:37:26 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 11:37:26 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:37:26 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:37:26 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:42:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:42:02 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:42:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:42:02 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:42:02 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:42:02 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:42:02 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:42:02 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:42:02 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:42:02 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:42:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:42:02 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:42:02 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:42:03 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:42:03 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:42:03 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:42:03 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:42:03 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:42:03 [SUCCESS] [0;32mDrone script started (PID: 12078)[0m
+2026-01-13 11:42:04 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:42:04 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:42:04 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:42:07 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:42:07 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:42:07 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:42:07 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:42:07 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:42:07 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:42:07 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:42:07 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:42:07 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:42:07 [SUCCESS] [0;32mDrone script started (PID: 12152)[0m
+2026-01-13 11:42:09 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:42:09 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 11:42:09 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:42:10 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:42:10 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:42:36 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:42:36 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:42:36 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:42:36 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:42:36 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:42:36 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:42:36 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:42:37 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:42:37 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:42:37 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:42:37 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:42:37 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:42:37 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:42:37 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:42:37 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:42:37 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:42:37 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:42:37 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:42:37 [SUCCESS] [0;32mDrone script started (PID: 12289)[0m
+2026-01-13 11:42:38 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:42:38 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:42:38 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:42:41 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:42:41 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:42:41 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:42:41 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:42:41 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:42:41 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:42:41 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:42:41 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:42:41 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:42:41 [SUCCESS] [0;32mDrone script started (PID: 12358)[0m
+2026-01-13 11:42:43 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:42:43 [INFO] [0;34mKilling drone script (PID: 12358)...[0m
+2026-01-13 11:42:44 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:42:44 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:46:20 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:46:20 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:46:20 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:46:20 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:46:20 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:46:20 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:46:20 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:46:20 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:46:20 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:46:20 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:46:20 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:46:20 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:46:20 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:46:21 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:46:21 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:46:21 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:46:21 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:46:21 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:46:21 [SUCCESS] [0;32mDrone script started (PID: 12548)[0m
+2026-01-13 11:46:22 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:46:22 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:46:22 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:46:25 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:46:25 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:46:25 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:46:25 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:46:26 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:46:26 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:47:48 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:47:48 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:47:48 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:47:48 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:47:48 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:47:48 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:47:48 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:47:48 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:47:48 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:47:48 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:47:48 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:47:48 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:47:48 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:47:48 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:47:48 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:47:48 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:47:48 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:47:48 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:47:48 [SUCCESS] [0;32mDrone script started (PID: 12748)[0m
+2026-01-13 11:47:50 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:47:50 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:47:50 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:47:53 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:47:53 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:47:53 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:47:53 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:47:53 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:47:53 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:47:53 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:47:53 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:47:53 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 11:47:53 [SUCCESS] [0;32mDrone script started (PID: 12817)[0m
+2026-01-13 11:47:54 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:47:54 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 11:47:54 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:47:55 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:47:55 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:53:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:53:19 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:53:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:53:19 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:53:19 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:53:19 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:53:19 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:53:19 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 11:53:19 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:53:19 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:53:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:53:19 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:53:19 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:53:20 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:53:20 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:53:20 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:53:20 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:53:20 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 11:53:20 [SUCCESS] [0;32mDrone script started (PID: 13395)[0m
+2026-01-13 11:53:21 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:53:21 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:53:21 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:53:24 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:53:24 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 11:53:24 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:53:24 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:53:24 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:53:24 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 11:54:41 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:54:41 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 11:54:41 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:54:41 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 11:54:41 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 11:54:41 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 11:54:41 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:54:41 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 11:54:41 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 11:54:41 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 11:54:41 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 11:54:41 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 11:54:41 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 11:54:41 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 11:54:41 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 11:54:41 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 11:54:41 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 11:54:41 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 11:54:41 [SUCCESS] [0;32mDrone script started (PID: 13605)[0m
+2026-01-13 11:54:43 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 11:54:43 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 11:54:43 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 11:54:44 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 11:54:44 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 12:05:11 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:05:11 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:05:11 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:05:11 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:05:11 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:05:11 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:05:11 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:05:11 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:05:11 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:05:11 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:05:11 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:05:11 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:05:11 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:05:12 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:05:12 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:05:12 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:05:12 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:05:12 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:05:12 [SUCCESS] [0;32mDrone script started (PID: 14043)[0m
+2026-01-13 12:05:14 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:05:14 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 12:05:14 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:05:17 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:05:17 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 12:05:17 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:05:17 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:05:17 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:05:17 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:05:18 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:05:18 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:05:18 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:05:18 [SUCCESS] [0;32mDrone script started (PID: 14132)[0m
+2026-01-13 12:05:19 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:05:19 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 12:05:19 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:05:22 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:05:22 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 12:05:22 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:05:22 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:05:22 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:05:22 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:05:22 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:05:22 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:05:22 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:05:22 [SUCCESS] [0;32mDrone script started (PID: 14195)[0m
+2026-01-13 12:05:24 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:05:24 [ERROR] [0;31mConsecutive failures: 3[0m
+2026-01-13 12:05:24 [WARN] [1;33mToo many consecutive failures. Waiting 30s before restart...[0m
+2026-01-13 12:05:26 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:05:26 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 12:06:34 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:06:34 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:06:34 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:06:34 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:06:34 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:06:34 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:06:34 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:06:34 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:06:34 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:06:34 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:06:34 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:06:34 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:06:34 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:06:35 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:06:35 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:06:35 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:06:35 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:06:35 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:06:35 [SUCCESS] [0;32mDrone script started (PID: 14415)[0m
+2026-01-13 12:06:36 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:06:36 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 12:06:36 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:06:37 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:06:37 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 12:08:38 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:08:38 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:08:38 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:08:38 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:08:38 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:08:38 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:08:38 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:08:38 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:08:38 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:08:38 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:08:38 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:08:38 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:08:38 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:08:38 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:08:38 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:08:38 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:08:38 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:08:38 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:08:38 [SUCCESS] [0;32mDrone script started (PID: 14595)[0m
+2026-01-13 12:08:40 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:08:40 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 12:08:40 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:08:43 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:08:43 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 12:08:43 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:08:43 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:08:43 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:08:43 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:08:43 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:08:43 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:08:43 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/dummy_dronesh.py[0m
+2026-01-13 12:08:43 [SUCCESS] [0;32mDrone script started (PID: 14664)[0m
+2026-01-13 12:08:44 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:08:44 [INFO] [0;34mKilling drone script (PID: 14664)...[0m
+2026-01-13 12:08:44 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:08:44 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 12:10:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:10:05 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:10:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:10:05 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:10:05 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:10:05 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:10:05 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:10:05 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:10:05 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:10:05 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:10:05 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:10:05 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:10:05 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:10:06 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:10:06 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:10:06 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:10:06 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:10:06 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:10:06 [SUCCESS] [0;32mDrone script started (PID: 14843)[0m
+2026-01-13 12:10:07 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:10:07 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 12:10:07 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:10:09 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:10:09 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 12:11:15 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:11:15 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:11:15 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:11:15 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:11:15 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:11:15 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:11:15 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:11:15 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:11:15 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:11:15 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:11:15 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:11:15 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:11:15 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:11:15 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:11:15 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:11:15 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:11:15 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:11:15 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:11:15 [SUCCESS] [0;32mDrone script started (PID: 14983)[0m
+2026-01-13 12:11:17 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:11:17 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 12:11:17 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:11:19 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:11:19 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 12:11:54 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:11:54 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:11:54 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:11:54 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:11:54 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:11:54 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:11:54 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:11:54 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:11:54 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:11:54 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:11:54 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:11:54 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:11:54 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:11:54 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:11:54 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:11:55 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:11:55 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:11:55 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:11:55 [SUCCESS] [0;32mDrone script started (PID: 15142)[0m
+2026-01-13 12:11:56 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:11:56 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 12:11:56 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:11:59 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:11:59 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 12:11:59 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:11:59 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:11:59 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:11:59 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:11:59 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:11:59 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:11:59 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:11:59 [SUCCESS] [0;32mDrone script started (PID: 15223)[0m
+2026-01-13 12:12:01 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:12:01 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 12:12:01 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:12:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:12:42 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:12:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:12:42 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:12:42 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:12:42 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:12:42 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:12:42 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:12:42 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:12:42 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:12:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:12:42 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:12:42 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:12:43 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:12:43 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:12:43 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:12:43 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:12:43 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:12:43 [SUCCESS] [0;32mDrone script started (PID: 15767)[0m
+2026-01-13 12:12:43 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:12:43 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 12:12:43 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:12:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:12:46 [INFO] [0;34mInitiating restart cycle...[0m
+2026-01-13 12:12:46 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:12:46 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:12:46 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:12:46 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:12:46 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:12:46 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:12:46 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:12:46 [SUCCESS] [0;32mDrone script started (PID: 15862)[0m
+2026-01-13 12:12:47 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:12:47 [ERROR] [0;31mConsecutive failures: 2[0m
+2026-01-13 12:12:47 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:12:47 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:12:47 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 12:13:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:13:02 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:13:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:13:02 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:13:02 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:13:02 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:13:02 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:13:02 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:13:02 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:13:02 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:13:02 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:13:02 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:13:02 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:13:02 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:13:02 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:13:02 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:13:02 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:13:02 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:13:02 [SUCCESS] [0;32mDrone script started (PID: 16007)[0m
+2026-01-13 12:13:03 [ERROR] [0;31mScript crashed with exit code: 1[0m
+2026-01-13 12:13:03 [ERROR] [0;31mConsecutive failures: 1[0m
+2026-01-13 12:13:03 [INFO] [0;34mRestarting in 3s...[0m
+2026-01-13 12:13:05 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:13:05 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-13 12:23:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:23:46 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-13 12:23:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:23:46 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-13 12:23:46 [INFO] [0;34mDrone Type: recon[0m
+2026-01-13 12:23:46 [INFO] [0;34mBackend URL: http://100.83.247.49:8001[0m
+2026-01-13 12:23:46 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:23:46 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:23:46 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-13 12:23:46 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260113.log[0m
+2026-01-13 12:23:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-13 12:23:46 [INFO] [0;34mChecking if backend is available at http://100.83.247.49:8001...[0m
+2026-01-13 12:23:46 [INFO] [0;34mWebSocket URL: ws://100.83.247.49:8001[0m
+2026-01-13 12:23:46 [SUCCESS] [0;32mBackend is online and reachable![0m
+2026-01-13 12:23:46 [INFO] [0;34mChecking for existing drone script processes...[0m
+2026-01-13 12:23:46 [INFO] [0;34mNo existing processes found[0m
+2026-01-13 12:23:46 [INFO] [0;34mStarting drone script...[0m
+2026-01-13 12:23:46 [INFO] [0;34mScript path: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-13 12:23:46 [SUCCESS] [0;32mDrone script started (PID: 16431)[0m
+2026-01-13 12:23:54 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:23:54 [INFO] [0;34mKilling drone script (PID: 16431)...[0m
+2026-01-13 12:23:54 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-13 12:23:54 [SUCCESS] [0;32mCleanup complete. Exiting.[0m

@@ -1,0 +1,76 @@
+2026-01-12 17:54:58 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-12 17:54:58 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-12 17:54:59 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-12 17:54:59 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-12 17:54:59 [INFO] [0;34mDrone Type: recon[0m
+2026-01-12 17:54:59 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-12 17:54:59 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-12 17:54:59 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-12 17:54:59 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-12 17:54:59 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260112.log[0m
+2026-01-12 17:54:59 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-12 17:54:59 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-12 17:54:59 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-12 17:55:02 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2026-01-12 17:55:02 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-12 17:55:02 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-12 17:55:10 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2026-01-12 17:55:10 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-12 17:55:10 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-12 17:55:18 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2026-01-12 17:55:18 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-12 17:55:18 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-12 17:55:26 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2026-01-12 17:55:34 [WARN] [1;33mBackend not available (attempt 5). Retrying in 5s...[0m
+2026-01-12 17:55:42 [WARN] [1;33mBackend not available (attempt 6). Retrying in 5s...[0m
+2026-01-12 17:55:50 [WARN] [1;33mBackend not available (attempt 7). Retrying in 5s...[0m
+2026-01-12 17:55:58 [WARN] [1;33mBackend not available (attempt 8). Retrying in 5s...[0m
+2026-01-12 17:56:06 [WARN] [1;33mBackend not available (attempt 9). Retrying in 5s...[0m
+2026-01-12 17:56:14 [WARN] [1;33mBackend not available (attempt 10). Retrying in 5s...[0m
+2026-01-12 17:56:22 [WARN] [1;33mBackend not available (attempt 11). Retrying in 5s...[0m
+2026-01-12 17:56:30 [WARN] [1;33mBackend not available (attempt 12). Retrying in 5s...[0m
+2026-01-12 17:56:38 [WARN] [1;33mBackend not available (attempt 13). Retrying in 5s...[0m
+2026-01-12 17:56:46 [WARN] [1;33mBackend not available (attempt 14). Retrying in 5s...[0m
+2026-01-12 17:56:54 [WARN] [1;33mBackend not available (attempt 15). Retrying in 5s...[0m
+2026-01-12 17:57:02 [WARN] [1;33mBackend not available (attempt 16). Retrying in 5s...[0m
+2026-01-12 17:57:10 [WARN] [1;33mBackend not available (attempt 17). Retrying in 5s...[0m
+2026-01-12 17:57:18 [WARN] [1;33mBackend not available (attempt 18). Retrying in 5s...[0m
+2026-01-12 17:57:26 [WARN] [1;33mBackend not available (attempt 19). Retrying in 5s...[0m
+2026-01-12 17:57:34 [WARN] [1;33mBackend not available (attempt 20). Retrying in 5s...[0m
+2026-01-12 17:57:42 [WARN] [1;33mBackend not available (attempt 21). Retrying in 5s...[0m
+2026-01-12 17:57:50 [WARN] [1;33mBackend not available (attempt 22). Retrying in 5s...[0m
+2026-01-12 17:57:58 [WARN] [1;33mBackend not available (attempt 23). Retrying in 5s...[0m
+2026-01-12 17:58:06 [WARN] [1;33mBackend not available (attempt 24). Retrying in 5s...[0m
+2026-01-12 17:58:14 [WARN] [1;33mBackend not available (attempt 25). Retrying in 5s...[0m
+2026-01-12 17:58:23 [WARN] [1;33mBackend not available (attempt 26). Retrying in 5s...[0m
+2026-01-12 17:58:31 [WARN] [1;33mBackend not available (attempt 27). Retrying in 5s...[0m
+2026-01-12 17:58:39 [WARN] [1;33mBackend not available (attempt 28). Retrying in 5s...[0m
+2026-01-12 17:58:47 [WARN] [1;33mBackend not available (attempt 29). Retrying in 5s...[0m
+2026-01-12 17:58:55 [WARN] [1;33mBackend not available (attempt 30). Retrying in 5s...[0m
+2026-01-12 17:59:03 [WARN] [1;33mBackend not available (attempt 31). Retrying in 5s...[0m
+2026-01-12 17:59:05 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-12 17:59:05 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2026-01-12 17:59:12 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-12 17:59:12 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-01-12 17:59:12 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-12 17:59:12 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-01-12 17:59:12 [INFO] [0;34mDrone Type: recon[0m
+2026-01-12 17:59:12 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2026-01-12 17:59:12 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-12 17:59:12 [INFO] [0;34mScript: /home/nanosuper/Downloads/HOMA-1.0/drone.py[0m
+2026-01-12 17:59:12 [WARN] [1;33mNo virtual environment activated[0m
+2026-01-12 17:59:12 [INFO] [0;34mLog: /home/nanosuper/Downloads/HOMA-1.0/logs/austin-recon-01_20260112.log[0m
+2026-01-12 17:59:12 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-01-12 17:59:12 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2026-01-12 17:59:12 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2026-01-12 17:59:15 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2026-01-12 17:59:15 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-12 17:59:15 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-12 17:59:23 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2026-01-12 17:59:23 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-12 17:59:23 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-12 17:59:31 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2026-01-12 17:59:31 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2026-01-12 17:59:31 [INFO] [0;34mRetrying in 5s...[0m
+2026-01-12 17:59:32 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-01-12 17:59:32 [SUCCESS] [0;32mCleanup complete. Exiting.[0m

@@ -1,0 +1,15 @@
+2025-12-13 19:44:22 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-13 19:44:22 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-13 19:44:22 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-13 19:44:22 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-13 19:44:22 [INFO] [0;34mDrone Type: recon[0m
+2025-12-13 19:44:22 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-13 19:44:22 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-13 19:44:22 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-13 19:44:22 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-13 19:44:22 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251213.log[0m
+2025-12-13 19:44:22 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-13 19:44:22 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-13 19:44:22 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-13 19:44:30 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-13 19:44:30 [SUCCESS] [0;32mCleanup complete. Exiting.[0m

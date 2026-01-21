@@ -1,0 +1,1062 @@
+2025-12-09 11:14:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 11:14:42 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 11:14:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 11:14:42 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 11:14:42 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 11:14:42 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 11:14:42 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 11:14:42 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 11:14:42 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 11:14:42 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 11:14:42 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 11:14:42 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 11:14:42 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 11:14:42 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 11:14:42 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 11:14:42 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 11:14:42 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 11:14:42 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 11:14:42 [SUCCESS] [0;32mDrone script started (PID: 5756)[0m
+2025-12-09 11:15:46 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 11:15:46 [INFO] [0;34mKilling drone script (PID: 5756)...[0m
+2025-12-09 11:15:47 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 11:15:47 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 12:58:35 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 12:58:35 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 12:58:35 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 12:58:35 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 12:58:35 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 12:58:35 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 12:58:35 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 12:58:35 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 12:58:35 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 12:58:35 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 12:58:35 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 12:58:35 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 12:58:35 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 12:58:35 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 12:58:35 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 12:58:35 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 12:58:53 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2025-12-09 12:58:53 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 12:58:53 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:02:51 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2025-12-09 13:02:51 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:02:51 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:03:09 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2025-12-09 13:02:51 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:02:51 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 13:02:51 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:02:51 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 13:02:51 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 13:02:51 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 13:02:51 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:02:51 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 13:02:51 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 13:02:51 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 13:02:51 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:02:51 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 13:02:51 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:02:51 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 13:02:51 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:02:51 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:03:09 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2025-12-09 13:03:09 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:03:09 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:05:49 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2025-12-09 13:05:49 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:05:49 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:06:07 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2025-12-09 13:06:25 [WARN] [1;33mBackend not available (attempt 5). Retrying in 5s...[0m
+2025-12-09 13:06:43 [WARN] [1;33mBackend not available (attempt 6). Retrying in 5s...[0m
+2025-12-09 13:07:01 [WARN] [1;33mBackend not available (attempt 7). Retrying in 5s...[0m
+2025-12-09 13:07:19 [WARN] [1;33mBackend not available (attempt 8). Retrying in 5s...[0m
+2025-12-09 13:07:37 [WARN] [1;33mBackend not available (attempt 9). Retrying in 5s...[0m
+2025-12-09 13:07:55 [WARN] [1;33mBackend not available (attempt 10). Retrying in 5s...[0m
+2025-12-09 13:08:10 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 13:08:10 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 13:08:10 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 13:08:10 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 13:08:10 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 13:08:10 [SUCCESS] [0;32mDrone script started (PID: 2475)[0m
+ [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 13:10:14 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 13:33:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:33:44 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 13:33:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:33:44 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 13:33:44 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 13:33:44 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 13:33:44 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:33:44 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 13:33:44 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 13:33:44 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 13:33:44 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:33:44 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 13:33:44 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:33:44 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 13:33:44 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 13:33:45 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 13:33:45 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 13:33:45 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 13:33:45 [SUCCESS] [0;32mDrone script started (PID: 9338)[0m
+2025-12-09 13:35:13 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:35:13 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 13:35:13 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:35:13 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 13:35:13 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 13:35:13 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 13:35:13 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:35:23 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 13:35:23 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 13:35:23 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 13:35:23 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 13:35:23 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 13:35:23 [SUCCESS] [0;32mDrone script started (PID: 9816)[0m
+2025-12-09 13:35:41 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:35:41 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 13:35:41 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:35:41 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 13:35:41 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 13:35:41 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 13:35:41 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:35:42 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 13:35:42 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:35:42 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:35:47 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 13:35:47 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 13:35:47 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 13:35:47 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 13:35:47 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 13:35:47 [SUCCESS] [0;32mDrone script started (PID: 10062)[0m
+2025-12-09 13:38:15 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:38:15 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 13:38:15 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:38:15 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 13:38:15 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 13:38:15 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 13:38:15 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:38:17 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 13:38:17 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:38:17 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:38:22 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 13:38:22 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 13:26:16 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:26:16 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 13:26:16 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:26:16 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 13:26:16 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 13:26:16 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 13:26:16 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:26:16 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 13:26:16 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 13:26:16 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 13:26:16 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 13:26:16 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 13:26:16 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 13:26:16 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 13:26:16 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:26:16 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:26:26 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2025-12-09 13:26:26 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:26:26 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:26:32 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2025-12-09 13:26:32 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 13:26:32 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 13:26:37 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2025-12-09 13:26:42 [WARN] [1;33mBackend not available (attempt 5). Retrying in 5s...[0m
+2025-12-09 15:35:13 [WARN] [1;33mBackend not available (attempt 6). Retrying in 5s...[0m
+2025-12-09 15:35:19 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:35:19 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:35:19 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:35:19 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:35:19 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:35:19 [SUCCESS] [0;32mDrone script started (PID: 2369)[0m
+ [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 15:39:57 [INFO] [0;34mKilling drone script (PID: 2369)...[0m
+2025-12-09 15:40:00 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 15:40:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:40:19 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 15:40:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:40:19 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 15:40:19 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 15:40:19 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 15:40:19 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:40:19 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:40:19 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 15:40:19 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 15:40:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:40:19 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:40:19 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:40:19 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:40:19 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:40:19 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:40:19 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:40:19 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:40:19 [SUCCESS] [0;32mDrone script started (PID: 4382)[0m
+2025-12-09 15:46:47 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 15:46:47 [INFO] [0;34mKilling drone script (PID: 4382)...[0m
+2025-12-09 15:46:49 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 15:46:49 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 15:46:57 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:46:57 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 15:46:57 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:46:57 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 15:46:57 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 15:46:57 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 15:46:57 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:46:57 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:46:57 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 15:46:57 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 15:46:57 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:46:57 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:46:57 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:46:57 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:46:57 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:46:57 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:46:57 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:46:57 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:46:57 [SUCCESS] [0;32mDrone script started (PID: 5456)[0m
+2025-12-09 15:47:54 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 15:47:54 [INFO] [0;34mKilling drone script (PID: 5456)...[0m
+2025-12-09 15:47:54 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 15:47:54 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 15:48:10 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:48:10 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 15:48:10 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:48:10 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 15:48:10 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 15:48:10 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 15:48:10 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:48:10 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:48:10 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 15:48:10 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 15:48:10 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:48:10 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:48:10 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:48:10 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:48:10 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:48:10 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:48:10 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:48:10 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:48:10 [SUCCESS] [0;32mDrone script started (PID: 5957)[0m
+2025-12-09 15:54:36 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:54:36 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 15:54:36 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:54:36 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 15:54:36 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 15:54:36 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:54:36 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:54:46 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:54:46 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:54:46 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:54:46 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:54:46 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:54:46 [SUCCESS] [0;32mDrone script started (PID: 7574)[0m
+2025-12-09 15:55:03 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:55:03 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 15:55:03 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:55:03 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 15:55:03 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 15:55:03 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:55:03 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:55:03 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:55:03 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:55:03 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:55:03 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:55:03 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:55:03 [SUCCESS] [0;32mDrone script started (PID: 7761)[0m
+2025-12-09 15:58:46 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:58:46 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 15:58:46 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:58:46 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 15:58:46 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 15:58:46 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:58:46 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:58:56 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:58:56 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:58:56 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:58:56 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:58:56 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:58:56 [SUCCESS] [0;32mDrone script started (PID: 9868)[0m
+2025-12-09 15:59:13 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:59:13 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 15:59:13 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:59:13 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 15:59:13 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 15:59:13 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:59:13 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:59:13 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:59:13 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:59:13 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:59:13 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:59:13 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:59:13 [SUCCESS] [0;32mDrone script started (PID: 10061)[0m
+2025-12-09 15:59:29 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:59:30 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 15:59:30 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:59:30 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 15:59:30 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 15:59:30 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:59:30 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 15:59:36 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 15:59:36 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 15:59:36 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 15:59:36 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 15:59:36 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 15:59:36 [SUCCESS] [0;32mDrone script started (PID: 10264)[0m
+2025-12-09 15:59:53 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:59:53 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 15:59:53 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 15:59:53 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 15:59:53 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 15:59:53 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 15:59:53 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:00:01 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:00:01 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:00:01 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:00:01 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:00:01 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:00:01 [SUCCESS] [0;32mDrone script started (PID: 10483)[0m
+2025-12-09 16:00:18 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:00:18 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:00:18 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:00:18 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:00:18 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:00:18 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:00:18 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:00:21 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:00:21 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:00:21 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:00:21 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:00:21 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:00:21 [SUCCESS] [0;32mDrone script started (PID: 10680)[0m
+2025-12-09 16:00:37 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:00:37 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:00:37 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:00:37 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:00:37 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:00:37 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:00:37 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:00:43 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:00:43 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:00:43 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:00:43 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:00:43 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:00:43 [SUCCESS] [0;32mDrone script started (PID: 10889)[0m
+2025-12-09 16:01:05 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:01:05 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:01:05 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:01:05 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:01:05 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:01:05 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:01:05 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:01:14 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:01:14 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:01:14 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:01:14 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:01:14 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:01:14 [SUCCESS] [0;32mDrone script started (PID: 11128)[0m
+2025-12-09 16:01:30 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:01:30 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:01:30 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:01:30 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:01:30 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:01:30 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:01:30 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:01:30 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:01:30 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:01:30 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:01:30 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:01:30 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:01:30 [SUCCESS] [0;32mDrone script started (PID: 11316)[0m
+2025-12-09 16:02:18 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:02:18 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:02:18 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:02:18 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:02:18 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:02:18 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:02:18 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:02:18 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 16:02:18 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:02:18 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:02:24 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:02:24 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:02:24 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:02:24 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:02:24 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:02:24 [SUCCESS] [0;32mDrone script started (PID: 11719)[0m
+2025-12-09 16:05:43 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:05:43 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:05:43 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:05:43 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:05:43 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:05:43 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:05:43 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:05:53 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:05:53 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:05:53 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:05:53 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:05:53 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:05:53 [SUCCESS] [0;32mDrone script started (PID: 12618)[0m
+2025-12-09 16:06:10 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:06:10 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:06:11 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:06:11 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:06:11 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:06:11 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:06:11 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:06:16 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:06:16 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:06:16 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:06:16 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:06:16 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:06:16 [SUCCESS] [0;32mDrone script started (PID: 12850)[0m
+2025-12-09 16:06:35 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:06:35 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:06:35 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:06:35 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:06:35 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:06:35 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:06:35 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:06:36 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:06:36 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:06:36 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:06:36 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:06:36 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:06:36 [SUCCESS] [0;32mDrone script started (PID: 13044)[0m
+2025-12-09 16:07:08 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:07:08 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:07:08 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:07:08 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:07:08 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:07:08 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:07:08 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:07:18 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:07:18 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:07:18 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:07:18 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:07:18 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:07:18 [SUCCESS] [0;32mDrone script started (PID: 13358)[0m
+2025-12-09 16:07:37 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:07:37 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:07:37 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:07:37 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:07:37 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:07:37 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:07:37 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:07:40 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:07:40 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:07:40 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:07:40 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:07:40 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:07:40 [SUCCESS] [0;32mDrone script started (PID: 13574)[0m
+2025-12-09 16:08:50 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:08:50 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:08:50 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:08:50 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:08:50 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:08:50 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:08:50 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:08:51 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 16:08:51 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:08:51 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:08:56 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2025-12-09 16:08:56 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:08:56 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:09:01 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2025-12-09 16:09:01 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:09:01 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:09:06 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2025-12-09 16:09:11 [WARN] [1;33mBackend not available (attempt 5). Retrying in 5s...[0m
+2025-12-09 16:09:17 [WARN] [1;33mBackend not available (attempt 6). Retrying in 5s...[0m
+2025-12-09 16:09:22 [WARN] [1;33mBackend not available (attempt 7). Retrying in 5s...[0m
+2025-12-09 16:09:27 [WARN] [1;33mBackend not available (attempt 8). Retrying in 5s...[0m
+2025-12-09 16:09:32 [WARN] [1;33mBackend not available (attempt 9). Retrying in 5s...[0m
+2025-12-09 16:09:37 [WARN] [1;33mBackend not available (attempt 10). Retrying in 5s...[0m
+2025-12-09 16:09:42 [WARN] [1;33mBackend not available (attempt 11). Retrying in 5s...[0m
+2025-12-09 16:09:47 [WARN] [1;33mBackend not available (attempt 12). Retrying in 5s...[0m
+2025-12-09 16:09:52 [WARN] [1;33mBackend not available (attempt 13). Retrying in 5s...[0m
+2025-12-09 16:09:57 [WARN] [1;33mBackend not available (attempt 14). Retrying in 5s...[0m
+2025-12-09 16:10:02 [WARN] [1;33mBackend not available (attempt 15). Retrying in 5s...[0m
+2025-12-09 16:10:07 [WARN] [1;33mBackend not available (attempt 16). Retrying in 5s...[0m
+2025-12-09 16:10:12 [WARN] [1;33mBackend not available (attempt 17). Retrying in 5s...[0m
+2025-12-09 16:10:17 [WARN] [1;33mBackend not available (attempt 18). Retrying in 5s...[0m
+2025-12-09 16:10:23 [WARN] [1;33mBackend not available (attempt 19). Retrying in 5s...[0m
+2025-12-09 16:10:28 [WARN] [1;33mBackend not available (attempt 20). Retrying in 5s...[0m
+2025-12-09 16:10:33 [WARN] [1;33mBackend not available (attempt 21). Retrying in 5s...[0m
+2025-12-09 16:10:38 [WARN] [1;33mBackend not available (attempt 22). Retrying in 5s...[0m
+2025-12-09 16:10:43 [WARN] [1;33mBackend not available (attempt 23). Retrying in 5s...[0m
+2025-12-09 16:10:48 [WARN] [1;33mBackend not available (attempt 24). Retrying in 5s...[0m
+2025-12-09 16:10:53 [WARN] [1;33mBackend not available (attempt 25). Retrying in 5s...[0m
+2025-12-09 16:10:58 [WARN] [1;33mBackend not available (attempt 26). Retrying in 5s...[0m
+2025-12-09 16:11:03 [WARN] [1;33mBackend not available (attempt 27). Retrying in 5s...[0m
+2025-12-09 16:11:08 [WARN] [1;33mBackend not available (attempt 28). Retrying in 5s...[0m
+2025-12-09 16:11:13 [WARN] [1;33mBackend not available (attempt 29). Retrying in 5s...[0m
+2025-12-09 16:11:19 [WARN] [1;33mBackend not available (attempt 30). Retrying in 5s...[0m
+2025-12-09 16:11:24 [WARN] [1;33mBackend not available (attempt 31). Retrying in 5s...[0m
+2025-12-09 16:11:29 [WARN] [1;33mBackend not available (attempt 32). Retrying in 5s...[0m
+2025-12-09 16:11:34 [WARN] [1;33mBackend not available (attempt 33). Retrying in 5s...[0m
+2025-12-09 16:11:39 [WARN] [1;33mBackend not available (attempt 34). Retrying in 5s...[0m
+2025-12-09 16:11:44 [WARN] [1;33mBackend not available (attempt 35). Retrying in 5s...[0m
+2025-12-09 16:11:49 [WARN] [1;33mBackend not available (attempt 36). Retrying in 5s...[0m
+2025-12-09 16:11:54 [WARN] [1;33mBackend not available (attempt 37). Retrying in 5s...[0m
+2025-12-09 16:11:59 [WARN] [1;33mBackend not available (attempt 38). Retrying in 5s...[0m
+2025-12-09 16:12:05 [WARN] [1;33mBackend not available (attempt 39). Retrying in 5s...[0m
+2025-12-09 16:12:10 [WARN] [1;33mBackend not available (attempt 40). Retrying in 5s...[0m
+2025-12-09 16:12:15 [WARN] [1;33mBackend not available (attempt 41). Retrying in 5s...[0m
+2025-12-09 16:12:20 [WARN] [1;33mBackend not available (attempt 42). Retrying in 5s...[0m
+2025-12-09 16:12:25 [WARN] [1;33mBackend not available (attempt 43). Retrying in 5s...[0m
+2025-12-09 16:12:30 [WARN] [1;33mBackend not available (attempt 44). Retrying in 5s...[0m
+2025-12-09 16:12:35 [WARN] [1;33mBackend not available (attempt 45). Retrying in 5s...[0m
+2025-12-09 16:12:40 [WARN] [1;33mBackend not available (attempt 46). Retrying in 5s...[0m
+2025-12-09 16:12:46 [WARN] [1;33mBackend not available (attempt 47). Retrying in 5s...[0m
+2025-12-09 16:12:51 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:12:51 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:12:51 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:12:51 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:12:51 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:12:51 [SUCCESS] [0;32mDrone script started (PID: 15882)[0m
+2025-12-09 16:16:43 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 16:16:43 [INFO] [0;34mKilling drone script (PID: 15882)...[0m
+2025-12-09 16:16:43 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 16:16:44 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 16:16:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:16:46 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 16:16:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:16:46 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 16:16:46 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 16:16:46 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 16:16:46 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:16:46 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:16:46 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 16:16:46 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 16:16:46 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:16:46 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:16:46 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:16:46 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:16:46 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:16:47 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:16:47 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:16:47 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:16:47 [SUCCESS] [0;32mDrone script started (PID: 16841)[0m
+2025-12-09 16:17:01 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 16:17:01 [INFO] [0;34mKilling drone script (PID: 16841)...[0m
+2025-12-09 16:17:01 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 16:17:01 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 16:17:04 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:17:04 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 16:17:04 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:17:04 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 16:17:04 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 16:17:04 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 16:17:04 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:17:04 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:17:04 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 16:17:04 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 16:17:04 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:17:04 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:17:04 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:17:04 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:17:04 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:17:05 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:17:05 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:17:05 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:17:05 [SUCCESS] [0;32mDrone script started (PID: 17093)[0m
+2025-12-09 16:18:02 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:18:02 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:18:02 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:18:02 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:18:02 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:18:02 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:18:02 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:18:03 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 16:18:03 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:18:03 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:18:09 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2025-12-09 16:18:09 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:18:09 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:18:14 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2025-12-09 16:18:14 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:18:14 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:18:19 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2025-12-09 16:18:24 [WARN] [1;33mBackend not available (attempt 5). Retrying in 5s...[0m
+2025-12-09 16:18:29 [WARN] [1;33mBackend not available (attempt 6). Retrying in 5s...[0m
+2025-12-09 16:18:34 [WARN] [1;33mBackend not available (attempt 7). Retrying in 5s...[0m
+2025-12-09 16:18:39 [WARN] [1;33mBackend not available (attempt 8). Retrying in 5s...[0m
+2025-12-09 16:18:44 [WARN] [1;33mBackend not available (attempt 9). Retrying in 5s...[0m
+2025-12-09 16:18:50 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:18:50 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:18:50 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:18:50 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:18:50 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:18:50 [SUCCESS] [0;32mDrone script started (PID: 17855)[0m
+2025-12-09 16:19:44 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:19:44 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:19:44 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:19:44 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:19:44 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:19:44 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:19:44 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:19:45 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 16:19:45 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:19:45 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:19:50 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2025-12-09 16:19:50 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:19:50 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:19:55 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2025-12-09 16:19:55 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:19:55 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:20:00 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2025-12-09 16:20:05 [WARN] [1;33mBackend not available (attempt 5). Retrying in 5s...[0m
+2025-12-09 16:20:10 [WARN] [1;33mBackend not available (attempt 6). Retrying in 5s...[0m
+2025-12-09 16:20:15 [WARN] [1;33mBackend not available (attempt 7). Retrying in 5s...[0m
+2025-12-09 16:20:20 [WARN] [1;33mBackend not available (attempt 8). Retrying in 5s...[0m
+2025-12-09 16:20:25 [WARN] [1;33mBackend not available (attempt 9). Retrying in 5s...[0m
+2025-12-09 16:20:31 [WARN] [1;33mBackend not available (attempt 10). Retrying in 5s...[0m
+2025-12-09 16:20:36 [WARN] [1;33mBackend not available (attempt 11). Retrying in 5s...[0m
+2025-12-09 16:20:41 [WARN] [1;33mBackend not available (attempt 12). Retrying in 5s...[0m
+2025-12-09 16:20:46 [WARN] [1;33mBackend not available (attempt 13). Retrying in 5s...[0m
+2025-12-09 16:20:51 [WARN] [1;33mBackend not available (attempt 14). Retrying in 5s...[0m
+2025-12-09 16:20:56 [WARN] [1;33mBackend not available (attempt 15). Retrying in 5s...[0m
+2025-12-09 16:21:01 [WARN] [1;33mBackend not available (attempt 16). Retrying in 5s...[0m
+2025-12-09 16:21:06 [WARN] [1;33mBackend not available (attempt 17). Retrying in 5s...[0m
+2025-12-09 16:21:19 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:21:19 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:21:19 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:21:19 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:21:19 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:21:19 [SUCCESS] [0;32mDrone script started (PID: 18916)[0m
+2025-12-09 16:22:29 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:22:29 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:22:29 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:22:29 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:22:29 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:22:29 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:22:29 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:22:34 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 16:22:34 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:22:34 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:22:38 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2025-12-09 16:22:38 [SUCCESS] [0;32mCleanup complete. Exiting.[0m
+2025-12-09 16:23:45 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:23:45 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 16:23:45 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:23:45 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 16:23:45 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 16:23:45 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 16:23:45 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:23:45 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:23:45 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 16:23:45 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 16:23:45 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:23:45 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:23:45 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:23:45 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:23:45 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:23:45 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:23:45 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:23:45 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:23:45 [SUCCESS] [0;32mDrone script started (PID: 19587)[0m
+2025-12-09 16:25:18 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:25:18 [ERROR] [0;31m🔌 BACKEND CONNECTION LOST (Exit code: 11)[0m
+2025-12-09 16:25:18 [ERROR] [0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:25:18 [WARN] [1;33mBackend disconnected - will wait for it to come back online[0m
+2025-12-09 16:25:18 [INFO] [0;34mWaiting for backend to become available...[0m
+2025-12-09 16:25:18 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:25:18 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:25:19 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 16:25:19 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:25:19 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:25:24 [WARN] [1;33mBackend not reachable (attempt 2)[0m
+2025-12-09 16:25:24 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:25:24 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:25:29 [WARN] [1;33mBackend not reachable (attempt 3)[0m
+2025-12-09 16:25:29 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:25:29 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:25:34 [WARN] [1;33mBackend not available (attempt 4). Retrying in 5s...[0m
+2025-12-09 16:25:40 [WARN] [1;33mBackend not available (attempt 5). Retrying in 5s...[0m
+2025-12-09 16:25:45 [WARN] [1;33mBackend not available (attempt 6). Retrying in 5s...[0m
+2025-12-09 16:25:50 [WARN] [1;33mBackend not available (attempt 7). Retrying in 5s...[0m
+2025-12-09 16:25:55 [WARN] [1;33mBackend not available (attempt 8). Retrying in 5s...[0m
+2025-12-09 16:26:00 [WARN] [1;33mBackend not available (attempt 9). Retrying in 5s...[0m
+2025-12-09 16:26:05 [WARN] [1;33mBackend not available (attempt 10). Retrying in 5s...[0m
+2025-12-09 16:26:10 [WARN] [1;33mBackend not available (attempt 11). Retrying in 5s...[0m
+2025-12-09 16:26:16 [WARN] [1;33mBackend not available (attempt 12). Retrying in 5s...[0m
+2025-12-09 16:26:21 [WARN] [1;33mBackend not available (attempt 13). Retrying in 5s...[0m
+2025-12-09 16:26:26 [WARN] [1;33mBackend not available (attempt 14). Retrying in 5s...[0m
+2025-12-09 16:26:31 [WARN] [1;33mBackend not available (attempt 15). Retrying in 5s...[0m
+2025-12-09 16:26:36 [WARN] [1;33mBackend not available (attempt 16). Retrying in 5s...[0m
+2025-12-09 16:26:41 [WARN] [1;33mBackend not available (attempt 17). Retrying in 5s...[0m
+2025-12-09 16:26:46 [WARN] [1;33mBackend not available (attempt 18). Retrying in 5s...[0m
+2025-12-09 16:26:51 [WARN] [1;33mBackend not available (attempt 19). Retrying in 5s...[0m
+2025-12-09 16:26:56 [WARN] [1;33mBackend not available (attempt 20). Retrying in 5s...[0m
+2025-12-09 16:27:01 [WARN] [1;33mBackend not available (attempt 21). Retrying in 5s...[0m
+2025-12-09 16:27:07 [WARN] [1;33mBackend not available (attempt 22). Retrying in 5s...[0m
+2025-12-09 16:27:12 [WARN] [1;33mBackend not available (attempt 23). Retrying in 5s...[0m
+2025-12-09 16:27:17 [WARN] [1;33mBackend not available (attempt 24). Retrying in 5s...[0m
+2025-12-09 16:27:23 [WARN] [1;33mBackend not available (attempt 25). Retrying in 5s...[0m
+2025-12-09 16:27:28 [WARN] [1;33mBackend not available (attempt 26). Retrying in 5s...[0m
+2025-12-09 16:27:33 [WARN] [1;33mBackend not available (attempt 27). Retrying in 5s...[0m
+2025-12-09 16:27:38 [WARN] [1;33mBackend not available (attempt 28). Retrying in 5s...[0m
+2025-12-09 16:27:43 [WARN] [1;33mBackend not available (attempt 29). Retrying in 5s...[0m
+2025-12-09 16:27:49 [WARN] [1;33mBackend not available (attempt 30). Retrying in 5s...[0m
+2025-12-09 16:27:54 [WARN] [1;33mBackend not available (attempt 31). Retrying in 5s...[0m
+2025-12-09 16:27:59 [WARN] [1;33mBackend not available (attempt 32). Retrying in 5s...[0m
+2025-12-09 16:28:04 [WARN] [1;33mBackend not available (attempt 33). Retrying in 5s...[0m
+2025-12-09 16:28:09 [WARN] [1;33mBackend not available (attempt 34). Retrying in 5s...[0m
+2025-12-09 16:28:16 [WARN] [1;33mBackend not available (attempt 35). Retrying in 5s...[0m
+2025-12-09 16:28:21 [WARN] [1;33mBackend not available (attempt 36). Retrying in 5s...[0m
+2025-12-09 16:28:27 [WARN] [1;33mBackend not available (attempt 37). Retrying in 5s...[0m
+2025-12-09 16:28:32 [WARN] [1;33mBackend not available (attempt 38). Retrying in 5s...[0m
+2025-12-09 16:28:37 [WARN] [1;33mBackend not available (attempt 39). Retrying in 5s...[0m
+2025-12-09 16:28:42 [WARN] [1;33mBackend not available (attempt 40). Retrying in 5s...[0m
+2025-12-09 16:28:47 [WARN] [1;33mBackend not available (attempt 41). Retrying in 5s...[0m
+2025-12-09 16:28:52 [WARN] [1;33mBackend not available (attempt 42). Retrying in 5s...[0m
+2025-12-09 16:28:57 [WARN] [1;33mBackend not available (attempt 43). Retrying in 5s...[0m
+2025-12-09 16:29:02 [WARN] [1;33mBackend not available (attempt 44). Retrying in 5s...[0m
+2025-12-09 16:29:07 [WARN] [1;33mBackend not available (attempt 45). Retrying in 5s...[0m
+2025-12-09 16:29:12 [WARN] [1;33mBackend not available (attempt 46). Retrying in 5s...[0m
+2025-12-09 16:29:18 [WARN] [1;33mBackend not available (attempt 47). Retrying in 5s...[0m
+2025-12-09 16:29:23 [WARN] [1;33mBackend not available (attempt 48). Retrying in 5s...[0m
+2025-12-09 16:29:28 [WARN] [1;33mBackend not available (attempt 49). Retrying in 5s...[0m
+2025-12-09 16:29:33 [WARN] [1;33mBackend not available (attempt 50). Retrying in 5s...[0m
+2025-12-09 16:29:38 [WARN] [1;33mBackend not available (attempt 51). Retrying in 5s...[0m
+2025-12-09 16:29:43 [WARN] [1;33mBackend not available (attempt 52). Retrying in 5s...[0m
+2025-12-09 16:29:48 [WARN] [1;33mBackend not available (attempt 53). Retrying in 5s...[0m
+2025-12-09 16:29:53 [WARN] [1;33mBackend not available (attempt 54). Retrying in 5s...[0m
+2025-12-09 16:29:58 [WARN] [1;33mBackend not available (attempt 55). Retrying in 5s...[0m
+2025-12-09 16:30:03 [WARN] [1;33mBackend not available (attempt 56). Retrying in 5s...[0m
+2025-12-09 16:30:09 [WARN] [1;33mBackend not available (attempt 57). Retrying in 5s...[0m
+2025-12-09 16:30:14 [WARN] [1;33mBackend not available (attempt 58). Retrying in 5s...[0m
+2025-12-09 16:30:19 [WARN] [1;33mBackend not available (attempt 59). Retrying in 5s...[0m
+2025-12-09 16:30:24 [WARN] [1;33mBackend not available (attempt 60). Retrying in 5s...[0m
+2025-12-09 16:30:29 [WARN] [1;33mBackend not available (attempt 61). Retrying in 5s...[0m
+2025-12-09 16:30:34 [WARN] [1;33mBackend not available (attempt 62). Retrying in 5s...[0m
+2025-12-09 16:30:39 [WARN] [1;33mBackend not available (attempt 63). Retrying in 5s...[0m
+2025-12-09 16:30:44 [WARN] [1;33mBackend not available (attempt 64). Retrying in 5s...[0m
+2025-12-09 16:30:49 [WARN] [1;33mBackend not available (attempt 65). Retrying in 5s...[0m
+2025-12-09 16:30:54 [WARN] [1;33mBackend not available (attempt 66). Retrying in 5s...[0m
+2025-12-09 16:31:00 [WARN] [1;33mBackend not available (attempt 67). Retrying in 5s...[0m
+2025-12-09 16:31:05 [WARN] [1;33mBackend not available (attempt 68). Retrying in 5s...[0m
+2025-12-09 16:31:10 [WARN] [1;33mBackend not available (attempt 69). Retrying in 5s...[0m
+2025-12-09 16:31:15 [WARN] [1;33mBackend not available (attempt 70). Retrying in 5s...[0m
+2025-12-09 16:31:20 [WARN] [1;33mBackend not available (attempt 71). Retrying in 5s...[0m
+2025-12-09 16:31:25 [WARN] [1;33mBackend not available (attempt 72). Retrying in 5s...[0m
+2025-12-09 16:31:30 [WARN] [1;33mBackend not available (attempt 73). Retrying in 5s...[0m
+2025-12-09 16:31:35 [WARN] [1;33mBackend not available (attempt 74). Retrying in 5s...[0m
+2025-12-09 16:31:41 [WARN] [1;33mBackend not available (attempt 75). Retrying in 5s...[0m
+2025-12-09 16:31:46 [WARN] [1;33mBackend not available (attempt 76). Retrying in 5s...[0m
+2025-12-09 16:31:51 [WARN] [1;33mBackend not available (attempt 77). Retrying in 5s...[0m
+2025-12-09 16:31:56 [WARN] [1;33mBackend not available (attempt 78). Retrying in 5s...[0m
+2025-12-09 16:32:01 [WARN] [1;33mBackend not available (attempt 79). Retrying in 5s...[0m
+2025-12-09 16:32:06 [WARN] [1;33mBackend not available (attempt 80). Retrying in 5s...[0m
+2025-12-09 16:32:11 [WARN] [1;33mBackend not available (attempt 81). Retrying in 5s...[0m
+2025-12-09 16:32:16 [WARN] [1;33mBackend not available (attempt 82). Retrying in 5s...[0m
+2025-12-09 16:32:21 [WARN] [1;33mBackend not available (attempt 83). Retrying in 5s...[0m
+2025-12-09 16:32:26 [WARN] [1;33mBackend not available (attempt 84). Retrying in 5s...[0m
+2025-12-09 16:32:31 [WARN] [1;33mBackend not available (attempt 85). Retrying in 5s...[0m
+2025-12-09 16:32:37 [WARN] [1;33mBackend not available (attempt 86). Retrying in 5s...[0m
+2025-12-09 16:32:42 [WARN] [1;33mBackend not available (attempt 87). Retrying in 5s...[0m
+2025-12-09 16:32:47 [WARN] [1;33mBackend not available (attempt 88). Retrying in 5s...[0m
+2025-12-09 16:32:52 [WARN] [1;33mBackend not available (attempt 89). Retrying in 5s...[0m
+2025-12-09 16:32:57 [WARN] [1;33mBackend not available (attempt 90). Retrying in 5s...[0m
+2025-12-09 16:33:02 [WARN] [1;33mBackend not available (attempt 91). Retrying in 5s...[0m
+2025-12-09 16:33:07 [WARN] [1;33mBackend not available (attempt 92). Retrying in 5s...[0m
+2025-12-09 16:33:12 [WARN] [1;33mBackend not available (attempt 93). Retrying in 5s...[0m
+2025-12-09 16:33:17 [WARN] [1;33mBackend not available (attempt 94). Retrying in 5s...[0m
+2025-12-09 16:33:22 [WARN] [1;33mBackend not available (attempt 95). Retrying in 5s...[0m
+2025-12-09 16:33:28 [WARN] [1;33mBackend not available (attempt 96). Retrying in 5s...[0m
+2025-12-09 16:33:33 [WARN] [1;33mBackend not available (attempt 97). Retrying in 5s...[0m
+2025-12-09 16:33:51 [WARN] [1;33mBackend not available (attempt 98). Retrying in 5s...[0m
+2025-12-09 16:34:09 [WARN] [1;33mBackend not available (attempt 99). Retrying in 5s...[0m
+2025-12-09 16:34:27 [WARN] [1;33mBackend not available (attempt 100). Retrying in 5s...[0m
+2025-12-09 16:34:45 [WARN] [1;33mBackend not available (attempt 101). Retrying in 5s...[0m
+2025-12-09 16:35:03 [WARN] [1;33mBackend not available (attempt 102). Retrying in 5s...[0m
+2025-12-09 16:35:21 [WARN] [1;33mBackend not available (attempt 103). Retrying in 5s...[0m
+2025-12-09 16:35:39 [WARN] [1;33mBackend not available (attempt 104). Retrying in 5s...[0m
+2025-12-09 16:35:57 [WARN] [1;33mBackend not available (attempt 105). Retrying in 5s...[0m
+2025-12-09 16:36:15 [WARN] [1;33mBackend not available (attempt 106). Retrying in 5s...[0m
+2025-12-09 16:36:33 [WARN] [1;33mBackend not available (attempt 107). Retrying in 5s...[0m
+2025-12-09 16:36:38 [WARN] [1;33mBackend not available (attempt 108). Retrying in 5s...[0m
+2025-12-09 16:36:43 [WARN] [1;33mBackend not available (attempt 109). Retrying in 5s...[0m
+2025-12-09 16:36:48 [WARN] [1;33mBackend not available (attempt 110). Retrying in 5s...[0m
+2025-12-09 16:36:54 [WARN] [1;33mBackend not available (attempt 111). Retrying in 5s...[0m
+2025-12-09 16:36:59 [WARN] [1;33mBackend not available (attempt 112). Retrying in 5s...[0m
+2025-12-09 16:37:09 [WARN] [1;33mBackend not available (attempt 113). Retrying in 5s...[0m
+2025-12-09 16:37:14 [WARN] [1;33mBackend not available (attempt 114). Retrying in 5s...[0m
+2025-12-09 16:37:32 [WARN] [1;33mBackend not available (attempt 115). Retrying in 5s...[0m
+2025-12-09 16:37:50 [WARN] [1;33mBackend not available (attempt 116). Retrying in 5s...[0m
+2025-12-09 16:38:08 [WARN] [1;33mBackend not available (attempt 117). Retrying in 5s...[0m
+2025-12-09 16:38:26 [WARN] [1;33mBackend not available (attempt 118). Retrying in 5s...[0m
+2025-12-09 16:38:44 [WARN] [1;33mBackend not available (attempt 119). Retrying in 5s...[0m
+2025-12-09 16:39:02 [WARN] [1;33mBackend not available (attempt 120). Retrying in 5s...[0m
+2025-12-09 16:39:20 [WARN] [1;33mBackend not available (attempt 121). Retrying in 5s...[0m
+2025-12-09 16:39:38 [WARN] [1;33mBackend not available (attempt 122). Retrying in 5s...[0m
+2025-12-09 16:39:56 [WARN] [1;33mBackend not available (attempt 123). Retrying in 5s...[0m
+2025-12-09 16:40:14 [WARN] [1;33mBackend not available (attempt 124). Retrying in 5s...[0m
+2025-12-09 16:40:32 [WARN] [1;33mBackend not available (attempt 125). Retrying in 5s...[0m
+2025-12-09 16:40:46 [WARN] [1;33mBackend not available (attempt 126). Retrying in 5s...[0m
+2025-12-09 16:40:52 [WARN] [1;33mBackend not available (attempt 127). Retrying in 5s...[0m
+2025-12-09 16:40:57 [WARN] [1;33mBackend not available (attempt 128). Retrying in 5s...[0m
+2025-12-09 16:41:03 [WARN] [1;33mBackend not available (attempt 129). Retrying in 5s...[0m
+2025-12-09 16:41:08 [WARN] [1;33mBackend not available (attempt 130). Retrying in 5s...[0m
+2025-12-09 16:41:13 [WARN] [1;33mBackend not available (attempt 131). Retrying in 5s...[0m
+2025-12-09 16:41:31 [WARN] [1;33mBackend not available (attempt 132). Retrying in 5s...[0m
+2025-12-09 16:41:49 [WARN] [1;33mBackend not available (attempt 133). Retrying in 5s...[0m
+2025-12-09 16:42:07 [WARN] [1;33mBackend not available (attempt 134). Retrying in 5s...[0m
+2025-12-09 16:42:25 [WARN] [1;33mBackend not available (attempt 135). Retrying in 5s...[0m
+2025-12-09 16:42:43 [WARN] [1;33mBackend not available (attempt 136). Retrying in 5s...[0m
+2025-12-09 16:43:01 [WARN] [1;33mBackend not available (attempt 137). Retrying in 5s...[0m
+2025-12-09 16:43:07 [WARN] [1;33mBackend not available (attempt 138). Retrying in 5s...[0m
+2025-12-09 16:43:12 [WARN] [1;33mBackend not available (attempt 139). Retrying in 5s...[0m
+2025-12-09 16:43:28 [WARN] [1;33mBackend not available (attempt 140). Retrying in 5s...[0m
+2025-12-09 16:43:46 [WARN] [1;33mBackend not available (attempt 141). Retrying in 5s...[0m
+2025-12-09 16:44:04 [WARN] [1;33mBackend not available (attempt 142). Retrying in 5s...[0m
+2025-12-09 16:44:22 [WARN] [1;33mBackend not available (attempt 143). Retrying in 5s...[0m
+2025-12-09 16:44:40 [WARN] [1;33mBackend not available (attempt 144). Retrying in 5s...[0m
+2025-12-09 16:44:58 [WARN] [1;33mBackend not available (attempt 145). Retrying in 5s...[0m
+2025-12-09 16:45:03 [WARN] [1;33mBackend not available (attempt 146). Retrying in 5s...[0m
+2025-12-09 16:45:10 [WARN] [1;33mBackend not available (attempt 147). Retrying in 5s...[0m
+2025-12-09 16:45:15 [WARN] [1;33mBackend not available (attempt 148). Retrying in 5s...[0m
+2025-12-09 16:45:20 [WARN] [1;33mBackend not available (attempt 149). Retrying in 5s...[0m
+2025-12-09 16:45:26 [WARN] [1;33mBackend not available (attempt 150). Retrying in 5s...[0m
+2025-12-09 16:45:31 [WARN] [1;33mBackend not available (attempt 151). Retrying in 5s...[0m
+2025-12-09 16:45:36 [WARN] [1;33mBackend not available (attempt 152). Retrying in 5s...[0m
+2025-12-09 16:45:41 [WARN] [1;33mBackend not available (attempt 153). Retrying in 5s...[0m
+2025-12-09 16:45:59 [WARN] [1;33mBackend not available (attempt 154). Retrying in 5s...[0m
+2025-12-09 16:46:17 [WARN] [1;33mBackend not available (attempt 155). Retrying in 5s...[0m
+2025-12-09 16:46:35 [WARN] [1;33mBackend not available (attempt 156). Retrying in 5s...[0m
+2025-12-09 16:46:53 [WARN] [1;33mBackend not available (attempt 157). Retrying in 5s...[0m
+2025-12-09 16:47:11 [WARN] [1;33mBackend not available (attempt 158). Retrying in 5s...[0m
+2025-12-09 16:47:16 [WARN] [1;33mBackend not available (attempt 159). Retrying in 5s...[0m
+2025-12-09 16:47:21 [WARN] [1;33mBackend not available (attempt 160). Retrying in 5s...[0m
+2025-12-09 16:47:26 [WARN] [1;33mBackend not available (attempt 161). Retrying in 5s...[0m
+2025-12-09 16:47:32 [WARN] [1;33mBackend not available (attempt 162). Retrying in 5s...[0m
+2025-12-09 16:47:37 [WARN] [1;33mBackend not available (attempt 163). Retrying in 5s...[0m
+2025-12-09 16:47:42 [WARN] [1;33mBackend not available (attempt 164). Retrying in 5s...[0m
+2025-12-09 16:47:47 [WARN] [1;33mBackend not available (attempt 165). Retrying in 5s...[0m
+2025-12-09 16:47:52 [WARN] [1;33mBackend not available (attempt 166). Retrying in 5s...[0m
+2025-12-09 16:47:57 [WARN] [1;33mBackend not available (attempt 167). Retrying in 5s...[0m
+2025-12-09 16:48:02 [WARN] [1;33mBackend not available (attempt 168). Retrying in 5s...[0m
+2025-12-09 16:48:07 [WARN] [1;33mBackend not available (attempt 169). Retrying in 5s...[0m
+2025-12-09 16:48:12 [WARN] [1;33mBackend not available (attempt 170). Retrying in 5s...[0m
+2025-12-09 16:48:17 [WARN] [1;33mBackend not available (attempt 171). Retrying in 5s...[0m
+2025-12-09 16:48:22 [WARN] [1;33mBackend not available (attempt 172). Retrying in 5s...[0m
+2025-12-09 16:48:28 [WARN] [1;33mBackend not available (attempt 173). Retrying in 5s...[0m
+2025-12-09 16:48:33 [WARN] [1;33mBackend not available (attempt 174). Retrying in 5s...[0m
+2025-12-09 16:48:38 [WARN] [1;33mBackend not available (attempt 175). Retrying in 5s...[0m
+2025-12-09 16:48:43 [WARN] [1;33mBackend not available (attempt 176). Retrying in 5s...[0m
+2025-12-09 16:48:48 [WARN] [1;33mBackend not available (attempt 177). Retrying in 5s...[0m
+2025-12-09 16:48:53 [WARN] [1;33mBackend not available (attempt 178). Retrying in 5s...[0m
+2025-12-09 16:48:58 [WARN] [1;33mBackend not available (attempt 179). Retrying in 5s...[0m
+2025-12-09 16:49:17 [WARN] [1;33mBackend not available (attempt 180). Retrying in 5s...[0m
+2025-12-09 16:49:22 [WARN] [1;33mBackend not available (attempt 181). Retrying in 5s...[0m
+2025-12-09 16:49:27 [WARN] [1;33mBackend not available (attempt 182). Retrying in 5s...[0m
+2025-12-09 16:49:32 [WARN] [1;33mBackend not available (attempt 183). Retrying in 5s...[0m
+2025-12-09 16:49:37 [WARN] [1;33mBackend not available (attempt 184). Retrying in 5s...[0m
+2025-12-09 16:49:42 [WARN] [1;33mBackend not available (attempt 185). Retrying in 5s...[0m
+2025-12-09 16:49:47 [WARN] [1;33mBackend not available (attempt 186). Retrying in 5s...[0m
+2025-12-09 16:49:53 [WARN] [1;33mBackend not available (attempt 187). Retrying in 5s...[0m
+2025-12-09 16:49:58 [WARN] [1;33mBackend not available (attempt 188). Retrying in 5s...[0m
+2025-12-09 16:50:03 [WARN] [1;33mBackend not available (attempt 189). Retrying in 5s...[0m
+2025-12-09 16:50:08 [WARN] [1;33mBackend not available (attempt 190). Retrying in 5s...[0m
+2025-12-09 16:50:13 [WARN] [1;33mBackend not available (attempt 191). Retrying in 5s...[0m
+2025-12-09 16:50:18 [WARN] [1;33mBackend not available (attempt 192). Retrying in 5s...[0m
+2025-12-09 16:50:23 [WARN] [1;33mBackend not available (attempt 193). Retrying in 5s...[0m
+2025-12-09 16:50:28 [WARN] [1;33mBackend not available (attempt 194). Retrying in 5s...[0m
+2025-12-09 16:50:33 [WARN] [1;33mBackend not available (attempt 195). Retrying in 5s...[0m
+2025-12-09 16:50:38 [WARN] [1;33mBackend not available (attempt 196). Retrying in 5s...[0m
+2025-12-09 16:50:43 [WARN] [1;33mBackend not available (attempt 197). Retrying in 5s...[0m
+2025-12-09 16:50:49 [WARN] [1;33mBackend not available (attempt 198). Retrying in 5s...[0m
+2025-12-09 16:50:54 [WARN] [1;33mBackend not available (attempt 199). Retrying in 5s...[0m
+2025-12-09 16:50:59 [WARN] [1;33mBackend not available (attempt 200). Retrying in 5s...[0m
+2025-12-09 16:51:04 [WARN] [1;33mBackend not available (attempt 201). Retrying in 5s...[0m
+2025-12-09 16:51:09 [WARN] [1;33mBackend not available (attempt 202). Retrying in 5s...[0m
+2025-12-09 16:51:15 [WARN] [1;33mBackend not available (attempt 203). Retrying in 5s...[0m
+2025-12-09 16:51:22 [WARN] [1;33mBackend not available (attempt 204). Retrying in 5s...[0m
+2025-12-09 16:51:27 [WARN] [1;33mBackend not available (attempt 205). Retrying in 5s...[0m
+2025-12-09 16:51:33 [WARN] [1;33mBackend not available (attempt 206). Retrying in 5s...[0m
+2025-12-09 16:51:39 [WARN] [1;33mBackend not available (attempt 207). Retrying in 5s...[0m
+2025-12-09 16:51:44 [WARN] [1;33mBackend not available (attempt 208). Retrying in 5s...[0m
+2025-12-09 16:51:49 [WARN] [1;33mBackend not available (attempt 209). Retrying in 5s...[0m
+2025-12-09 16:51:54 [WARN] [1;33mBackend not available (attempt 210). Retrying in 5s...[0m
+2025-12-09 16:51:59 [WARN] [1;33mBackend not available (attempt 211). Retrying in 5s...[0m
+2025-12-09 16:52:04 [WARN] [1;33mBackend not available (attempt 212). Retrying in 5s...[0m
+2025-12-09 16:52:09 [WARN] [1;33mBackend not available (attempt 213). Retrying in 5s...[0m
+2025-12-09 16:52:14 [WARN] [1;33mBackend not available (attempt 214). Retrying in 5s...[0m
+2025-12-09 16:52:20 [WARN] [1;33mBackend not available (attempt 215). Retrying in 5s...[0m
+2025-12-09 16:52:25 [WARN] [1;33mBackend not available (attempt 216). Retrying in 5s...[0m
+2025-12-09 16:52:30 [WARN] [1;33mBackend not available (attempt 217). Retrying in 5s...[0m
+2025-12-09 16:52:35 [WARN] [1;33mBackend not available (attempt 218). Retrying in 5s...[0m
+2025-12-09 16:52:40 [WARN] [1;33mBackend not available (attempt 219). Retrying in 5s...[0m
+2025-12-09 16:52:46 [WARN] [1;33mBackend not available (attempt 220). Retrying in 5s...[0m
+2025-12-09 16:52:51 [WARN] [1;33mBackend not available (attempt 221). Retrying in 5s...[0m
+2025-12-09 16:52:58 [WARN] [1;33mBackend not available (attempt 222). Retrying in 5s...[0m
+2025-12-09 16:53:03 [WARN] [1;33mBackend not available (attempt 223). Retrying in 5s...[0m
+2025-12-09 16:53:08 [WARN] [1;33mBackend not available (attempt 224). Retrying in 5s...[0m
+2025-12-09 16:53:13 [WARN] [1;33mBackend not available (attempt 225). Retrying in 5s...[0m
+2025-12-09 16:53:18 [WARN] [1;33mBackend not available (attempt 226). Retrying in 5s...[0m
+2025-12-09 16:53:23 [WARN] [1;33mBackend not available (attempt 227). Retrying in 5s...[0m
+2025-12-09 16:53:28 [WARN] [1;33mBackend not available (attempt 228). Retrying in 5s...[0m
+2025-12-09 16:53:34 [WARN] [1;33mBackend not available (attempt 229). Retrying in 5s...[0m
+2025-12-09 16:53:39 [WARN] [1;33mBackend not available (attempt 230). Retrying in 5s...[0m
+2025-12-09 16:53:44 [WARN] [1;33mBackend not available (attempt 231). Retrying in 5s...[0m
+2025-12-09 16:53:49 [WARN] [1;33mBackend not available (attempt 232). Retrying in 5s...[0m
+2025-12-09 16:53:54 [WARN] [1;33mBackend not available (attempt 233). Retrying in 5s...[0m
+2025-12-09 16:53:59 [WARN] [1;33mBackend not available (attempt 234). Retrying in 5s...[0m
+2025-12-09 16:54:04 [WARN] [1;33mBackend not available (attempt 235). Retrying in 5s...[0m
+2025-12-09 16:54:09 [WARN] [1;33mBackend not available (attempt 236). Retrying in 5s...[0m
+2025-12-09 16:54:14 [WARN] [1;33mBackend not available (attempt 237). Retrying in 5s...[0m
+2025-12-09 16:54:19 [WARN] [1;33mBackend not available (attempt 238). Retrying in 5s...[0m
+2025-12-09 16:54:24 [WARN] [1;33mBackend not available (attempt 239). Retrying in 5s...[0m
+2025-12-09 16:54:30 [WARN] [1;33mBackend not available (attempt 240). Retrying in 5s...[0m
+2025-12-09 16:54:35 [WARN] [1;33mBackend not available (attempt 241). Retrying in 5s...[0m
+2025-12-09 16:54:40 [WARN] [1;33mBackend not available (attempt 242). Retrying in 5s...[0m
+2025-12-09 16:54:45 [WARN] [1;33mBackend not available (attempt 243). Retrying in 5s...[0m
+2025-12-09 16:54:50 [WARN] [1;33mBackend not available (attempt 244). Retrying in 5s...[0m
+2025-12-09 16:54:55 [WARN] [1;33mBackend not available (attempt 245). Retrying in 5s...[0m
+2025-12-09 16:55:00 [WARN] [1;33mBackend not available (attempt 246). Retrying in 5s...[0m
+2025-12-09 16:55:05 [WARN] [1;33mBackend not available (attempt 247). Retrying in 5s...[0m
+2025-12-09 16:55:11 [WARN] [1;33mBackend not available (attempt 248). Retrying in 5s...[0m
+2025-12-09 16:55:16 [WARN] [1;33mBackend not available (attempt 249). Retrying in 5s...[0m
+2025-12-09 16:55:21 [WARN] [1;33mBackend not available (attempt 250). Retrying in 5s...[0m
+2025-12-09 16:55:26 [WARN] [1;33mBackend not available (attempt 251). Retrying in 5s...[0m
+2025-12-09 16:55:31 [WARN] [1;33mBackend not available (attempt 252). Retrying in 5s...[0m
+2025-12-09 16:55:36 [WARN] [1;33mBackend not available (attempt 253). Retrying in 5s...[0m
+2025-12-09 16:55:41 [WARN] [1;33mBackend not available (attempt 254). Retrying in 5s...[0m
+2025-12-09 16:55:46 [WARN] [1;33mBackend not available (attempt 255). Retrying in 5s...[0m
+2025-12-09 16:55:51 [WARN] [1;33mBackend not available (attempt 256). Retrying in 5s...[0m
+2025-12-09 16:55:56 [WARN] [1;33mBackend not available (attempt 257). Retrying in 5s...[0m
+2025-12-09 16:56:01 [WARN] [1;33mBackend not available (attempt 258). Retrying in 5s...[0m
+2025-12-09 16:56:07 [WARN] [1;33mBackend not available (attempt 259). Retrying in 5s...[0m
+2025-12-09 16:56:12 [WARN] [1;33mBackend not available (attempt 260). Retrying in 5s...[0m
+2025-12-09 16:56:17 [WARN] [1;33mBackend not available (attempt 261). Retrying in 5s...[0m
+2025-12-09 16:56:22 [WARN] [1;33mBackend not available (attempt 262). Retrying in 5s...[0m
+2025-12-09 16:56:27 [WARN] [1;33mBackend not available (attempt 263). Retrying in 5s...[0m
+2025-12-09 16:56:32 [WARN] [1;33mBackend not available (attempt 264). Retrying in 5s...[0m
+2025-12-09 16:56:37 [WARN] [1;33mBackend not available (attempt 265). Retrying in 5s...[0m
+2025-12-09 16:56:42 [WARN] [1;33mBackend not available (attempt 266). Retrying in 5s...[0m
+2025-12-09 16:56:48 [WARN] [1;33mBackend not available (attempt 267). Retrying in 5s...[0m
+2025-12-09 16:56:53 [WARN] [1;33mBackend not available (attempt 268). Retrying in 5s...[0m
+2025-12-09 16:56:58 [WARN] [1;33mBackend not available (attempt 269). Retrying in 5s...[0m
+2025-12-09 16:57:03 [WARN] [1;33mBackend not available (attempt 270). Retrying in 5s...[0m
+2025-12-09 16:57:09 [WARN] [1;33mBackend not available (attempt 271). Retrying in 5s...[0m
+2025-12-09 16:57:14 [WARN] [1;33mBackend not available (attempt 272). Retrying in 5s...[0m
+2025-12-09 16:57:19 [WARN] [1;33mBackend not available (attempt 273). Retrying in 5s...[0m
+2025-12-09 16:57:24 [WARN] [1;33mBackend not available (attempt 274). Retrying in 5s...[0m
+2025-12-09 16:57:29 [WARN] [1;33mBackend not available (attempt 275). Retrying in 5s...[0m
+2025-12-09 16:57:34 [WARN] [1;33mBackend not available (attempt 276). Retrying in 5s...[0m
+2025-12-09 16:57:39 [WARN] [1;33mBackend not available (attempt 277). Retrying in 5s...[0m
+2025-12-09 16:57:45 [WARN] [1;33mBackend not available (attempt 278). Retrying in 5s...[0m
+2025-12-09 16:57:50 [WARN] [1;33mBackend not available (attempt 279). Retrying in 5s...[0m
+2025-12-09 16:57:55 [WARN] [1;33mBackend not available (attempt 280). Retrying in 5s...[0m
+2025-12-09 16:58:00 [WARN] [1;33mBackend not available (attempt 281). Retrying in 5s...[0m
+2025-12-09 16:58:05 [WARN] [1;33mBackend not available (attempt 282). Retrying in 5s...[0m
+2025-12-09 16:58:10 [WARN] [1;33mBackend not available (attempt 283). Retrying in 5s...[0m
+2025-12-09 16:58:15 [WARN] [1;33mBackend not available (attempt 284). Retrying in 5s...[0m
+2025-12-09 16:58:20 [WARN] [1;33mBackend not available (attempt 285). Retrying in 5s...[0m
+2025-12-09 16:58:26 [WARN] [1;33mBackend not available (attempt 286). Retrying in 5s...[0m
+2025-12-09 16:58:31 [WARN] [1;33mBackend not available (attempt 287). Retrying in 5s...[0m
+2025-12-09 16:58:36 [WARN] [1;33mBackend not available (attempt 288). Retrying in 5s...[0m
+2025-12-09 16:58:41 [WARN] [1;33mBackend not available (attempt 289). Retrying in 5s...[0m
+2025-12-09 16:58:46 [WARN] [1;33mBackend not available (attempt 290). Retrying in 5s...[0m
+2025-12-09 16:58:51 [WARN] [1;33mBackend not available (attempt 291). Retrying in 5s...[0m
+2025-12-09 16:58:56 [WARN] [1;33mBackend not available (attempt 292). Retrying in 5s...[0m
+2025-12-09 16:59:01 [WARN] [1;33mBackend not available (attempt 293). Retrying in 5s...[0m
+2025-12-09 16:59:07 [WARN] [1;33mBackend not available (attempt 294). Retrying in 5s...[0m
+2025-12-09 16:59:12 [WARN] [1;33mBackend not available (attempt 295). Retrying in 5s...[0m
+2025-12-09 16:59:17 [WARN] [1;33mBackend not available (attempt 296). Retrying in 5s...[0m
+2025-12-09 16:59:22 [WARN] [1;33mBackend not available (attempt 297). Retrying in 5s...[0m
+2025-12-09 16:59:27 [WARN] [1;33mBackend not available (attempt 298). Retrying in 5s...[0m
+2025-12-09 16:59:32 [WARN] [1;33mBackend not available (attempt 299). Retrying in 5s...[0m
+2025-12-09 16:59:37 [WARN] [1;33mBackend not available (attempt 300). Retrying in 5s...[0m
+2025-12-09 16:59:42 [WARN] [1;33mBackend not available (attempt 301). Retrying in 5s...[0m
+2025-12-09 16:59:47 [WARN] [1;33mBackend not available (attempt 302). Retrying in 5s...[0m
+2025-12-09 16:59:52 [WARN] [1;33mBackend not available (attempt 303). Retrying in 5s...[0m
+2025-12-09 16:59:57 [WARN] [1;33mBackend not available (attempt 304). Retrying in 5s...[0m
+2025-12-09 17:00:03 [WARN] [1;33mBackend not available (attempt 305). Retrying in 5s...[0m
+2025-12-09 17:00:08 [WARN] [1;33mBackend not available (attempt 306). Retrying in 5s...[0m
+2025-12-09 17:00:13 [WARN] [1;33mBackend not available (attempt 307). Retrying in 5s...[0m
+2025-12-09 17:00:18 [WARN] [1;33mBackend not available (attempt 308). Retrying in 5s...[0m
+2025-12-09 17:00:23 [WARN] [1;33mBackend not available (attempt 309). Retrying in 5s...[0m
+2025-12-09 17:00:28 [WARN] [1;33mBackend not available (attempt 310). Retrying in 5s...[0m
+2025-12-09 17:00:34 [WARN] [1;33mBackend not available (attempt 311). Retrying in 5s...[0m
+2025-12-09 17:00:39 [WARN] [1;33mBackend not available (attempt 312). Retrying in 5s...[0m
+2025-12-09 17:00:44 [WARN] [1;33mBackend not available (attempt 313). Retrying in 5s...[0m
+2025-12-09 17:00:49 [WARN] [1;33mBackend not available (attempt 314). Retrying in 5s...[0m
+2025-12-09 17:00:54 [WARN] [1;33mBackend not available (attempt 315). Retrying in 5s...[0m
+2025-12-09 17:00:59 [WARN] [1;33mBackend not available (attempt 316). Retrying in 5s...[0m
+2025-12-09 17:01:04 [WARN] [1;33mBackend not available (attempt 317). Retrying in 5s...[0m
+2025-12-09 17:01:10 [WARN] [1;33mBackend not available (attempt 318). Retrying in 5s...[0m
+2025-12-09 17:01:15 [WARN] [1;33mBackend not available (attempt 319). Retrying in 5s...[0m
+2025-12-09 17:01:21 [WARN] [1;33mBackend not available (attempt 320). Retrying in 5s...[0m
+2025-12-09 17:01:26 [WARN] [1;33mBackend not available (attempt 321). Retrying in 5s...[0m
+2025-12-09 17:01:32 [WARN] [1;33mBackend not available (attempt 322). Retrying in 5s...[0m
+2025-12-09 17:01:37 [WARN] [1;33mBackend not available (attempt 323). Retrying in 5s...[0m
+2025-12-09 17:01:43 [WARN] [1;33mBackend not available (attempt 324). Retrying in 5s...[0m
+2025-12-09 17:01:48 [WARN] [1;33mBackend not available (attempt 325). Retrying in 5s...[0m
+2025-12-09 17:01:53 [WARN] [1;33mBackend not available (attempt 326). Retrying in 5s...[0m
+2025-12-09 17:01:58 [WARN] [1;33mBackend not available (attempt 327). Retrying in 5s...[0m
+2025-12-09 17:02:03 [WARN] [1;33mBackend not available (attempt 328). Retrying in 5s...[0m
+2025-12-09 17:02:08 [WARN] [1;33mBackend not available (attempt 329). Retrying in 5s...[0m
+2025-12-09 17:02:13 [WARN] [1;33mBackend not available (attempt 330). Retrying in 5s...[0m
+2025-12-09 17:02:19 [WARN] [1;33mBackend not available (attempt 331). Retrying in 5s...[0m
+2025-12-09 17:02:24 [WARN] [1;33mBackend not available (attempt 332). Retrying in 5s...[0m
+2025-12-09 17:02:29 [WARN] [1;33mBackend not available (attempt 333). Retrying in 5s...[0m
+2025-12-09 17:02:34 [WARN] [1;33mBackend not available (attempt 334). Retrying in 5s...[0m
+2025-12-09 17:02:39 [WARN] [1;33mBackend not available (attempt 335). Retrying in 5s...[0m
+2025-12-09 17:02:44 [WARN] [1;33mBackend not available (attempt 336). Retrying in 5s...[0m
+2025-12-09 17:02:49 [WARN] [1;33mBackend not available (attempt 337). Retrying in 5s...[0m
+2025-12-09 17:02:55 [WARN] [1;33mBackend not available (attempt 338). Retrying in 5s...[0m
+2025-12-09 17:03:00 [WARN] [1;33mBackend not available (attempt 339). Retrying in 5s...[0m
+2025-12-09 17:03:05 [WARN] [1;33mBackend not available (attempt 340). Retrying in 5s...[0m
+2025-12-09 17:03:10 [WARN] [1;33mBackend not available (attempt 341). Retrying in 5s...[0m
+2025-12-09 17:03:16 [WARN] [1;33mBackend not available (attempt 342). Retrying in 5s...[0m
+2025-12-09 17:03:21 [WARN] [1;33mBackend not available (attempt 343). Retrying in 5s...[0m
+2025-12-09 17:03:26 [WARN] [1;33mBackend not available (attempt 344). Retrying in 5s...[0m
+2025-12-09 17:03:31 [WARN] [1;33mBackend not available (attempt 345). Retrying in 5s...[0m
+2025-12-09 17:03:36 [WARN] [1;33mBackend not available (attempt 346). Retrying in 5s...[0m
+2025-12-09 17:03:41 [WARN] [1;33mBackend not available (attempt 347). Retrying in 5s...[0m
+2025-12-09 17:03:46 [WARN] [1;33mBackend not available (attempt 348). Retrying in 5s...[0m
+2025-12-09 17:03:51 [WARN] [1;33mBackend not available (attempt 349). Retrying in 5s...[0m
+2025-12-09 17:03:56 [WARN] [1;33mBackend not available (attempt 350). Retrying in 5s...[0m
+2025-12-09 17:04:02 [WARN] [1;33mBackend not available (attempt 351). Retrying in 5s...[0m
+2025-12-09 17:04:07 [WARN] [1;33mBackend not available (attempt 352). Retrying in 5s...[0m
+2025-12-09 17:04:25 [WARN] [1;33mBackend not available (attempt 353). Retrying in 5s...[0m
+2025-12-09 17:04:43 [WARN] [1;33mBackend not available (attempt 354). Retrying in 5s...[0m
+2025-12-09 17:05:01 [WARN] [1;33mBackend not available (attempt 355). Retrying in 5s...[0m
+2025-12-09 17:05:19 [WARN] [1;33mBackend not available (attempt 356). Retrying in 5s...[0m
+2025-12-09 17:05:37 [WARN] [1;33mBackend not available (attempt 357). Retrying in 5s...[0m
+2025-12-09 17:05:55 [WARN] [1;33mBackend not available (attempt 358). Retrying in 5s...[0m
+2025-12-09 17:06:13 [WARN] [1;33mBackend not available (attempt 359). Retrying in 5s...[0m
+2025-12-09 17:06:31 [WARN] [1;33mBackend not available (attempt 360). Retrying in 5s...[0m
+2025-12-09 17:06:49 [WARN] [1;33mBackend not available (attempt 361). Retrying in 5s...[0m
+2025-12-09 17:07:07 [WARN] [1;33mBackend not available (attempt 362). Retrying in 5s...[0m
+2025-12-09 17:07:25 [WARN] [1;33mBackend not available (attempt 363). Retrying in 5s...[0m
+2025-12-09 17:07:43 [WARN] [1;33mBackend not available (attempt 364). Retrying in 5s...[0m
+2025-12-09 17:08:01 [WARN] [1;33mBackend not available (attempt 365). Retrying in 5s...[0m
+2025-12-09 17:08:20 [WARN] [1;33mBackend not available (attempt 366). Retrying in 5s...[0m
+2025-12-09 17:08:38 [WARN] [1;33mBackend not available (attempt 367). Retrying in 5s...[0m
+                                                                                             2025-12-09 16:08:50 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:08:50 [INFO] [0;34mDrone Auto-Restart Script[0m
+2025-12-09 16:08:50 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:08:50 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2025-12-09 16:08:50 [INFO] [0;34mDrone Type: recon[0m
+2025-12-09 16:08:50 [INFO] [0;34mBackend URL: http://100.111.237.50:8001[0m
+2025-12-09 16:08:50 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:08:50 [INFO] [0;34mScript: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:08:50 [SUCCESS] [0;32mVirtual environment activated: /home/homa1/homa1/homa1_venv[0m
+2025-12-09 16:08:50 [INFO] [0;34mLog: /home/homa1/homa1/code_base/HOMA-1.0/logs/austin-recon-01_20251209.log[0m
+2025-12-09 16:08:50 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2025-12-09 16:08:50 [INFO] [0;34mChecking if backend is available at http://100.111.237.50:8001...[0m
+2025-12-09 16:08:50 [INFO] [0;34mWebSocket URL: ws://100.111.237.50:8001[0m
+2025-12-09 16:08:50 [WARN] [1;33mBackend not reachable (attempt 1)[0m
+2025-12-09 16:08:50 [INFO] [0;34mTrying: curl http://100.111.237.50:8001/health[0m
+2025-12-09 16:08:50 [INFO] [0;34mRetrying in 5s...[0m
+2025-12-09 16:09:00 [SUCCESS] [0;32mBackend is online and reachable![0m
+2025-12-09 16:09:00 [INFO] [0;34mChecking for existing drone script processes...[0m
+2025-12-09 16:09:00 [INFO] [0;34mNo existing processes found[0m
+2025-12-09 16:09:00 [INFO] [0;34mStarting drone script...[0m
+2025-12-09 16:09:00 [INFO] [0;34mScript path: /home/homa1/homa1/code_base/HOMA-1.0/aruco_.py[0m
+2025-12-09 16:09:00 [SUCCESS] [0;32mDrone script started (PID: 2190)[0m

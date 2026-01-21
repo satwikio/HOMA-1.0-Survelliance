@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: siyi-sdk
+Version: 0.2.12
+Summary: SIYI gimbal camera SDK
+Author: Soter Technology
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: imutils (>=0.5.4,<0.6.0)
+Requires-Dist: opencv-python (>=4.8.1.78,<5.0.0.0)
+Requires-Dist: pyserial (>=3.5,<4.0)
+Description-Content-Type: text/markdown
+
+# siyi_gimbal_camera
+SIYI gimbal camera controller
+

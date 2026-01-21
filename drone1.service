@@ -1,0 +1,17 @@
+[Unit]
+Description=Drone 1 (austin-recon-01) Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=homa1
+WorkingDirectory=/home/homa1/homa1/code_base/HOMA-1.0
+ExecStart=/bin/bash /home/homa1/homa1/code_base/HOMA-1.0/run_drone1.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
