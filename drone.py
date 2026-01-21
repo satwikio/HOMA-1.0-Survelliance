@@ -2542,6 +2542,10 @@ import numpy as np
 import base64
 import os
 import grpc  # CRITICAL: Needed to catch MAVSDK crashes
+import psutil
+import logging
+from pathlib import Path
+from collections import defaultdict
 
 from aiortc import RTCPeerConnection, VideoStreamTrack, RTCSessionDescription
 from aiortc.sdp import candidate_from_sdp
@@ -2796,6 +2800,32 @@ class DroneClient:
         else:
             self.detector = None
             print(f"📦 Payload drone - Object detection DISABLED")
+
+        # Performance tracking for frame processing
+        self.process = psutil.Process(os.getpid())
+        self.detection_perf_stats = {
+            "frames_received": 0,
+            "detections_sent": 0,
+            "frame_encode_times": [],
+            "websocket_send_times": [],
+            "total_process_times": [],
+            "last_stats_log_time": time.time()
+        }
+
+        # Setup file logger for detection performance
+        logs_dir = Path("logs")
+        logs_dir.mkdir(exist_ok=True)
+
+        self.detection_stats_logger = logging.getLogger("drone_detection_stats")
+        self.detection_stats_logger.setLevel(logging.INFO)
+        self.detection_stats_logger.handlers = []
+
+        file_handler = logging.FileHandler(logs_dir / "drone_detection_performance.log")
+        file_handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
+        self.detection_stats_logger.addHandler(file_handler)
+
+        if self.drone_type == "recon":
+            print(f"📊 Drone Detection Performance Logging Enabled → logs/drone_detection_performance.log")
 
         # Restart lock to prevent multiple simultaneous restart attempts
         self.restart_lock = asyncio.Lock()
@@ -3117,17 +3147,37 @@ class DroneClient:
 
     async def process_frame_for_detection(self, frame_bgr):
         if self.detector is None: return
+
+        # Start timing
+        process_start = time.time()
+
+        # Track resource usage
+        mem_before = self.process.memory_info().rss / 1024 / 1024  # MB
+        cpu_before = self.process.cpu_percent(interval=None)
+
         try:
+            # Track frames received
+            self.detection_perf_stats["frames_received"] += 1
+
+            # Get GPS coordinates
             gps = self.latest.get("gps", {})
             lat = gps.get("lat", self.dummy_lat)
             lon = gps.get("lon", self.dummy_lng)
             alt = gps.get("alt_rel_m", self.dummy_alt)
 
+            # Run detection (timed internally in detector)
             result = self.detector.detect(frame_bgr, drone_lat=lat, drone_lon=lon, drone_alt=alt)
 
             if result and self.websocket:
+                # Step 1: Frame encoding
+                encode_start = time.time()
                 _, buffer = cv2.imencode('.jpg', frame_bgr, [cv2.IMWRITE_JPEG_QUALITY, 95])
                 frame_b64 = base64.b64encode(buffer).decode('utf-8')
+                encode_time = time.time() - encode_start
+                self.detection_perf_stats["frame_encode_times"].append(encode_time)
+
+                # Step 2: WebSocket send
+                send_start = time.time()
                 msg = {
                     "type": "object_detection",
                     "drone_id": DRONE_ID,
@@ -3137,7 +3187,76 @@ class DroneClient:
                     "frame_data": frame_b64
                 }
                 await self.websocket.send(json.dumps(msg))
-        except Exception: pass
+                send_time = time.time() - send_start
+                self.detection_perf_stats["websocket_send_times"].append(send_time)
+
+                # Track successful sends
+                self.detection_perf_stats["detections_sent"] += 1
+
+                # Get resource usage after
+                mem_after = self.process.memory_info().rss / 1024 / 1024  # MB
+                cpu_after = self.process.cpu_percent(interval=None)
+
+                # Total time
+                process_total = time.time() - process_start
+                self.detection_perf_stats["total_process_times"].append(process_total)
+
+                # Log individual detection
+                print(f"📤 Detection Sent: {len(result['bbox'])} bbox | "
+                      f"Encode: {encode_time*1000:.1f}ms | "
+                      f"Send: {send_time*1000:.1f}ms | "
+                      f"Total: {process_total*1000:.1f}ms | "
+                      f"Mem: {mem_after:.1f}MB | "
+                      f"CPU: {cpu_after:.1f}%")
+
+                # Periodic stats logging
+                self._log_detection_periodic_stats()
+
+        except Exception as e:
+            print(f"❌ Detection processing error: {e}")
+
+    def _log_detection_periodic_stats(self):
+        """Log comprehensive detection processing stats every 10 seconds"""
+        current_time = time.time()
+        elapsed = current_time - self.detection_perf_stats["last_stats_log_time"]
+
+        if elapsed >= 10.0:  # Log every 10 seconds
+            # Calculate averages
+            avg_encode_time = np.mean(self.detection_perf_stats["frame_encode_times"]) if self.detection_perf_stats["frame_encode_times"] else 0
+            avg_send_time = np.mean(self.detection_perf_stats["websocket_send_times"]) if self.detection_perf_stats["websocket_send_times"] else 0
+            avg_total_time = np.mean(self.detection_perf_stats["total_process_times"]) if self.detection_perf_stats["total_process_times"] else 0
+
+            # Calculate rates
+            frames_per_sec = self.detection_perf_stats["frames_received"] / elapsed if elapsed > 0 else 0
+            detections_per_sec = self.detection_perf_stats["detections_sent"] / elapsed if elapsed > 0 else 0
+
+            # Get current resource usage
+            mem_current = self.process.memory_info().rss / 1024 / 1024  # MB
+            cpu_percent = self.process.cpu_percent(interval=0.1)
+
+            # Log to file
+            self.detection_stats_logger.info(f"\n{'='*80}")
+            self.detection_stats_logger.info(f"Drone Detection Processing Stats (last {elapsed:.1f}s):")
+            self.detection_stats_logger.info(f"  Frames Received: {self.detection_perf_stats['frames_received']} ({frames_per_sec:.1f} FPS)")
+            self.detection_stats_logger.info(f"  Detections Sent: {self.detection_perf_stats['detections_sent']} ({detections_per_sec:.1f}/sec)")
+            self.detection_stats_logger.info(f"  Avg Frame Encode Time: {avg_encode_time*1000:.2f}ms")
+            self.detection_stats_logger.info(f"  Avg WebSocket Send Time: {avg_send_time*1000:.2f}ms")
+            self.detection_stats_logger.info(f"  Avg Total Processing Time: {avg_total_time*1000:.2f}ms")
+            self.detection_stats_logger.info(f"  Memory Usage: {mem_current:.1f} MB")
+            self.detection_stats_logger.info(f"  CPU Usage: {cpu_percent:.1f}%")
+
+            # Console summary
+            print(f"📊 Drone Stats: {frames_per_sec:.1f} FPS | {detections_per_sec:.1f} det/s | "
+                  f"Encode: {avg_encode_time*1000:.1f}ms | Send: {avg_send_time*1000:.1f}ms | "
+                  f"{mem_current:.1f}MB | {cpu_percent:.1f}% CPU")
+
+            # Reset counters
+            self.detection_perf_stats["frames_received"] = 0
+            self.detection_perf_stats["detections_sent"] = 0
+            self.detection_perf_stats["frame_encode_times"].clear()
+            self.detection_perf_stats["websocket_send_times"].clear()
+            self.detection_perf_stats["total_process_times"].clear()
+            self.detection_perf_stats["last_stats_log_time"] = current_time
 
 
     # --- Command Handling ---

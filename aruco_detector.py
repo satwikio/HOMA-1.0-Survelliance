@@ -258,6 +258,11 @@ Extracted from align_drone.py for use in the drone detection pipeline.
 import cv2
 import numpy as np
 import time
+import psutil
+import os
+import logging
+from pathlib import Path
+from collections import defaultdict
 
 
 class ArucoFireDetector:
@@ -304,6 +309,33 @@ class ArucoFireDetector:
         self.last_detection_time = time.time()  # Initialize to current time for proper interval calculation
         self.min_detection_interval = detection_interval  # Configurable detection interval
 
+        # Performance tracking
+        self.process = psutil.Process(os.getpid())
+        self.perf_stats = {
+            "total_frames_processed": 0,
+            "total_detections": 0,
+            "frames_skipped": 0,
+            "detect_times": [],  # Detection processing times
+            "gray_conversion_times": [],
+            "marker_detection_times": [],
+            "bbox_calculation_times": [],
+            "last_stats_log_time": time.time()
+        }
+
+        # Setup file logger for performance stats
+        logs_dir = Path("logs")
+        logs_dir.mkdir(exist_ok=True)
+
+        self.stats_logger = logging.getLogger("aruco_detector_stats")
+        self.stats_logger.setLevel(logging.INFO)
+        self.stats_logger.handlers = []  # Clear existing handlers
+
+        file_handler = logging.FileHandler(logs_dir / "aruco_detector_performance.log")
+        file_handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
+        self.stats_logger.addHandler(file_handler)
+
+        print(f"📊 ArUco Detector Performance Logging Enabled → logs/aruco_detector_performance.log")
+
     def detect(self, frame, drone_lat=None, drone_lon=None, drone_alt=None):
         """
         Detect ArUco markers and return them as fire detections.
@@ -323,19 +355,33 @@ class ArucoFireDetector:
             }
             Returns None if no markers detected.
         """
+        # Start overall timing
+        detect_start = time.time()
         timestamp = time.time()
+
+        # Track frames processed
+        self.perf_stats["total_frames_processed"] += 1
+
+        # Get resource usage at start
+        mem_before = self.process.memory_info().rss / 1024 / 1024  # MB
+        cpu_percent_before = self.process.cpu_percent(interval=None)
 
         # Time-based rate limiting (handled by caller now, but keep as safety)
         # This is now just a backup check - main timing is in script.py
         time_since_last_detection = timestamp - self.last_detection_time
         if time_since_last_detection < self.min_detection_interval:
+            self.perf_stats["frames_skipped"] += 1
+            self._log_periodic_stats()
             return None
-        print("detecting markers----------------")
-        print("detection_time",time_since_last_detection)
-        print("min_detection_time", self.min_detection_interval)
-        # Detect ArUco markers
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
+        # Step 1: Gray conversion
+        gray_start = time.time()
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        gray_time = time.time() - gray_start
+        self.perf_stats["gray_conversion_times"].append(gray_time)
+
+        # Step 2: Marker detection
+        marker_start = time.time()
         if self.use_aruco_detector and self.detector is not None:
             corners, ids, _ = self.detector.detectMarkers(gray)
         else:
@@ -343,15 +389,22 @@ class ArucoFireDetector:
                 corners, ids, _ = cv2.aruco.detectMarkers(gray, self.aruco_dict)
             else:
                 corners, ids, _ = cv2.aruco.detectMarkers(gray, self.aruco_dict, parameters=self.aruco_params)
+        marker_time = time.time() - marker_start
+        self.perf_stats["marker_detection_times"].append(marker_time)
 
         # No markers detected
         if ids is None or len(ids) == 0:
+            detect_total = time.time() - detect_start
+            self.perf_stats["detect_times"].append(detect_total)
+            self._log_periodic_stats()
             return None
 
         # Update last detection time
         self.last_detection_time = timestamp
+        self.perf_stats["total_detections"] += len(ids)
 
-        # Convert markers to detection format
+        # Step 3: Bounding box calculation
+        bbox_start = time.time()
         height, width = frame.shape[:2]
         bbox_list = []
         confidences = []
@@ -372,18 +425,6 @@ class ArucoFireDetector:
             center_x = int(np.mean(x_coords))
             center_y = int(np.mean(y_coords))
 
-            # TESTING MODE: Return drone GPS coordinates directly
-            # TODO: Enable pixel-to-GPS conversion when camera calibration is ready
-            # if drone_lat and drone_lon and drone_alt:
-            #     # Offset from drone position based on pixel position
-            #     lat_offset = (center_x - width / 2) / width * 0.001
-            #     lon_offset = (center_y - height / 2) / height * 0.001
-            #     world_lat = drone_lat + lat_offset
-            #     world_lon = drone_lon + lon_offset
-            # else:
-            #     world_lat = drone_lat or 0.0
-            #     world_lon = drone_lon or 0.0
-
             # For testing: always return drone GPS coordinates
             world_lat = drone_lat or 0.0
             world_lon = drone_lon or 0.0
@@ -394,6 +435,29 @@ class ArucoFireDetector:
 
             # Format: [p1_x, p1_y, p2_x, p2_y, lat, lon]
             bbox_list.append([p1_x, p1_y, p2_x, p2_y, world_lat, world_lon])
+
+        bbox_time = time.time() - bbox_start
+        self.perf_stats["bbox_calculation_times"].append(bbox_time)
+
+        # Total detection time
+        detect_total = time.time() - detect_start
+        self.perf_stats["detect_times"].append(detect_total)
+
+        # Get resource usage after
+        mem_after = self.process.memory_info().rss / 1024 / 1024  # MB
+        cpu_percent_after = self.process.cpu_percent(interval=None)
+
+        # Log this detection
+        print(f"🔍 ArUco Detection: {len(bbox_list)} marker(s) | "
+              f"Total: {detect_total*1000:.1f}ms | "
+              f"Gray: {gray_time*1000:.1f}ms | "
+              f"Detect: {marker_time*1000:.1f}ms | "
+              f"BBox: {bbox_time*1000:.1f}ms | "
+              f"Mem: {mem_after:.1f}MB | "
+              f"CPU: {cpu_percent_after:.1f}%")
+
+        # Periodic stats logging
+        self._log_periodic_stats()
 
         # Return None if no valid detections
         if not bbox_list:
@@ -407,6 +471,53 @@ class ArucoFireDetector:
             'confidence': round(avg_confidence, 2),
             'timestamp': timestamp
         }
+
+    def _log_periodic_stats(self):
+        """Log comprehensive stats every 10 seconds"""
+        current_time = time.time()
+        elapsed = current_time - self.perf_stats["last_stats_log_time"]
+
+        if elapsed >= 10.0:  # Log every 10 seconds
+            # Calculate averages
+            avg_detect_time = np.mean(self.perf_stats["detect_times"]) if self.perf_stats["detect_times"] else 0
+            avg_gray_time = np.mean(self.perf_stats["gray_conversion_times"]) if self.perf_stats["gray_conversion_times"] else 0
+            avg_marker_time = np.mean(self.perf_stats["marker_detection_times"]) if self.perf_stats["marker_detection_times"] else 0
+            avg_bbox_time = np.mean(self.perf_stats["bbox_calculation_times"]) if self.perf_stats["bbox_calculation_times"] else 0
+
+            # Calculate FPS
+            fps = self.perf_stats["total_frames_processed"] / elapsed if elapsed > 0 else 0
+            detections_per_sec = self.perf_stats["total_detections"] / elapsed if elapsed > 0 else 0
+
+            # Get current resource usage
+            mem_current = self.process.memory_info().rss / 1024 / 1024  # MB
+            cpu_percent = self.process.cpu_percent(interval=0.1)
+
+            # Log to file
+            self.stats_logger.info(f"\n{'='*80}")
+            self.stats_logger.info(f"ArUco Detector Performance Stats (last {elapsed:.1f}s):")
+            self.stats_logger.info(f"  Frames Processed: {self.perf_stats['total_frames_processed']} ({fps:.1f} FPS)")
+            self.stats_logger.info(f"  Frames Skipped (rate limit): {self.perf_stats['frames_skipped']}")
+            self.stats_logger.info(f"  Total Detections: {self.perf_stats['total_detections']} ({detections_per_sec:.1f}/sec)")
+            self.stats_logger.info(f"  Avg Detection Time: {avg_detect_time*1000:.2f}ms")
+            self.stats_logger.info(f"    - Gray Conversion: {avg_gray_time*1000:.2f}ms")
+            self.stats_logger.info(f"    - Marker Detection: {avg_marker_time*1000:.2f}ms")
+            self.stats_logger.info(f"    - BBox Calculation: {avg_bbox_time*1000:.2f}ms")
+            self.stats_logger.info(f"  Memory Usage: {mem_current:.1f} MB")
+            self.stats_logger.info(f"  CPU Usage: {cpu_percent:.1f}%")
+
+            # Console summary
+            print(f"📊 ArUco Stats: {fps:.1f} FPS | {detections_per_sec:.1f} det/s | "
+                  f"{avg_detect_time*1000:.1f}ms avg | {mem_current:.1f}MB | {cpu_percent:.1f}% CPU")
+
+            # Reset counters
+            self.perf_stats["total_frames_processed"] = 0
+            self.perf_stats["total_detections"] = 0
+            self.perf_stats["frames_skipped"] = 0
+            self.perf_stats["detect_times"].clear()
+            self.perf_stats["gray_conversion_times"].clear()
+            self.perf_stats["marker_detection_times"].clear()
+            self.perf_stats["bbox_calculation_times"].clear()
+            self.perf_stats["last_stats_log_time"] = current_time
 
     def draw_detections(self, frame, detection_result):
         """
