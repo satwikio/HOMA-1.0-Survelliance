@@ -1,0 +1,2268 @@
+2026-01-21 15:04:59,466 - 
+================================================================================
+2026-01-21 15:04:59,467 - ArUco Detector Performance Stats (last 12.5s):
+2026-01-21 15:04:59,467 -   Frames Processed: 1 (0.1 FPS)
+2026-01-21 15:04:59,467 -   Frames Skipped (rate limit): 0
+2026-01-21 15:04:59,468 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:04:59,469 -   Avg Detection Time: 28.81ms
+2026-01-21 15:04:59,469 -     - Gray Conversion: 1.03ms
+2026-01-21 15:04:59,469 -     - Marker Detection: 27.50ms
+2026-01-21 15:04:59,469 -     - BBox Calculation: 0.00ms
+2026-01-21 15:04:59,469 -   Memory Usage: 336.2 MB
+2026-01-21 15:04:59,469 -   CPU Usage: 109.2%
+2026-01-21 15:05:09,478 - 
+================================================================================
+2026-01-21 15:05:09,479 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:05:09,479 -   Frames Processed: 302 (30.2 FPS)
+2026-01-21 15:05:09,479 -   Frames Skipped (rate limit): 0
+2026-01-21 15:05:09,479 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:05:09,479 -   Avg Detection Time: 11.28ms
+2026-01-21 15:05:09,480 -     - Gray Conversion: 1.14ms
+2026-01-21 15:05:09,480 -     - Marker Detection: 9.88ms
+2026-01-21 15:05:09,480 -     - BBox Calculation: 0.00ms
+2026-01-21 15:05:09,480 -   Memory Usage: 410.8 MB
+2026-01-21 15:05:09,480 -   CPU Usage: 79.5%
+2026-01-21 15:05:19,531 - 
+================================================================================
+2026-01-21 15:05:19,532 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:05:19,532 -   Frames Processed: 275 (27.3 FPS)
+2026-01-21 15:05:19,532 -   Frames Skipped (rate limit): 0
+2026-01-21 15:05:19,532 -   Total Detections: 26 (2.6/sec)
+2026-01-21 15:05:19,532 -   Avg Detection Time: 11.76ms
+2026-01-21 15:05:19,532 -     - Gray Conversion: 1.19ms
+2026-01-21 15:05:19,532 -     - Marker Detection: 10.28ms
+2026-01-21 15:05:19,532 -     - BBox Calculation: 0.35ms
+2026-01-21 15:05:19,533 -   Memory Usage: 479.8 MB
+2026-01-21 15:05:19,533 -   CPU Usage: 79.8%
+2026-01-21 15:05:29,573 - 
+================================================================================
+2026-01-21 15:05:29,574 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:05:29,574 -   Frames Processed: 130 (12.9 FPS)
+2026-01-21 15:05:29,574 -   Frames Skipped (rate limit): 0
+2026-01-21 15:05:29,575 -   Total Detections: 130 (12.9/sec)
+2026-01-21 15:05:29,575 -   Avg Detection Time: 16.72ms
+2026-01-21 15:05:29,575 -     - Gray Conversion: 1.04ms
+2026-01-21 15:05:29,575 -     - Marker Detection: 15.13ms
+2026-01-21 15:05:29,575 -     - BBox Calculation: 0.35ms
+2026-01-21 15:05:29,575 -   Memory Usage: 993.4 MB
+2026-01-21 15:05:29,575 -   CPU Usage: 109.5%
+2026-01-21 15:05:39,601 - 
+================================================================================
+2026-01-21 15:05:39,601 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:05:39,602 -   Frames Processed: 122 (12.2 FPS)
+2026-01-21 15:05:39,602 -   Frames Skipped (rate limit): 0
+2026-01-21 15:05:39,602 -   Total Detections: 122 (12.2/sec)
+2026-01-21 15:05:39,603 -   Avg Detection Time: 18.58ms
+2026-01-21 15:05:39,603 -     - Gray Conversion: 0.99ms
+2026-01-21 15:05:39,603 -     - Marker Detection: 17.04ms
+2026-01-21 15:05:39,603 -     - BBox Calculation: 0.35ms
+2026-01-21 15:05:39,603 -   Memory Usage: 1476.7 MB
+2026-01-21 15:05:39,603 -   CPU Usage: 69.8%
+2026-01-21 15:05:49,663 - 
+================================================================================
+2026-01-21 15:05:49,664 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:05:49,664 -   Frames Processed: 123 (12.2 FPS)
+2026-01-21 15:05:49,664 -   Frames Skipped (rate limit): 0
+2026-01-21 15:05:49,664 -   Total Detections: 123 (12.2/sec)
+2026-01-21 15:05:49,665 -   Avg Detection Time: 18.22ms
+2026-01-21 15:05:49,665 -     - Gray Conversion: 0.99ms
+2026-01-21 15:05:49,665 -     - Marker Detection: 16.68ms
+2026-01-21 15:05:49,665 -     - BBox Calculation: 0.35ms
+2026-01-21 15:05:49,665 -   Memory Usage: 1964.8 MB
+2026-01-21 15:05:49,665 -   CPU Usage: 89.8%
+2026-01-21 15:15:46,928 - 
+================================================================================
+2026-01-21 15:15:46,929 - ArUco Detector Performance Stats (last 12.7s):
+2026-01-21 15:15:46,929 -   Frames Processed: 1 (0.1 FPS)
+2026-01-21 15:15:46,929 -   Frames Skipped (rate limit): 0
+2026-01-21 15:15:46,929 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:15:46,929 -   Avg Detection Time: 26.70ms
+2026-01-21 15:15:46,930 -     - Gray Conversion: 1.22ms
+2026-01-21 15:15:46,930 -     - Marker Detection: 25.22ms
+2026-01-21 15:15:46,930 -     - BBox Calculation: 0.00ms
+2026-01-21 15:15:46,930 -   Memory Usage: 339.3 MB
+2026-01-21 15:15:46,930 -   CPU Usage: 109.5%
+2026-01-21 15:15:56,968 - 
+================================================================================
+2026-01-21 15:15:56,969 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:15:56,969 -   Frames Processed: 302 (30.1 FPS)
+2026-01-21 15:15:56,969 -   Frames Skipped (rate limit): 0
+2026-01-21 15:15:56,970 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:15:56,970 -   Avg Detection Time: 11.63ms
+2026-01-21 15:15:56,970 -     - Gray Conversion: 1.19ms
+2026-01-21 15:15:56,971 -     - Marker Detection: 10.18ms
+2026-01-21 15:15:56,971 -     - BBox Calculation: 0.00ms
+2026-01-21 15:15:56,971 -   Memory Usage: 425.0 MB
+2026-01-21 15:15:56,971 -   CPU Usage: 69.7%
+2026-01-21 15:16:06,989 - 
+================================================================================
+2026-01-21 15:16:06,989 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:16:06,990 -   Frames Processed: 301 (30.0 FPS)
+2026-01-21 15:16:06,990 -   Frames Skipped (rate limit): 0
+2026-01-21 15:16:06,990 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:16:06,990 -   Avg Detection Time: 12.08ms
+2026-01-21 15:16:06,990 -     - Gray Conversion: 1.26ms
+2026-01-21 15:16:06,990 -     - Marker Detection: 10.54ms
+2026-01-21 15:16:06,991 -     - BBox Calculation: 0.00ms
+2026-01-21 15:16:06,991 -   Memory Usage: 426.7 MB
+2026-01-21 15:16:06,991 -   CPU Usage: 99.6%
+2026-01-21 15:16:16,989 - 
+================================================================================
+2026-01-21 15:16:16,990 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:16:16,990 -   Frames Processed: 300 (30.0 FPS)
+2026-01-21 15:16:16,990 -   Frames Skipped (rate limit): 0
+2026-01-21 15:16:16,990 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:16:16,990 -   Avg Detection Time: 12.48ms
+2026-01-21 15:16:16,990 -     - Gray Conversion: 1.21ms
+2026-01-21 15:16:16,991 -     - Marker Detection: 11.02ms
+2026-01-21 15:16:16,991 -     - BBox Calculation: 0.00ms
+2026-01-21 15:16:16,992 -   Memory Usage: 426.7 MB
+2026-01-21 15:16:16,992 -   CPU Usage: 89.5%
+2026-01-21 15:16:26,996 - 
+================================================================================
+2026-01-21 15:16:26,997 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:16:26,997 -   Frames Processed: 300 (30.0 FPS)
+2026-01-21 15:16:26,997 -   Frames Skipped (rate limit): 0
+2026-01-21 15:16:26,997 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:16:26,997 -   Avg Detection Time: 11.70ms
+2026-01-21 15:16:26,997 -     - Gray Conversion: 1.25ms
+2026-01-21 15:16:26,998 -     - Marker Detection: 10.19ms
+2026-01-21 15:16:26,998 -     - BBox Calculation: 0.00ms
+2026-01-21 15:16:26,998 -   Memory Usage: 429.2 MB
+2026-01-21 15:16:26,998 -   CPU Usage: 99.6%
+2026-01-21 15:16:37,028 - 
+================================================================================
+2026-01-21 15:16:37,030 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:16:37,030 -   Frames Processed: 301 (30.0 FPS)
+2026-01-21 15:16:37,030 -   Frames Skipped (rate limit): 0
+2026-01-21 15:16:37,030 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:16:37,031 -   Avg Detection Time: 11.78ms
+2026-01-21 15:16:37,031 -     - Gray Conversion: 1.22ms
+2026-01-21 15:16:37,031 -     - Marker Detection: 10.31ms
+2026-01-21 15:16:37,031 -     - BBox Calculation: 0.00ms
+2026-01-21 15:16:37,032 -   Memory Usage: 432.1 MB
+2026-01-21 15:16:37,032 -   CPU Usage: 99.7%
+2026-01-21 15:16:47,040 - 
+================================================================================
+2026-01-21 15:16:47,040 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:16:47,041 -   Frames Processed: 236 (23.6 FPS)
+2026-01-21 15:16:47,041 -   Frames Skipped (rate limit): 0
+2026-01-21 15:16:47,041 -   Total Detections: 55 (5.5/sec)
+2026-01-21 15:16:47,041 -   Avg Detection Time: 11.26ms
+2026-01-21 15:16:47,041 -     - Gray Conversion: 1.08ms
+2026-01-21 15:16:47,041 -     - Marker Detection: 9.85ms
+2026-01-21 15:16:47,041 -     - BBox Calculation: 0.35ms
+2026-01-21 15:16:47,041 -   Memory Usage: 652.1 MB
+2026-01-21 15:16:47,042 -   CPU Usage: 99.4%
+2026-01-21 15:16:57,042 - 
+================================================================================
+2026-01-21 15:16:57,043 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:16:57,043 -   Frames Processed: 308 (30.8 FPS)
+2026-01-21 15:16:57,043 -   Frames Skipped (rate limit): 0
+2026-01-21 15:16:57,044 -   Total Detections: 13 (1.3/sec)
+2026-01-21 15:16:57,044 -   Avg Detection Time: 12.44ms
+2026-01-21 15:16:57,044 -     - Gray Conversion: 1.07ms
+2026-01-21 15:16:57,044 -     - Marker Detection: 11.13ms
+2026-01-21 15:16:57,044 -     - BBox Calculation: 0.34ms
+2026-01-21 15:16:57,044 -   Memory Usage: 706.5 MB
+2026-01-21 15:16:57,044 -   CPU Usage: 109.6%
+2026-01-21 15:17:07,043 - 
+================================================================================
+2026-01-21 15:17:07,044 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:17:07,044 -   Frames Processed: 308 (30.8 FPS)
+2026-01-21 15:17:07,044 -   Frames Skipped (rate limit): 0
+2026-01-21 15:17:07,044 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:17:07,044 -   Avg Detection Time: 13.22ms
+2026-01-21 15:17:07,045 -     - Gray Conversion: 1.07ms
+2026-01-21 15:17:07,045 -     - Marker Detection: 11.92ms
+2026-01-21 15:17:07,045 -     - BBox Calculation: 0.00ms
+2026-01-21 15:17:07,045 -   Memory Usage: 664.1 MB
+2026-01-21 15:17:07,045 -   CPU Usage: 79.7%
+2026-01-21 15:17:17,102 - 
+================================================================================
+2026-01-21 15:17:17,103 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:17:17,103 -   Frames Processed: 313 (31.1 FPS)
+2026-01-21 15:17:17,103 -   Frames Skipped (rate limit): 0
+2026-01-21 15:17:17,104 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:17:17,104 -   Avg Detection Time: 13.52ms
+2026-01-21 15:17:17,104 -     - Gray Conversion: 1.10ms
+2026-01-21 15:17:17,104 -     - Marker Detection: 12.19ms
+2026-01-21 15:17:17,104 -     - BBox Calculation: 0.00ms
+2026-01-21 15:17:17,104 -   Memory Usage: 665.3 MB
+2026-01-21 15:17:17,104 -   CPU Usage: 99.7%
+2026-01-21 15:17:59,956 - 
+================================================================================
+2026-01-21 15:17:59,957 - ArUco Detector Performance Stats (last 11.6s):
+2026-01-21 15:17:59,957 -   Frames Processed: 1 (0.1 FPS)
+2026-01-21 15:17:59,957 -   Frames Skipped (rate limit): 0
+2026-01-21 15:17:59,958 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:17:59,958 -   Avg Detection Time: 20.08ms
+2026-01-21 15:17:59,958 -     - Gray Conversion: 1.04ms
+2026-01-21 15:17:59,958 -     - Marker Detection: 18.81ms
+2026-01-21 15:17:59,958 -     - BBox Calculation: 0.00ms
+2026-01-21 15:17:59,958 -   Memory Usage: 327.0 MB
+2026-01-21 15:17:59,959 -   CPU Usage: 109.6%
+2026-01-21 15:18:09,959 - 
+================================================================================
+2026-01-21 15:18:09,959 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:18:09,959 -   Frames Processed: 301 (30.1 FPS)
+2026-01-21 15:18:09,959 -   Frames Skipped (rate limit): 0
+2026-01-21 15:18:09,959 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:18:09,959 -   Avg Detection Time: 11.83ms
+2026-01-21 15:18:09,959 -     - Gray Conversion: 1.20ms
+2026-01-21 15:18:09,960 -     - Marker Detection: 10.38ms
+2026-01-21 15:18:09,960 -     - BBox Calculation: 0.00ms
+2026-01-21 15:18:09,960 -   Memory Usage: 411.5 MB
+2026-01-21 15:18:09,960 -   CPU Usage: 109.6%
+2026-01-21 15:18:19,963 - 
+================================================================================
+2026-01-21 15:18:19,964 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:18:19,965 -   Frames Processed: 300 (30.0 FPS)
+2026-01-21 15:18:19,965 -   Frames Skipped (rate limit): 0
+2026-01-21 15:18:19,965 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:18:19,965 -   Avg Detection Time: 12.17ms
+2026-01-21 15:18:19,965 -     - Gray Conversion: 1.24ms
+2026-01-21 15:18:19,965 -     - Marker Detection: 10.67ms
+2026-01-21 15:18:19,965 -     - BBox Calculation: 0.00ms
+2026-01-21 15:18:19,965 -   Memory Usage: 411.4 MB
+2026-01-21 15:18:19,966 -   CPU Usage: 79.7%
+2026-01-21 15:18:29,993 - 
+================================================================================
+2026-01-21 15:18:29,994 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:18:29,994 -   Frames Processed: 301 (30.0 FPS)
+2026-01-21 15:18:29,994 -   Frames Skipped (rate limit): 0
+2026-01-21 15:18:29,994 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:18:29,994 -   Avg Detection Time: 12.03ms
+2026-01-21 15:18:29,995 -     - Gray Conversion: 1.24ms
+2026-01-21 15:18:29,995 -     - Marker Detection: 10.53ms
+2026-01-21 15:18:29,995 -     - BBox Calculation: 0.00ms
+2026-01-21 15:18:29,995 -   Memory Usage: 372.0 MB
+2026-01-21 15:18:29,995 -   CPU Usage: 119.6%
+2026-01-21 15:18:40,001 - 
+================================================================================
+2026-01-21 15:18:40,002 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:18:40,002 -   Frames Processed: 300 (30.0 FPS)
+2026-01-21 15:18:40,002 -   Frames Skipped (rate limit): 0
+2026-01-21 15:18:40,002 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:18:40,002 -   Avg Detection Time: 11.60ms
+2026-01-21 15:18:40,003 -     - Gray Conversion: 1.21ms
+2026-01-21 15:18:40,003 -     - Marker Detection: 10.13ms
+2026-01-21 15:18:40,003 -     - BBox Calculation: 0.00ms
+2026-01-21 15:18:40,003 -   Memory Usage: 376.3 MB
+2026-01-21 15:18:40,003 -   CPU Usage: 79.6%
+2026-01-21 15:18:50,026 - 
+================================================================================
+2026-01-21 15:18:50,027 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:18:50,027 -   Frames Processed: 301 (30.0 FPS)
+2026-01-21 15:18:50,027 -   Frames Skipped (rate limit): 0
+2026-01-21 15:18:50,027 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:18:50,027 -   Avg Detection Time: 11.98ms
+2026-01-21 15:18:50,027 -     - Gray Conversion: 1.23ms
+2026-01-21 15:18:50,028 -     - Marker Detection: 10.51ms
+2026-01-21 15:18:50,028 -     - BBox Calculation: 0.00ms
+2026-01-21 15:18:50,028 -   Memory Usage: 379.2 MB
+2026-01-21 15:18:50,028 -   CPU Usage: 99.7%
+2026-01-21 15:19:00,035 - 
+================================================================================
+2026-01-21 15:19:00,036 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:19:00,036 -   Frames Processed: 299 (29.9 FPS)
+2026-01-21 15:19:00,036 -   Frames Skipped (rate limit): 0
+2026-01-21 15:19:00,036 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:19:00,037 -   Avg Detection Time: 11.77ms
+2026-01-21 15:19:00,037 -     - Gray Conversion: 1.23ms
+2026-01-21 15:19:00,037 -     - Marker Detection: 10.27ms
+2026-01-21 15:19:00,037 -     - BBox Calculation: 0.00ms
+2026-01-21 15:19:00,037 -   Memory Usage: 379.2 MB
+2026-01-21 15:19:00,037 -   CPU Usage: 89.7%
+2026-01-21 15:19:10,052 - 
+================================================================================
+2026-01-21 15:19:10,052 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:19:10,052 -   Frames Processed: 301 (30.1 FPS)
+2026-01-21 15:19:10,053 -   Frames Skipped (rate limit): 0
+2026-01-21 15:19:10,053 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:19:10,053 -   Avg Detection Time: 11.22ms
+2026-01-21 15:19:10,053 -     - Gray Conversion: 1.17ms
+2026-01-21 15:19:10,053 -     - Marker Detection: 9.78ms
+2026-01-21 15:19:10,053 -     - BBox Calculation: 0.00ms
+2026-01-21 15:19:10,053 -   Memory Usage: 379.2 MB
+2026-01-21 15:19:10,053 -   CPU Usage: 89.7%
+2026-01-21 15:19:20,065 - 
+================================================================================
+2026-01-21 15:19:20,067 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:19:20,068 -   Frames Processed: 298 (29.8 FPS)
+2026-01-21 15:19:20,068 -   Frames Skipped (rate limit): 0
+2026-01-21 15:19:20,068 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:19:20,068 -   Avg Detection Time: 11.54ms
+2026-01-21 15:19:20,069 -     - Gray Conversion: 1.21ms
+2026-01-21 15:19:20,069 -     - Marker Detection: 10.08ms
+2026-01-21 15:19:20,069 -     - BBox Calculation: 0.00ms
+2026-01-21 15:19:20,069 -   Memory Usage: 372.0 MB
+2026-01-21 15:19:20,069 -   CPU Usage: 89.6%
+2026-01-21 15:19:30,085 - 
+================================================================================
+2026-01-21 15:19:30,085 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:19:30,086 -   Frames Processed: 300 (29.9 FPS)
+2026-01-21 15:19:30,086 -   Frames Skipped (rate limit): 0
+2026-01-21 15:19:30,086 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:19:30,086 -   Avg Detection Time: 10.95ms
+2026-01-21 15:19:30,086 -     - Gray Conversion: 1.14ms
+2026-01-21 15:19:30,087 -     - Marker Detection: 9.56ms
+2026-01-21 15:19:30,087 -     - BBox Calculation: 0.00ms
+2026-01-21 15:19:30,087 -   Memory Usage: 372.0 MB
+2026-01-21 15:19:30,087 -   CPU Usage: 89.6%
+2026-01-21 15:19:40,103 - 
+================================================================================
+2026-01-21 15:19:40,104 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:19:40,104 -   Frames Processed: 302 (30.1 FPS)
+2026-01-21 15:19:40,104 -   Frames Skipped (rate limit): 0
+2026-01-21 15:19:40,105 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:19:40,105 -   Avg Detection Time: 11.27ms
+2026-01-21 15:19:40,105 -     - Gray Conversion: 1.13ms
+2026-01-21 15:19:40,105 -     - Marker Detection: 9.88ms
+2026-01-21 15:19:40,105 -     - BBox Calculation: 0.00ms
+2026-01-21 15:19:40,105 -   Memory Usage: 372.0 MB
+2026-01-21 15:19:40,105 -   CPU Usage: 99.7%
+2026-01-21 15:19:50,164 - 
+================================================================================
+2026-01-21 15:19:50,165 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:19:50,165 -   Frames Processed: 279 (27.7 FPS)
+2026-01-21 15:19:50,165 -   Frames Skipped (rate limit): 0
+2026-01-21 15:19:50,165 -   Total Detections: 23 (2.3/sec)
+2026-01-21 15:19:50,165 -   Avg Detection Time: 11.02ms
+2026-01-21 15:19:50,165 -     - Gray Conversion: 1.16ms
+2026-01-21 15:19:50,165 -     - Marker Detection: 9.59ms
+2026-01-21 15:19:50,165 -     - BBox Calculation: 0.35ms
+2026-01-21 15:19:50,166 -   Memory Usage: 464.1 MB
+2026-01-21 15:19:50,166 -   CPU Usage: 89.8%
+2026-01-21 15:20:00,223 - 
+================================================================================
+2026-01-21 15:20:00,223 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:20:00,224 -   Frames Processed: 125 (12.4 FPS)
+2026-01-21 15:20:00,224 -   Frames Skipped (rate limit): 0
+2026-01-21 15:20:00,224 -   Total Detections: 125 (12.4/sec)
+2026-01-21 15:20:00,224 -   Avg Detection Time: 17.35ms
+2026-01-21 15:20:00,224 -     - Gray Conversion: 1.01ms
+2026-01-21 15:20:00,224 -     - Marker Detection: 15.75ms
+2026-01-21 15:20:00,224 -     - BBox Calculation: 0.36ms
+2026-01-21 15:20:00,224 -   Memory Usage: 1007.6 MB
+2026-01-21 15:20:00,224 -   CPU Usage: 99.4%
+2026-01-21 15:20:10,273 - 
+================================================================================
+2026-01-21 15:20:10,273 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:20:10,273 -   Frames Processed: 120 (11.9 FPS)
+2026-01-21 15:20:10,273 -   Frames Skipped (rate limit): 0
+2026-01-21 15:20:10,273 -   Total Detections: 120 (11.9/sec)
+2026-01-21 15:20:10,274 -   Avg Detection Time: 19.43ms
+2026-01-21 15:20:10,274 -     - Gray Conversion: 1.03ms
+2026-01-21 15:20:10,274 -     - Marker Detection: 17.84ms
+2026-01-21 15:20:10,274 -     - BBox Calculation: 0.35ms
+2026-01-21 15:20:10,274 -   Memory Usage: 1485.5 MB
+2026-01-21 15:20:10,274 -   CPU Usage: 79.8%
+2026-01-21 15:20:20,290 - 
+================================================================================
+2026-01-21 15:20:20,290 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:20:20,290 -   Frames Processed: 121 (12.1 FPS)
+2026-01-21 15:20:20,291 -   Frames Skipped (rate limit): 0
+2026-01-21 15:20:20,291 -   Total Detections: 121 (12.1/sec)
+2026-01-21 15:20:20,291 -   Avg Detection Time: 18.90ms
+2026-01-21 15:20:20,291 -     - Gray Conversion: 1.08ms
+2026-01-21 15:20:20,291 -     - Marker Detection: 17.28ms
+2026-01-21 15:20:20,291 -     - BBox Calculation: 0.35ms
+2026-01-21 15:20:20,291 -   Memory Usage: 1966.2 MB
+2026-01-21 15:20:20,291 -   CPU Usage: 69.8%
+2026-01-21 15:20:30,343 - 
+================================================================================
+2026-01-21 15:20:30,343 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:20:30,343 -   Frames Processed: 119 (11.8 FPS)
+2026-01-21 15:20:30,344 -   Frames Skipped (rate limit): 0
+2026-01-21 15:20:30,344 -   Total Detections: 119 (11.8/sec)
+2026-01-21 15:20:30,344 -   Avg Detection Time: 18.79ms
+2026-01-21 15:20:30,344 -     - Gray Conversion: 0.98ms
+2026-01-21 15:20:30,344 -     - Marker Detection: 17.24ms
+2026-01-21 15:20:30,344 -     - BBox Calculation: 0.36ms
+2026-01-21 15:20:30,344 -   Memory Usage: 2432.7 MB
+2026-01-21 15:20:30,344 -   CPU Usage: 89.8%
+2026-01-21 15:20:40,378 - 
+================================================================================
+2026-01-21 15:20:40,378 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:20:40,378 -   Frames Processed: 119 (11.9 FPS)
+2026-01-21 15:20:40,379 -   Frames Skipped (rate limit): 0
+2026-01-21 15:20:40,379 -   Total Detections: 119 (11.9/sec)
+2026-01-21 15:20:40,379 -   Avg Detection Time: 19.99ms
+2026-01-21 15:20:40,379 -     - Gray Conversion: 1.01ms
+2026-01-21 15:20:40,379 -     - Marker Detection: 18.43ms
+2026-01-21 15:20:40,379 -     - BBox Calculation: 0.35ms
+2026-01-21 15:20:40,379 -   Memory Usage: 2877.9 MB
+2026-01-21 15:20:40,379 -   CPU Usage: 99.7%
+2026-01-21 15:26:39,317 - 
+================================================================================
+2026-01-21 15:26:39,318 - ArUco Detector Performance Stats (last 12.7s):
+2026-01-21 15:26:39,318 -   Frames Processed: 1 (0.1 FPS)
+2026-01-21 15:26:39,318 -   Frames Skipped (rate limit): 0
+2026-01-21 15:26:39,318 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:26:39,319 -   Avg Detection Time: 20.45ms
+2026-01-21 15:26:39,319 -     - Gray Conversion: 0.83ms
+2026-01-21 15:26:39,320 -     - Marker Detection: 19.41ms
+2026-01-21 15:26:39,320 -     - BBox Calculation: 0.00ms
+2026-01-21 15:26:39,320 -   Memory Usage: 307.7 MB
+2026-01-21 15:26:39,320 -   CPU Usage: 99.7%
+2026-01-21 15:26:49,322 - 
+================================================================================
+2026-01-21 15:26:49,323 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:26:49,323 -   Frames Processed: 301 (30.1 FPS)
+2026-01-21 15:26:49,324 -   Frames Skipped (rate limit): 0
+2026-01-21 15:26:49,324 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:26:49,324 -   Avg Detection Time: 12.22ms
+2026-01-21 15:26:49,324 -     - Gray Conversion: 1.23ms
+2026-01-21 15:26:49,324 -     - Marker Detection: 10.73ms
+2026-01-21 15:26:49,324 -     - BBox Calculation: 0.00ms
+2026-01-21 15:26:49,324 -   Memory Usage: 396.2 MB
+2026-01-21 15:26:49,324 -   CPU Usage: 69.7%
+2026-01-21 15:26:59,395 - 
+================================================================================
+2026-01-21 15:26:59,396 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:26:59,397 -   Frames Processed: 183 (18.2 FPS)
+2026-01-21 15:26:59,397 -   Frames Skipped (rate limit): 0
+2026-01-21 15:26:59,397 -   Total Detections: 93 (9.2/sec)
+2026-01-21 15:26:59,397 -   Avg Detection Time: 12.85ms
+2026-01-21 15:26:59,398 -     - Gray Conversion: 1.20ms
+2026-01-21 15:26:59,398 -     - Marker Detection: 11.32ms
+2026-01-21 15:26:59,398 -     - BBox Calculation: 0.36ms
+2026-01-21 15:26:59,398 -   Memory Usage: 766.5 MB
+2026-01-21 15:26:59,398 -   CPU Usage: 89.8%
+2026-01-21 15:27:09,431 - 
+================================================================================
+2026-01-21 15:27:09,431 - ArUco Detector Performance Stats (last 10.0s):
+2026-01-21 15:27:09,431 -   Frames Processed: 120 (12.0 FPS)
+2026-01-21 15:27:09,431 -   Frames Skipped (rate limit): 0
+2026-01-21 15:27:09,432 -   Total Detections: 120 (12.0/sec)
+2026-01-21 15:27:09,432 -   Avg Detection Time: 14.08ms
+2026-01-21 15:27:09,432 -     - Gray Conversion: 1.17ms
+2026-01-21 15:27:09,432 -     - Marker Detection: 12.53ms
+2026-01-21 15:27:09,432 -     - BBox Calculation: 0.36ms
+2026-01-21 15:27:09,432 -   Memory Usage: 1246.0 MB
+2026-01-21 15:27:09,432 -   CPU Usage: 79.5%
+2026-01-21 15:27:19,497 - 
+================================================================================
+2026-01-21 15:27:19,497 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:27:19,498 -   Frames Processed: 119 (11.8 FPS)
+2026-01-21 15:27:19,498 -   Frames Skipped (rate limit): 0
+2026-01-21 15:27:19,498 -   Total Detections: 119 (11.8/sec)
+2026-01-21 15:27:19,498 -   Avg Detection Time: 15.06ms
+2026-01-21 15:27:19,498 -     - Gray Conversion: 1.15ms
+2026-01-21 15:27:19,498 -     - Marker Detection: 13.50ms
+2026-01-21 15:27:19,498 -     - BBox Calculation: 0.36ms
+2026-01-21 15:27:19,498 -   Memory Usage: 1718.2 MB
+2026-01-21 15:27:19,498 -   CPU Usage: 69.8%
+2026-01-21 15:27:29,576 - 
+================================================================================
+2026-01-21 15:27:29,576 - ArUco Detector Performance Stats (last 10.1s):
+2026-01-21 15:27:29,577 -   Frames Processed: 122 (12.1 FPS)
+2026-01-21 15:27:29,577 -   Frames Skipped (rate limit): 0
+2026-01-21 15:27:29,577 -   Total Detections: 122 (12.1/sec)
+2026-01-21 15:27:29,577 -   Avg Detection Time: 15.64ms
+2026-01-21 15:27:29,577 -     - Gray Conversion: 1.13ms
+2026-01-21 15:27:29,577 -     - Marker Detection: 14.07ms
+2026-01-21 15:27:29,577 -     - BBox Calculation: 0.36ms
+2026-01-21 15:27:29,577 -   Memory Usage: 2195.5 MB
+2026-01-21 15:27:29,577 -   CPU Usage: 99.7%
+2026-01-21 15:30:15,955 - 
+================================================================================
+2026-01-21 15:30:15,955 - ArUco Detector Performance Stats (last 12.2s):
+2026-01-21 15:30:15,956 -   Frames Processed: 1 (0.1 FPS)
+2026-01-21 15:30:15,956 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:15,956 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:30:15,956 -   Avg Detection Time: 19.71ms
+2026-01-21 15:30:15,956 -     - Gray Conversion: 0.81ms
+2026-01-21 15:30:15,956 -     - Marker Detection: 18.72ms
+2026-01-21 15:30:15,956 -     - BBox Calculation: 0.00ms
+2026-01-21 15:30:15,957 -   Memory Usage: 311.9 MB
+2026-01-21 15:30:15,957 -   CPU Usage: 99.7%
+2026-01-21 15:30:18,971 - 
+================================================================================
+2026-01-21 15:30:18,972 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:18,972 -   Frames Processed: 91 (30.2 FPS)
+2026-01-21 15:30:18,972 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:18,972 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:30:18,972 -   Avg Detection Time: 11.77ms
+2026-01-21 15:30:18,972 -     - Gray Conversion: 1.21ms
+2026-01-21 15:30:18,972 -     - Marker Detection: 10.32ms
+2026-01-21 15:30:18,973 -     - BBox Calculation: 0.00ms
+2026-01-21 15:30:18,973 -   Memory Usage: 350.7 MB
+2026-01-21 15:30:18,973 -   CPU Usage: 69.8%
+2026-01-21 15:30:22,005 - 
+================================================================================
+2026-01-21 15:30:22,005 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:22,005 -   Frames Processed: 91 (30.0 FPS)
+2026-01-21 15:30:22,006 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:22,006 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:30:22,006 -   Avg Detection Time: 11.67ms
+2026-01-21 15:30:22,006 -     - Gray Conversion: 1.20ms
+2026-01-21 15:30:22,006 -     - Marker Detection: 10.24ms
+2026-01-21 15:30:22,006 -     - BBox Calculation: 0.00ms
+2026-01-21 15:30:22,006 -   Memory Usage: 376.0 MB
+2026-01-21 15:30:22,007 -   CPU Usage: 79.8%
+2026-01-21 15:30:25,028 - 
+================================================================================
+2026-01-21 15:30:25,029 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:25,029 -   Frames Processed: 87 (28.8 FPS)
+2026-01-21 15:30:25,029 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:25,029 -   Total Detections: 6 (2.0/sec)
+2026-01-21 15:30:25,029 -   Avg Detection Time: 14.06ms
+2026-01-21 15:30:25,029 -     - Gray Conversion: 1.14ms
+2026-01-21 15:30:25,029 -     - Marker Detection: 12.68ms
+2026-01-21 15:30:25,029 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:25,029 -   Memory Usage: 435.3 MB
+2026-01-21 15:30:25,029 -   CPU Usage: 99.8%
+2026-01-21 15:30:28,047 - 
+================================================================================
+2026-01-21 15:30:28,047 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:28,048 -   Frames Processed: 38 (12.6 FPS)
+2026-01-21 15:30:28,048 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:28,048 -   Total Detections: 38 (12.6/sec)
+2026-01-21 15:30:28,048 -   Avg Detection Time: 15.09ms
+2026-01-21 15:30:28,048 -     - Gray Conversion: 1.09ms
+2026-01-21 15:30:28,048 -     - Marker Detection: 13.70ms
+2026-01-21 15:30:28,048 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:28,048 -   Memory Usage: 588.1 MB
+2026-01-21 15:30:28,048 -   CPU Usage: 69.6%
+2026-01-21 15:30:31,066 - 
+================================================================================
+2026-01-21 15:30:31,066 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:31,066 -   Frames Processed: 38 (12.6 FPS)
+2026-01-21 15:30:31,066 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:31,066 -   Total Detections: 38 (12.6/sec)
+2026-01-21 15:30:31,066 -   Avg Detection Time: 16.42ms
+2026-01-21 15:30:31,066 -     - Gray Conversion: 1.05ms
+2026-01-21 15:30:31,067 -     - Marker Detection: 15.00ms
+2026-01-21 15:30:31,067 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:31,067 -   Memory Usage: 737.6 MB
+2026-01-21 15:30:31,067 -   CPU Usage: 59.9%
+2026-01-21 15:30:34,083 - 
+================================================================================
+2026-01-21 15:30:34,084 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:34,084 -   Frames Processed: 39 (12.9 FPS)
+2026-01-21 15:30:34,084 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:34,084 -   Total Detections: 39 (12.9/sec)
+2026-01-21 15:30:34,084 -   Avg Detection Time: 16.94ms
+2026-01-21 15:30:34,084 -     - Gray Conversion: 1.01ms
+2026-01-21 15:30:34,084 -     - Marker Detection: 15.49ms
+2026-01-21 15:30:34,084 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:34,084 -   Memory Usage: 887.4 MB
+2026-01-21 15:30:34,085 -   CPU Usage: 69.8%
+2026-01-21 15:30:37,091 - 
+================================================================================
+2026-01-21 15:30:37,092 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:37,092 -   Frames Processed: 34 (11.3 FPS)
+2026-01-21 15:30:37,092 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:37,092 -   Total Detections: 34 (11.3/sec)
+2026-01-21 15:30:37,092 -   Avg Detection Time: 17.92ms
+2026-01-21 15:30:37,093 -     - Gray Conversion: 1.02ms
+2026-01-21 15:30:37,093 -     - Marker Detection: 16.42ms
+2026-01-21 15:30:37,093 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:37,093 -   Memory Usage: 1019.8 MB
+2026-01-21 15:30:37,093 -   CPU Usage: 79.7%
+2026-01-21 15:30:40,130 - 
+================================================================================
+2026-01-21 15:30:40,131 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:40,131 -   Frames Processed: 34 (11.2 FPS)
+2026-01-21 15:30:40,131 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:40,131 -   Total Detections: 34 (11.2/sec)
+2026-01-21 15:30:40,131 -   Avg Detection Time: 18.23ms
+2026-01-21 15:30:40,131 -     - Gray Conversion: 1.03ms
+2026-01-21 15:30:40,131 -     - Marker Detection: 16.64ms
+2026-01-21 15:30:40,131 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:40,132 -   Memory Usage: 1153.0 MB
+2026-01-21 15:30:40,132 -   CPU Usage: 69.8%
+2026-01-21 15:30:43,155 - 
+================================================================================
+2026-01-21 15:30:43,155 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:43,156 -   Frames Processed: 34 (11.2 FPS)
+2026-01-21 15:30:43,156 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:43,156 -   Total Detections: 34 (11.2/sec)
+2026-01-21 15:30:43,156 -   Avg Detection Time: 19.16ms
+2026-01-21 15:30:43,156 -     - Gray Conversion: 1.04ms
+2026-01-21 15:30:43,156 -     - Marker Detection: 17.55ms
+2026-01-21 15:30:43,156 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:43,156 -   Memory Usage: 1289.7 MB
+2026-01-21 15:30:43,156 -   CPU Usage: 79.8%
+2026-01-21 15:30:46,214 - 
+================================================================================
+2026-01-21 15:30:46,214 - ArUco Detector Performance Stats (last 3.1s):
+2026-01-21 15:30:46,214 -   Frames Processed: 36 (11.8 FPS)
+2026-01-21 15:30:46,215 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:46,215 -   Total Detections: 36 (11.8/sec)
+2026-01-21 15:30:46,215 -   Avg Detection Time: 19.46ms
+2026-01-21 15:30:46,215 -     - Gray Conversion: 1.04ms
+2026-01-21 15:30:46,215 -     - Marker Detection: 17.85ms
+2026-01-21 15:30:46,215 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:46,216 -   Memory Usage: 1429.6 MB
+2026-01-21 15:30:46,216 -   CPU Usage: 59.9%
+2026-01-21 15:30:49,251 - 
+================================================================================
+2026-01-21 15:30:49,252 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:49,252 -   Frames Processed: 36 (11.9 FPS)
+2026-01-21 15:30:49,253 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:49,253 -   Total Detections: 36 (11.9/sec)
+2026-01-21 15:30:49,253 -   Avg Detection Time: 20.12ms
+2026-01-21 15:30:49,253 -     - Gray Conversion: 1.04ms
+2026-01-21 15:30:49,254 -     - Marker Detection: 18.52ms
+2026-01-21 15:30:49,254 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:49,254 -   Memory Usage: 1571.3 MB
+2026-01-21 15:30:49,254 -   CPU Usage: 89.8%
+2026-01-21 15:30:52,261 - 
+================================================================================
+2026-01-21 15:30:52,262 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:30:52,262 -   Frames Processed: 35 (11.6 FPS)
+2026-01-21 15:30:52,262 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:52,262 -   Total Detections: 35 (11.6/sec)
+2026-01-21 15:30:52,262 -   Avg Detection Time: 20.51ms
+2026-01-21 15:30:52,262 -     - Gray Conversion: 1.06ms
+2026-01-21 15:30:52,262 -     - Marker Detection: 18.88ms
+2026-01-21 15:30:52,262 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:52,262 -   Memory Usage: 1706.7 MB
+2026-01-21 15:30:52,263 -   CPU Usage: 69.7%
+2026-01-21 15:30:55,388 - 
+================================================================================
+2026-01-21 15:30:55,389 - ArUco Detector Performance Stats (last 3.1s):
+2026-01-21 15:30:55,389 -   Frames Processed: 36 (11.5 FPS)
+2026-01-21 15:30:55,389 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:55,390 -   Total Detections: 36 (11.5/sec)
+2026-01-21 15:30:55,390 -   Avg Detection Time: 20.04ms
+2026-01-21 15:30:55,390 -     - Gray Conversion: 1.05ms
+2026-01-21 15:30:55,390 -     - Marker Detection: 18.41ms
+2026-01-21 15:30:55,391 -     - BBox Calculation: 0.36ms
+2026-01-21 15:30:55,391 -   Memory Usage: 1854.0 MB
+2026-01-21 15:30:55,391 -   CPU Usage: 79.5%
+2026-01-21 15:30:58,476 - 
+================================================================================
+2026-01-21 15:30:58,477 - ArUco Detector Performance Stats (last 3.1s):
+2026-01-21 15:30:58,477 -   Frames Processed: 36 (11.7 FPS)
+2026-01-21 15:30:58,477 -   Frames Skipped (rate limit): 0
+2026-01-21 15:30:58,477 -   Total Detections: 36 (11.7/sec)
+2026-01-21 15:30:58,478 -   Avg Detection Time: 19.81ms
+2026-01-21 15:30:58,478 -     - Gray Conversion: 1.06ms
+2026-01-21 15:30:58,478 -     - Marker Detection: 18.18ms
+2026-01-21 15:30:58,478 -     - BBox Calculation: 0.35ms
+2026-01-21 15:30:58,478 -   Memory Usage: 1998.4 MB
+2026-01-21 15:30:58,478 -   CPU Usage: 79.5%
+2026-01-21 15:31:01,511 - 
+================================================================================
+2026-01-21 15:31:01,512 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:31:01,512 -   Frames Processed: 35 (11.5 FPS)
+2026-01-21 15:31:01,512 -   Frames Skipped (rate limit): 0
+2026-01-21 15:31:01,512 -   Total Detections: 35 (11.5/sec)
+2026-01-21 15:31:01,512 -   Avg Detection Time: 19.81ms
+2026-01-21 15:31:01,512 -     - Gray Conversion: 1.07ms
+2026-01-21 15:31:01,512 -     - Marker Detection: 18.18ms
+2026-01-21 15:31:01,512 -     - BBox Calculation: 0.35ms
+2026-01-21 15:31:01,512 -   Memory Usage: 2137.8 MB
+2026-01-21 15:31:01,512 -   CPU Usage: 79.8%
+2026-01-21 15:31:04,531 - 
+================================================================================
+2026-01-21 15:31:04,532 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:31:04,532 -   Frames Processed: 35 (11.6 FPS)
+2026-01-21 15:31:04,532 -   Frames Skipped (rate limit): 0
+2026-01-21 15:31:04,532 -   Total Detections: 35 (11.6/sec)
+2026-01-21 15:31:04,533 -   Avg Detection Time: 19.85ms
+2026-01-21 15:31:04,533 -     - Gray Conversion: 1.08ms
+2026-01-21 15:31:04,533 -     - Marker Detection: 18.20ms
+2026-01-21 15:31:04,533 -     - BBox Calculation: 0.36ms
+2026-01-21 15:31:04,533 -   Memory Usage: 2273.8 MB
+2026-01-21 15:31:04,533 -   CPU Usage: 69.8%
+2026-01-21 15:31:07,574 - 
+================================================================================
+2026-01-21 15:31:07,576 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:31:07,576 -   Frames Processed: 34 (11.2 FPS)
+2026-01-21 15:31:07,576 -   Frames Skipped (rate limit): 0
+2026-01-21 15:31:07,577 -   Total Detections: 34 (11.2/sec)
+2026-01-21 15:31:07,577 -   Avg Detection Time: 20.29ms
+2026-01-21 15:31:07,577 -     - Gray Conversion: 1.10ms
+2026-01-21 15:31:07,577 -     - Marker Detection: 18.62ms
+2026-01-21 15:31:07,577 -     - BBox Calculation: 0.36ms
+2026-01-21 15:31:07,577 -   Memory Usage: 2410.5 MB
+2026-01-21 15:31:07,578 -   CPU Usage: 89.8%
+2026-01-21 15:31:10,649 - 
+================================================================================
+2026-01-21 15:31:10,650 - ArUco Detector Performance Stats (last 3.1s):
+2026-01-21 15:31:10,650 -   Frames Processed: 36 (11.7 FPS)
+2026-01-21 15:31:10,650 -   Frames Skipped (rate limit): 0
+2026-01-21 15:31:10,651 -   Total Detections: 36 (11.7/sec)
+2026-01-21 15:31:10,651 -   Avg Detection Time: 20.44ms
+2026-01-21 15:31:10,651 -     - Gray Conversion: 1.08ms
+2026-01-21 15:31:10,651 -     - Marker Detection: 18.78ms
+2026-01-21 15:31:10,651 -     - BBox Calculation: 0.36ms
+2026-01-21 15:31:10,651 -   Memory Usage: 2553.2 MB
+2026-01-21 15:31:10,651 -   CPU Usage: 79.8%
+2026-01-21 15:31:13,674 - 
+================================================================================
+2026-01-21 15:31:13,675 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:31:13,675 -   Frames Processed: 36 (11.9 FPS)
+2026-01-21 15:31:13,675 -   Frames Skipped (rate limit): 0
+2026-01-21 15:31:13,675 -   Total Detections: 36 (11.9/sec)
+2026-01-21 15:31:13,676 -   Avg Detection Time: 20.11ms
+2026-01-21 15:31:13,676 -     - Gray Conversion: 1.06ms
+2026-01-21 15:31:13,676 -     - Marker Detection: 18.47ms
+2026-01-21 15:31:13,676 -     - BBox Calculation: 0.36ms
+2026-01-21 15:31:13,676 -   Memory Usage: 2697.1 MB
+2026-01-21 15:31:13,676 -   CPU Usage: 69.8%
+2026-01-21 15:31:16,711 - 
+================================================================================
+2026-01-21 15:31:16,712 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:31:16,712 -   Frames Processed: 35 (11.5 FPS)
+2026-01-21 15:31:16,712 -   Frames Skipped (rate limit): 0
+2026-01-21 15:31:16,712 -   Total Detections: 35 (11.5/sec)
+2026-01-21 15:31:16,712 -   Avg Detection Time: 20.23ms
+2026-01-21 15:31:16,712 -     - Gray Conversion: 1.07ms
+2026-01-21 15:31:16,713 -     - Marker Detection: 18.58ms
+2026-01-21 15:31:16,713 -     - BBox Calculation: 0.36ms
+2026-01-21 15:31:16,713 -   Memory Usage: 2840.3 MB
+2026-01-21 15:31:16,713 -   CPU Usage: 79.8%
+2026-01-21 15:31:19,746 - 
+================================================================================
+2026-01-21 15:31:19,747 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:31:19,747 -   Frames Processed: 35 (11.5 FPS)
+2026-01-21 15:31:19,747 -   Frames Skipped (rate limit): 0
+2026-01-21 15:31:19,747 -   Total Detections: 35 (11.5/sec)
+2026-01-21 15:31:19,747 -   Avg Detection Time: 20.45ms
+2026-01-21 15:31:19,747 -     - Gray Conversion: 1.09ms
+2026-01-21 15:31:19,747 -     - Marker Detection: 18.77ms
+2026-01-21 15:31:19,748 -     - BBox Calculation: 0.36ms
+2026-01-21 15:31:19,748 -   Memory Usage: 2978.5 MB
+2026-01-21 15:31:19,748 -   CPU Usage: 99.7%
+2026-01-21 15:35:13,432 - 
+================================================================================
+2026-01-21 15:35:13,432 - ArUco Detector Performance Stats (last 11.4s):
+2026-01-21 15:35:13,433 -   Frames Processed: 1 (0.1 FPS)
+2026-01-21 15:35:13,433 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:13,433 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:35:13,433 -   Avg Detection Time: 24.70ms
+2026-01-21 15:35:13,433 -     - Gray Conversion: 1.40ms
+2026-01-21 15:35:13,434 -     - Marker Detection: 23.12ms
+2026-01-21 15:35:13,434 -     - BBox Calculation: 0.00ms
+2026-01-21 15:35:13,434 -   Memory Usage: 314.2 MB
+2026-01-21 15:35:13,434 -   CPU Usage: 89.7%
+2026-01-21 15:35:16,448 - 
+================================================================================
+2026-01-21 15:35:16,448 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:16,449 -   Frames Processed: 91 (30.2 FPS)
+2026-01-21 15:35:16,449 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:16,449 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:35:16,449 -   Avg Detection Time: 12.52ms
+2026-01-21 15:35:16,449 -     - Gray Conversion: 1.26ms
+2026-01-21 15:35:16,449 -     - Marker Detection: 10.99ms
+2026-01-21 15:35:16,449 -     - BBox Calculation: 0.00ms
+2026-01-21 15:35:16,449 -   Memory Usage: 346.9 MB
+2026-01-21 15:35:16,449 -   CPU Usage: 109.6%
+2026-01-21 15:35:19,475 - 
+================================================================================
+2026-01-21 15:35:19,476 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:19,477 -   Frames Processed: 91 (30.1 FPS)
+2026-01-21 15:35:19,478 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:19,478 -   Total Detections: 0 (0.0/sec)
+2026-01-21 15:35:19,478 -   Avg Detection Time: 12.05ms
+2026-01-21 15:35:19,478 -     - Gray Conversion: 1.18ms
+2026-01-21 15:35:19,478 -     - Marker Detection: 10.60ms
+2026-01-21 15:35:19,478 -     - BBox Calculation: 0.00ms
+2026-01-21 15:35:19,479 -   Memory Usage: 353.9 MB
+2026-01-21 15:35:19,479 -   CPU Usage: 69.7%
+2026-01-21 15:35:22,512 - 
+================================================================================
+2026-01-21 15:35:22,513 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:22,513 -   Frames Processed: 83 (27.3 FPS)
+2026-01-21 15:35:22,513 -   Frames Skipped (rate limit): 1
+2026-01-21 15:35:22,513 -   Total Detections: 7 (2.3/sec)
+2026-01-21 15:35:22,513 -   Avg Detection Time: 11.56ms
+2026-01-21 15:35:22,513 -     - Gray Conversion: 1.18ms
+2026-01-21 15:35:22,513 -     - Marker Detection: 10.11ms
+2026-01-21 15:35:22,513 -     - BBox Calculation: 0.36ms
+2026-01-21 15:35:22,514 -   Memory Usage: 416.3 MB
+2026-01-21 15:35:22,514 -   CPU Usage: 99.8%
+2026-01-21 15:35:25,532 - 
+================================================================================
+2026-01-21 15:35:25,533 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:25,533 -   Frames Processed: 49 (16.2 FPS)
+2026-01-21 15:35:25,533 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:25,534 -   Total Detections: 49 (16.2/sec)
+2026-01-21 15:35:25,534 -   Avg Detection Time: 13.48ms
+2026-01-21 15:35:25,534 -     - Gray Conversion: 1.15ms
+2026-01-21 15:35:25,534 -     - Marker Detection: 11.99ms
+2026-01-21 15:35:25,534 -     - BBox Calculation: 0.35ms
+2026-01-21 15:35:25,535 -   Memory Usage: 578.8 MB
+2026-01-21 15:35:25,535 -   CPU Usage: 89.8%
+2026-01-21 15:35:28,568 - 
+================================================================================
+2026-01-21 15:35:28,568 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:28,569 -   Frames Processed: 47 (15.5 FPS)
+2026-01-21 15:35:28,569 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:28,569 -   Total Detections: 47 (15.5/sec)
+2026-01-21 15:35:28,569 -   Avg Detection Time: 15.48ms
+2026-01-21 15:35:28,569 -     - Gray Conversion: 1.14ms
+2026-01-21 15:35:28,569 -     - Marker Detection: 13.92ms
+2026-01-21 15:35:28,569 -     - BBox Calculation: 0.36ms
+2026-01-21 15:35:28,569 -   Memory Usage: 726.4 MB
+2026-01-21 15:35:28,569 -   CPU Usage: 89.3%
+2026-01-21 15:35:31,574 - 
+================================================================================
+2026-01-21 15:35:31,575 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:31,575 -   Frames Processed: 47 (15.6 FPS)
+2026-01-21 15:35:31,575 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:31,575 -   Total Detections: 47 (15.6/sec)
+2026-01-21 15:35:31,575 -   Avg Detection Time: 17.38ms
+2026-01-21 15:35:31,575 -     - Gray Conversion: 1.08ms
+2026-01-21 15:35:31,575 -     - Marker Detection: 15.81ms
+2026-01-21 15:35:31,575 -     - BBox Calculation: 0.36ms
+2026-01-21 15:35:31,575 -   Memory Usage: 875.6 MB
+2026-01-21 15:35:31,576 -   CPU Usage: 99.5%
+2026-01-21 15:35:34,609 - 
+================================================================================
+2026-01-21 15:35:34,609 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:34,609 -   Frames Processed: 48 (15.8 FPS)
+2026-01-21 15:35:34,609 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:34,610 -   Total Detections: 48 (15.8/sec)
+2026-01-21 15:35:34,610 -   Avg Detection Time: 19.44ms
+2026-01-21 15:35:34,610 -     - Gray Conversion: 1.04ms
+2026-01-21 15:35:34,610 -     - Marker Detection: 17.81ms
+2026-01-21 15:35:34,610 -     - BBox Calculation: 0.36ms
+2026-01-21 15:35:34,610 -   Memory Usage: 1026.4 MB
+2026-01-21 15:35:34,610 -   CPU Usage: 79.8%
+2026-01-21 15:35:37,664 - 
+================================================================================
+2026-01-21 15:35:37,665 - ArUco Detector Performance Stats (last 3.1s):
+2026-01-21 15:35:37,665 -   Frames Processed: 49 (16.0 FPS)
+2026-01-21 15:35:37,665 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:37,665 -   Total Detections: 49 (16.0/sec)
+2026-01-21 15:35:37,665 -   Avg Detection Time: 18.70ms
+2026-01-21 15:35:37,666 -     - Gray Conversion: 0.99ms
+2026-01-21 15:35:37,666 -     - Marker Detection: 17.13ms
+2026-01-21 15:35:37,666 -     - BBox Calculation: 0.37ms
+2026-01-21 15:35:37,666 -   Memory Usage: 1179.2 MB
+2026-01-21 15:35:37,666 -   CPU Usage: 59.9%
+2026-01-21 15:35:40,674 - 
+================================================================================
+2026-01-21 15:35:40,675 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:40,675 -   Frames Processed: 48 (15.9 FPS)
+2026-01-21 15:35:40,675 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:40,675 -   Total Detections: 48 (15.9/sec)
+2026-01-21 15:35:40,675 -   Avg Detection Time: 18.70ms
+2026-01-21 15:35:40,675 -     - Gray Conversion: 1.00ms
+2026-01-21 15:35:40,675 -     - Marker Detection: 17.12ms
+2026-01-21 15:35:40,675 -     - BBox Calculation: 0.37ms
+2026-01-21 15:35:40,675 -   Memory Usage: 1331.2 MB
+2026-01-21 15:35:40,676 -   CPU Usage: 69.6%
+2026-01-21 15:35:43,677 - 
+================================================================================
+2026-01-21 15:35:43,677 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:43,677 -   Frames Processed: 52 (17.3 FPS)
+2026-01-21 15:35:43,678 -   Frames Skipped (rate limit): 3
+2026-01-21 15:35:43,678 -   Total Detections: 49 (16.3/sec)
+2026-01-21 15:35:43,678 -   Avg Detection Time: 18.49ms
+2026-01-21 15:35:43,678 -     - Gray Conversion: 1.01ms
+2026-01-21 15:35:43,678 -     - Marker Detection: 16.91ms
+2026-01-21 15:35:43,678 -     - BBox Calculation: 0.36ms
+2026-01-21 15:35:43,678 -   Memory Usage: 1484.7 MB
+2026-01-21 15:35:43,678 -   CPU Usage: 79.8%
+2026-01-21 15:35:46,682 - 
+================================================================================
+2026-01-21 15:35:46,683 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:46,683 -   Frames Processed: 51 (17.0 FPS)
+2026-01-21 15:35:46,683 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:46,686 -   Total Detections: 51 (17.0/sec)
+2026-01-21 15:35:46,686 -   Avg Detection Time: 17.92ms
+2026-01-21 15:35:46,687 -     - Gray Conversion: 1.00ms
+2026-01-21 15:35:46,687 -     - Marker Detection: 16.35ms
+2026-01-21 15:35:46,687 -     - BBox Calculation: 0.36ms
+2026-01-21 15:35:46,687 -   Memory Usage: 1640.3 MB
+2026-01-21 15:35:46,687 -   CPU Usage: 69.8%
+2026-01-21 15:35:49,719 - 
+================================================================================
+2026-01-21 15:35:49,719 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:49,720 -   Frames Processed: 49 (16.1 FPS)
+2026-01-21 15:35:49,720 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:49,720 -   Total Detections: 49 (16.1/sec)
+2026-01-21 15:35:49,720 -   Avg Detection Time: 18.32ms
+2026-01-21 15:35:49,720 -     - Gray Conversion: 1.02ms
+2026-01-21 15:35:49,720 -     - Marker Detection: 16.74ms
+2026-01-21 15:35:49,720 -     - BBox Calculation: 0.35ms
+2026-01-21 15:35:49,720 -   Memory Usage: 1798.8 MB
+2026-01-21 15:35:49,720 -   CPU Usage: 69.8%
+2026-01-21 15:35:52,728 - 
+================================================================================
+2026-01-21 15:35:52,730 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:52,730 -   Frames Processed: 49 (16.3 FPS)
+2026-01-21 15:35:52,730 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:52,731 -   Total Detections: 49 (16.3/sec)
+2026-01-21 15:35:52,731 -   Avg Detection Time: 17.70ms
+2026-01-21 15:35:52,731 -     - Gray Conversion: 1.01ms
+2026-01-21 15:35:52,732 -     - Marker Detection: 16.14ms
+2026-01-21 15:35:52,732 -     - BBox Calculation: 0.35ms
+2026-01-21 15:35:52,732 -   Memory Usage: 1953.9 MB
+2026-01-21 15:35:52,732 -   CPU Usage: 79.8%
+2026-01-21 15:35:55,735 - 
+================================================================================
+2026-01-21 15:35:55,735 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:55,735 -   Frames Processed: 49 (16.3 FPS)
+2026-01-21 15:35:55,736 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:55,736 -   Total Detections: 49 (16.3/sec)
+2026-01-21 15:35:55,736 -   Avg Detection Time: 17.66ms
+2026-01-21 15:35:55,736 -     - Gray Conversion: 0.98ms
+2026-01-21 15:35:55,736 -     - Marker Detection: 16.12ms
+2026-01-21 15:35:55,736 -     - BBox Calculation: 0.35ms
+2026-01-21 15:35:55,736 -   Memory Usage: 2104.6 MB
+2026-01-21 15:35:55,736 -   CPU Usage: 69.8%
+2026-01-21 15:35:58,773 - 
+================================================================================
+2026-01-21 15:35:58,774 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:35:58,774 -   Frames Processed: 49 (16.1 FPS)
+2026-01-21 15:35:58,774 -   Frames Skipped (rate limit): 0
+2026-01-21 15:35:58,774 -   Total Detections: 49 (16.1/sec)
+2026-01-21 15:35:58,774 -   Avg Detection Time: 18.10ms
+2026-01-21 15:35:58,774 -     - Gray Conversion: 1.01ms
+2026-01-21 15:35:58,774 -     - Marker Detection: 16.53ms
+2026-01-21 15:35:58,774 -     - BBox Calculation: 0.35ms
+2026-01-21 15:35:58,775 -   Memory Usage: 2255.4 MB
+2026-01-21 15:35:58,775 -   CPU Usage: 79.8%
+2026-01-21 15:36:01,796 - 
+================================================================================
+2026-01-21 15:36:01,796 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:36:01,797 -   Frames Processed: 46 (15.2 FPS)
+2026-01-21 15:36:01,797 -   Frames Skipped (rate limit): 0
+2026-01-21 15:36:01,797 -   Total Detections: 46 (15.2/sec)
+2026-01-21 15:36:01,797 -   Avg Detection Time: 18.82ms
+2026-01-21 15:36:01,797 -     - Gray Conversion: 1.05ms
+2026-01-21 15:36:01,797 -     - Marker Detection: 17.21ms
+2026-01-21 15:36:01,797 -     - BBox Calculation: 0.35ms
+2026-01-21 15:36:01,797 -   Memory Usage: 2398.4 MB
+2026-01-21 15:36:01,797 -   CPU Usage: 69.8%
+2026-01-21 15:36:04,846 - 
+================================================================================
+2026-01-21 15:36:04,847 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:36:04,848 -   Frames Processed: 48 (15.7 FPS)
+2026-01-21 15:36:04,848 -   Frames Skipped (rate limit): 0
+2026-01-21 15:36:04,849 -   Total Detections: 48 (15.7/sec)
+2026-01-21 15:36:04,849 -   Avg Detection Time: 19.24ms
+2026-01-21 15:36:04,849 -     - Gray Conversion: 1.03ms
+2026-01-21 15:36:04,849 -     - Marker Detection: 17.65ms
+2026-01-21 15:36:04,849 -     - BBox Calculation: 0.35ms
+2026-01-21 15:36:04,849 -   Memory Usage: 2548.0 MB
+2026-01-21 15:36:04,849 -   CPU Usage: 69.8%
+2026-01-21 15:36:07,851 - 
+================================================================================
+2026-01-21 15:36:07,852 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:36:07,852 -   Frames Processed: 46 (15.3 FPS)
+2026-01-21 15:36:07,852 -   Frames Skipped (rate limit): 0
+2026-01-21 15:36:07,852 -   Total Detections: 46 (15.3/sec)
+2026-01-21 15:36:07,852 -   Avg Detection Time: 20.14ms
+2026-01-21 15:36:07,852 -     - Gray Conversion: 1.06ms
+2026-01-21 15:36:07,852 -     - Marker Detection: 18.51ms
+2026-01-21 15:36:07,852 -     - BBox Calculation: 0.35ms
+2026-01-21 15:36:07,853 -   Memory Usage: 2688.3 MB
+2026-01-21 15:36:07,853 -   CPU Usage: 69.8%
+2026-01-21 15:36:10,854 - 
+================================================================================
+2026-01-21 15:36:10,854 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:36:10,855 -   Frames Processed: 52 (17.3 FPS)
+2026-01-21 15:36:10,855 -   Frames Skipped (rate limit): 0
+2026-01-21 15:36:10,855 -   Total Detections: 52 (17.3/sec)
+2026-01-21 15:36:10,855 -   Avg Detection Time: 19.38ms
+2026-01-21 15:36:10,855 -     - Gray Conversion: 1.06ms
+2026-01-21 15:36:10,855 -     - Marker Detection: 17.75ms
+2026-01-21 15:36:10,855 -     - BBox Calculation: 0.35ms
+2026-01-21 15:36:10,856 -   Memory Usage: 2851.1 MB
+2026-01-21 15:36:10,856 -   CPU Usage: 79.8%
+2026-01-21 15:36:13,905 - 
+================================================================================
+2026-01-21 15:36:13,905 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-21 15:36:13,906 -   Frames Processed: 53 (17.4 FPS)
+2026-01-21 15:36:13,906 -   Frames Skipped (rate limit): 1
+2026-01-21 15:36:13,906 -   Total Detections: 52 (17.1/sec)
+2026-01-21 15:36:13,906 -   Avg Detection Time: 18.09ms
+2026-01-21 15:36:13,907 -     - Gray Conversion: 0.97ms
+2026-01-21 15:36:13,907 -     - Marker Detection: 16.56ms
+2026-01-21 15:36:13,907 -     - BBox Calculation: 0.35ms
+2026-01-21 15:36:13,907 -   Memory Usage: 3012.0 MB
+2026-01-21 15:36:13,907 -   CPU Usage: 69.8%
+2026-01-21 15:36:16,955 - 
+================================================================================
+2026-01-21 15:36:16,956 - ArUco Detector Performance Stats (last 3.1s):
+2026-01-21 15:36:16,956 -   Frames Processed: 48 (15.7 FPS)
+2026-01-21 15:36:16,956 -   Frames Skipped (rate limit): 0
+2026-01-21 15:36:16,956 -   Total Detections: 48 (15.7/sec)
+2026-01-21 15:36:16,957 -   Avg Detection Time: 18.26ms
+2026-01-21 15:36:16,957 -     - Gray Conversion: 1.00ms
+2026-01-21 15:36:16,957 -     - Marker Detection: 16.70ms
+2026-01-21 15:36:16,957 -     - BBox Calculation: 0.35ms
+2026-01-21 15:36:16,957 -   Memory Usage: 3167.0 MB
+2026-01-21 15:36:16,957 -   CPU Usage: 79.8%
+2026-01-23 19:00:08,358 - 
+================================================================================
+2026-01-23 19:00:08,360 - ArUco Detector Performance Stats (last 15.5s):
+2026-01-23 19:00:08,360 -   Frames Processed: 1 (0.1 FPS)
+2026-01-23 19:00:08,361 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:08,361 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:08,361 -   Avg Detection Time: 8.87ms
+2026-01-23 19:00:08,361 -     - Gray Conversion: 0.77ms
+2026-01-23 19:00:08,361 -     - Marker Detection: 7.91ms
+2026-01-23 19:00:08,361 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:08,361 -   Memory Usage: 331.5 MB
+2026-01-23 19:00:08,361 -   CPU Usage: 129.4%
+2026-01-23 19:00:11,354 - 
+================================================================================
+2026-01-23 19:00:11,355 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:11,355 -   Frames Processed: 91 (30.2 FPS)
+2026-01-23 19:00:11,355 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:11,355 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:11,355 -   Avg Detection Time: 8.46ms
+2026-01-23 19:00:11,355 -     - Gray Conversion: 1.10ms
+2026-01-23 19:00:11,356 -     - Marker Detection: 7.15ms
+2026-01-23 19:00:11,356 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:11,356 -   Memory Usage: 361.1 MB
+2026-01-23 19:00:11,356 -   CPU Usage: 99.6%
+2026-01-23 19:00:14,357 - 
+================================================================================
+2026-01-23 19:00:14,357 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:14,358 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:00:14,358 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:14,358 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:14,358 -   Avg Detection Time: 9.35ms
+2026-01-23 19:00:14,358 -     - Gray Conversion: 1.20ms
+2026-01-23 19:00:14,358 -     - Marker Detection: 7.90ms
+2026-01-23 19:00:14,358 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:14,359 -   Memory Usage: 380.0 MB
+2026-01-23 19:00:14,359 -   CPU Usage: 59.7%
+2026-01-23 19:00:17,378 - 
+================================================================================
+2026-01-23 19:00:17,378 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:17,378 -   Frames Processed: 90 (29.8 FPS)
+2026-01-23 19:00:17,379 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:17,379 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:17,379 -   Avg Detection Time: 10.21ms
+2026-01-23 19:00:17,379 -     - Gray Conversion: 1.30ms
+2026-01-23 19:00:17,379 -     - Marker Detection: 8.63ms
+2026-01-23 19:00:17,379 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:17,379 -   Memory Usage: 367.6 MB
+2026-01-23 19:00:17,379 -   CPU Usage: 129.6%
+2026-01-23 19:00:20,385 - 
+================================================================================
+2026-01-23 19:00:20,385 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:20,386 -   Frames Processed: 91 (30.3 FPS)
+2026-01-23 19:00:20,386 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:20,386 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:20,386 -   Avg Detection Time: 10.46ms
+2026-01-23 19:00:20,386 -     - Gray Conversion: 1.35ms
+2026-01-23 19:00:20,386 -     - Marker Detection: 8.84ms
+2026-01-23 19:00:20,387 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:20,387 -   Memory Usage: 371.7 MB
+2026-01-23 19:00:20,387 -   CPU Usage: 139.5%
+2026-01-23 19:00:23,390 - 
+================================================================================
+2026-01-23 19:00:23,390 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:23,390 -   Frames Processed: 90 (29.9 FPS)
+2026-01-23 19:00:23,390 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:23,390 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:23,390 -   Avg Detection Time: 10.83ms
+2026-01-23 19:00:23,391 -     - Gray Conversion: 1.24ms
+2026-01-23 19:00:23,391 -     - Marker Detection: 9.34ms
+2026-01-23 19:00:23,391 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:23,391 -   Memory Usage: 415.1 MB
+2026-01-23 19:00:23,391 -   CPU Usage: 109.7%
+2026-01-23 19:00:26,420 - 
+================================================================================
+2026-01-23 19:00:26,420 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:26,421 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:00:26,421 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:26,421 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:26,421 -   Avg Detection Time: 12.40ms
+2026-01-23 19:00:26,421 -     - Gray Conversion: 1.16ms
+2026-01-23 19:00:26,421 -     - Marker Detection: 11.01ms
+2026-01-23 19:00:26,421 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:26,421 -   Memory Usage: 418.0 MB
+2026-01-23 19:00:26,421 -   CPU Usage: 119.6%
+2026-01-23 19:00:29,450 - 
+================================================================================
+2026-01-23 19:00:29,451 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:29,451 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:00:29,451 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:29,451 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:29,451 -   Avg Detection Time: 13.16ms
+2026-01-23 19:00:29,451 -     - Gray Conversion: 1.12ms
+2026-01-23 19:00:29,451 -     - Marker Detection: 11.81ms
+2026-01-23 19:00:29,451 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:29,452 -   Memory Usage: 377.7 MB
+2026-01-23 19:00:29,452 -   CPU Usage: 139.5%
+2026-01-23 19:00:32,480 - 
+================================================================================
+2026-01-23 19:00:32,480 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:32,480 -   Frames Processed: 89 (29.4 FPS)
+2026-01-23 19:00:32,481 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:32,481 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:32,481 -   Avg Detection Time: 13.58ms
+2026-01-23 19:00:32,481 -     - Gray Conversion: 1.16ms
+2026-01-23 19:00:32,481 -     - Marker Detection: 12.20ms
+2026-01-23 19:00:32,481 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:32,482 -   Memory Usage: 398.9 MB
+2026-01-23 19:00:32,482 -   CPU Usage: 99.7%
+2026-01-23 19:00:35,485 - 
+================================================================================
+2026-01-23 19:00:35,486 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:35,486 -   Frames Processed: 89 (29.6 FPS)
+2026-01-23 19:00:35,486 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:35,486 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:35,486 -   Avg Detection Time: 18.22ms
+2026-01-23 19:00:35,486 -     - Gray Conversion: 1.11ms
+2026-01-23 19:00:35,486 -     - Marker Detection: 16.89ms
+2026-01-23 19:00:35,486 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:35,486 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:35,486 -   CPU Usage: 169.3%
+2026-01-23 19:00:38,490 - 
+================================================================================
+2026-01-23 19:00:38,490 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:38,492 -   Frames Processed: 93 (31.0 FPS)
+2026-01-23 19:00:38,492 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:38,493 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:38,493 -   Avg Detection Time: 20.66ms
+2026-01-23 19:00:38,494 -     - Gray Conversion: 1.03ms
+2026-01-23 19:00:38,494 -     - Marker Detection: 19.43ms
+2026-01-23 19:00:38,495 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:38,495 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:38,495 -   CPU Usage: 119.1%
+2026-01-23 19:00:41,490 - 
+================================================================================
+2026-01-23 19:00:41,490 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:41,490 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:00:41,490 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:41,491 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:41,491 -   Avg Detection Time: 16.07ms
+2026-01-23 19:00:41,491 -     - Gray Conversion: 1.07ms
+2026-01-23 19:00:41,491 -     - Marker Detection: 14.78ms
+2026-01-23 19:00:41,491 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:41,491 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:41,491 -   CPU Usage: 69.8%
+2026-01-23 19:00:44,517 - 
+================================================================================
+2026-01-23 19:00:44,518 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:44,518 -   Frames Processed: 90 (29.7 FPS)
+2026-01-23 19:00:44,519 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:44,519 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:44,519 -   Avg Detection Time: 16.32ms
+2026-01-23 19:00:44,519 -     - Gray Conversion: 1.01ms
+2026-01-23 19:00:44,519 -     - Marker Detection: 15.10ms
+2026-01-23 19:00:44,519 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:44,519 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:44,519 -   CPU Usage: 79.7%
+2026-01-23 19:00:47,529 - 
+================================================================================
+2026-01-23 19:00:47,529 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:47,529 -   Frames Processed: 91 (30.2 FPS)
+2026-01-23 19:00:47,529 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:47,529 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:47,530 -   Avg Detection Time: 16.95ms
+2026-01-23 19:00:47,530 -     - Gray Conversion: 0.97ms
+2026-01-23 19:00:47,530 -     - Marker Detection: 15.75ms
+2026-01-23 19:00:47,530 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:47,530 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:47,530 -   CPU Usage: 109.5%
+2026-01-23 19:00:50,554 - 
+================================================================================
+2026-01-23 19:00:50,554 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:50,554 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:00:50,554 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:50,554 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:50,555 -   Avg Detection Time: 17.16ms
+2026-01-23 19:00:50,555 -     - Gray Conversion: 0.99ms
+2026-01-23 19:00:50,555 -     - Marker Detection: 15.95ms
+2026-01-23 19:00:50,555 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:50,555 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:50,555 -   CPU Usage: 89.7%
+2026-01-23 19:00:53,563 - 
+================================================================================
+2026-01-23 19:00:53,564 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:53,564 -   Frames Processed: 90 (29.9 FPS)
+2026-01-23 19:00:53,564 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:53,564 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:53,564 -   Avg Detection Time: 16.39ms
+2026-01-23 19:00:53,564 -     - Gray Conversion: 0.97ms
+2026-01-23 19:00:53,564 -     - Marker Detection: 15.21ms
+2026-01-23 19:00:53,564 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:53,565 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:53,565 -   CPU Usage: 119.7%
+2026-01-23 19:00:56,599 - 
+================================================================================
+2026-01-23 19:00:56,599 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:56,600 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:00:56,600 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:56,600 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:56,600 -   Avg Detection Time: 17.50ms
+2026-01-23 19:00:56,600 -     - Gray Conversion: 1.00ms
+2026-01-23 19:00:56,600 -     - Marker Detection: 16.30ms
+2026-01-23 19:00:56,600 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:56,600 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:56,600 -   CPU Usage: 99.7%
+2026-01-23 19:00:59,621 - 
+================================================================================
+2026-01-23 19:00:59,622 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:00:59,622 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:00:59,622 -   Frames Skipped (rate limit): 0
+2026-01-23 19:00:59,622 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:00:59,622 -   Avg Detection Time: 17.57ms
+2026-01-23 19:00:59,622 -     - Gray Conversion: 1.01ms
+2026-01-23 19:00:59,623 -     - Marker Detection: 16.34ms
+2026-01-23 19:00:59,623 -     - BBox Calculation: 0.00ms
+2026-01-23 19:00:59,623 -   Memory Usage: 403.0 MB
+2026-01-23 19:00:59,623 -   CPU Usage: 119.5%
+2026-01-23 19:01:02,621 - 
+================================================================================
+2026-01-23 19:01:02,621 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:02,621 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:01:02,622 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:02,622 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:02,622 -   Avg Detection Time: 14.89ms
+2026-01-23 19:01:02,622 -     - Gray Conversion: 1.07ms
+2026-01-23 19:01:02,622 -     - Marker Detection: 13.61ms
+2026-01-23 19:01:02,622 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:02,622 -   Memory Usage: 403.0 MB
+2026-01-23 19:01:02,622 -   CPU Usage: 129.6%
+2026-01-23 19:01:05,637 - 
+================================================================================
+2026-01-23 19:01:05,638 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:05,638 -   Frames Processed: 90 (29.8 FPS)
+2026-01-23 19:01:05,639 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:05,640 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:05,640 -   Avg Detection Time: 12.16ms
+2026-01-23 19:01:05,640 -     - Gray Conversion: 1.06ms
+2026-01-23 19:01:05,640 -     - Marker Detection: 10.87ms
+2026-01-23 19:01:05,640 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:05,640 -   Memory Usage: 403.0 MB
+2026-01-23 19:01:05,640 -   CPU Usage: 119.5%
+2026-01-23 19:01:08,659 - 
+================================================================================
+2026-01-23 19:01:08,660 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:08,660 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:01:08,660 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:08,660 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:08,660 -   Avg Detection Time: 13.32ms
+2026-01-23 19:01:08,660 -     - Gray Conversion: 1.10ms
+2026-01-23 19:01:08,660 -     - Marker Detection: 11.99ms
+2026-01-23 19:01:08,661 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:08,661 -   Memory Usage: 403.0 MB
+2026-01-23 19:01:08,661 -   CPU Usage: 99.6%
+2026-01-23 19:01:11,663 - 
+================================================================================
+2026-01-23 19:01:11,664 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:11,664 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:01:11,664 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:11,664 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:11,664 -   Avg Detection Time: 13.51ms
+2026-01-23 19:01:11,664 -     - Gray Conversion: 1.10ms
+2026-01-23 19:01:11,665 -     - Marker Detection: 12.19ms
+2026-01-23 19:01:11,665 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:11,665 -   Memory Usage: 403.0 MB
+2026-01-23 19:01:11,665 -   CPU Usage: 59.7%
+2026-01-23 19:01:14,691 - 
+================================================================================
+2026-01-23 19:01:14,692 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:14,692 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:01:14,692 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:14,692 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:14,692 -   Avg Detection Time: 12.65ms
+2026-01-23 19:01:14,693 -     - Gray Conversion: 1.07ms
+2026-01-23 19:01:14,693 -     - Marker Detection: 11.36ms
+2026-01-23 19:01:14,693 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:14,693 -   Memory Usage: 403.0 MB
+2026-01-23 19:01:14,693 -   CPU Usage: 59.8%
+2026-01-23 19:01:17,731 - 
+================================================================================
+2026-01-23 19:01:17,731 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:17,731 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:01:17,732 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:17,732 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:17,732 -   Avg Detection Time: 12.58ms
+2026-01-23 19:01:17,732 -     - Gray Conversion: 1.09ms
+2026-01-23 19:01:17,732 -     - Marker Detection: 11.26ms
+2026-01-23 19:01:17,732 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:17,732 -   Memory Usage: 443.1 MB
+2026-01-23 19:01:17,732 -   CPU Usage: 89.7%
+2026-01-23 19:01:44,660 - 
+================================================================================
+2026-01-23 19:01:44,661 - ArUco Detector Performance Stats (last 14.4s):
+2026-01-23 19:01:44,661 -   Frames Processed: 1 (0.1 FPS)
+2026-01-23 19:01:44,661 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:44,661 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:44,661 -   Avg Detection Time: 19.67ms
+2026-01-23 19:01:44,661 -     - Gray Conversion: 1.09ms
+2026-01-23 19:01:44,662 -     - Marker Detection: 18.38ms
+2026-01-23 19:01:44,662 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:44,662 -   Memory Usage: 326.7 MB
+2026-01-23 19:01:44,662 -   CPU Usage: 99.6%
+2026-01-23 19:01:47,678 - 
+================================================================================
+2026-01-23 19:01:47,679 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:47,679 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:01:47,679 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:47,679 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:47,679 -   Avg Detection Time: 10.00ms
+2026-01-23 19:01:47,679 -     - Gray Conversion: 1.20ms
+2026-01-23 19:01:47,680 -     - Marker Detection: 8.54ms
+2026-01-23 19:01:47,680 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:47,680 -   Memory Usage: 355.8 MB
+2026-01-23 19:01:47,680 -   CPU Usage: 69.7%
+2026-01-23 19:01:50,706 - 
+================================================================================
+2026-01-23 19:01:50,706 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:50,706 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:01:50,707 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:50,707 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:50,707 -   Avg Detection Time: 9.47ms
+2026-01-23 19:01:50,707 -     - Gray Conversion: 1.19ms
+2026-01-23 19:01:50,707 -     - Marker Detection: 8.01ms
+2026-01-23 19:01:50,707 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:50,707 -   Memory Usage: 375.1 MB
+2026-01-23 19:01:50,707 -   CPU Usage: 89.7%
+2026-01-23 19:01:53,741 - 
+================================================================================
+2026-01-23 19:01:53,742 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:53,742 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:01:53,742 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:53,742 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:53,743 -   Avg Detection Time: 9.18ms
+2026-01-23 19:01:53,743 -     - Gray Conversion: 1.21ms
+2026-01-23 19:01:53,743 -     - Marker Detection: 7.69ms
+2026-01-23 19:01:53,743 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:53,744 -   Memory Usage: 362.4 MB
+2026-01-23 19:01:53,744 -   CPU Usage: 99.7%
+2026-01-23 19:01:56,752 - 
+================================================================================
+2026-01-23 19:01:56,753 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:56,754 -   Frames Processed: 90 (29.9 FPS)
+2026-01-23 19:01:56,754 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:56,754 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:56,755 -   Avg Detection Time: 9.54ms
+2026-01-23 19:01:56,755 -     - Gray Conversion: 1.27ms
+2026-01-23 19:01:56,755 -     - Marker Detection: 7.99ms
+2026-01-23 19:01:56,755 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:56,756 -   Memory Usage: 362.9 MB
+2026-01-23 19:01:56,756 -   CPU Usage: 79.7%
+2026-01-23 19:01:59,774 - 
+================================================================================
+2026-01-23 19:01:59,774 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:01:59,775 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:01:59,775 -   Frames Skipped (rate limit): 0
+2026-01-23 19:01:59,775 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:01:59,775 -   Avg Detection Time: 9.75ms
+2026-01-23 19:01:59,775 -     - Gray Conversion: 1.29ms
+2026-01-23 19:01:59,776 -     - Marker Detection: 8.17ms
+2026-01-23 19:01:59,776 -     - BBox Calculation: 0.00ms
+2026-01-23 19:01:59,776 -   Memory Usage: 362.9 MB
+2026-01-23 19:01:59,776 -   CPU Usage: 89.6%
+2026-01-23 19:02:02,808 - 
+================================================================================
+2026-01-23 19:02:02,809 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:02,809 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:02:02,809 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:02,809 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:02,809 -   Avg Detection Time: 10.34ms
+2026-01-23 19:02:02,809 -     - Gray Conversion: 1.31ms
+2026-01-23 19:02:02,810 -     - Marker Detection: 8.74ms
+2026-01-23 19:02:02,810 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:02,810 -   Memory Usage: 400.6 MB
+2026-01-23 19:02:02,810 -   CPU Usage: 89.7%
+2026-01-23 19:02:05,812 - 
+================================================================================
+2026-01-23 19:02:05,812 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:05,812 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:02:05,812 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:05,813 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:05,813 -   Avg Detection Time: 10.04ms
+2026-01-23 19:02:05,813 -     - Gray Conversion: 1.22ms
+2026-01-23 19:02:05,813 -     - Marker Detection: 8.55ms
+2026-01-23 19:02:05,813 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:05,813 -   Memory Usage: 362.9 MB
+2026-01-23 19:02:05,813 -   CPU Usage: 99.6%
+2026-01-23 19:02:08,862 - 
+================================================================================
+2026-01-23 19:02:08,862 - ArUco Detector Performance Stats (last 3.1s):
+2026-01-23 19:02:08,862 -   Frames Processed: 91 (29.8 FPS)
+2026-01-23 19:02:08,862 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:08,862 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:08,862 -   Avg Detection Time: 9.13ms
+2026-01-23 19:02:08,863 -     - Gray Conversion: 1.11ms
+2026-01-23 19:02:08,863 -     - Marker Detection: 7.79ms
+2026-01-23 19:02:08,863 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:08,863 -   Memory Usage: 362.9 MB
+2026-01-23 19:02:08,864 -   CPU Usage: 139.6%
+2026-01-23 19:02:11,871 - 
+================================================================================
+2026-01-23 19:02:11,871 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:11,872 -   Frames Processed: 91 (30.2 FPS)
+2026-01-23 19:02:11,872 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:11,872 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:11,872 -   Avg Detection Time: 9.79ms
+2026-01-23 19:02:11,872 -     - Gray Conversion: 1.08ms
+2026-01-23 19:02:11,872 -     - Marker Detection: 8.48ms
+2026-01-23 19:02:11,872 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:11,872 -   Memory Usage: 364.7 MB
+2026-01-23 19:02:11,872 -   CPU Usage: 89.3%
+2026-01-23 19:02:14,886 - 
+================================================================================
+2026-01-23 19:02:14,887 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:14,887 -   Frames Processed: 90 (29.8 FPS)
+2026-01-23 19:02:14,887 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:14,887 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:14,887 -   Avg Detection Time: 11.44ms
+2026-01-23 19:02:14,887 -     - Gray Conversion: 1.06ms
+2026-01-23 19:02:14,887 -     - Marker Detection: 10.16ms
+2026-01-23 19:02:14,888 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:14,888 -   Memory Usage: 365.5 MB
+2026-01-23 19:02:14,888 -   CPU Usage: 129.6%
+2026-01-23 19:02:17,912 - 
+================================================================================
+2026-01-23 19:02:17,913 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:17,913 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:02:17,913 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:17,913 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:17,913 -   Avg Detection Time: 12.85ms
+2026-01-23 19:02:17,913 -     - Gray Conversion: 1.11ms
+2026-01-23 19:02:17,913 -     - Marker Detection: 11.51ms
+2026-01-23 19:02:17,913 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:17,913 -   Memory Usage: 366.8 MB
+2026-01-23 19:02:17,914 -   CPU Usage: 89.7%
+2026-01-23 19:02:20,941 - 
+================================================================================
+2026-01-23 19:02:20,941 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:20,941 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:02:20,942 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:20,942 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:20,942 -   Avg Detection Time: 12.67ms
+2026-01-23 19:02:20,942 -     - Gray Conversion: 1.05ms
+2026-01-23 19:02:20,943 -     - Marker Detection: 11.37ms
+2026-01-23 19:02:20,943 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:20,943 -   Memory Usage: 366.8 MB
+2026-01-23 19:02:20,943 -   CPU Usage: 89.7%
+2026-01-23 19:02:23,975 - 
+================================================================================
+2026-01-23 19:02:23,976 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:23,976 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:02:23,976 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:23,976 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:23,977 -   Avg Detection Time: 13.04ms
+2026-01-23 19:02:23,977 -     - Gray Conversion: 1.13ms
+2026-01-23 19:02:23,977 -     - Marker Detection: 11.67ms
+2026-01-23 19:02:23,977 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:23,977 -   Memory Usage: 408.6 MB
+2026-01-23 19:02:23,977 -   CPU Usage: 79.8%
+2026-01-23 19:02:26,991 - 
+================================================================================
+2026-01-23 19:02:26,991 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:26,991 -   Frames Processed: 90 (29.8 FPS)
+2026-01-23 19:02:26,992 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:26,992 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:26,992 -   Avg Detection Time: 13.93ms
+2026-01-23 19:02:26,992 -     - Gray Conversion: 1.18ms
+2026-01-23 19:02:26,992 -     - Marker Detection: 12.51ms
+2026-01-23 19:02:26,992 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:26,992 -   Memory Usage: 411.4 MB
+2026-01-23 19:02:26,992 -   CPU Usage: 89.7%
+2026-01-23 19:02:30,009 - 
+================================================================================
+2026-01-23 19:02:30,010 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:30,010 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:02:30,010 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:30,010 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:30,010 -   Avg Detection Time: 14.69ms
+2026-01-23 19:02:30,011 -     - Gray Conversion: 1.14ms
+2026-01-23 19:02:30,011 -     - Marker Detection: 13.31ms
+2026-01-23 19:02:30,011 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:30,011 -   Memory Usage: 412.8 MB
+2026-01-23 19:02:30,011 -   CPU Usage: 69.8%
+2026-01-23 19:02:33,041 - 
+================================================================================
+2026-01-23 19:02:33,042 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:33,043 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:02:33,043 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:33,043 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:33,043 -   Avg Detection Time: 14.76ms
+2026-01-23 19:02:33,044 -     - Gray Conversion: 1.14ms
+2026-01-23 19:02:33,044 -     - Marker Detection: 13.37ms
+2026-01-23 19:02:33,045 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:33,045 -   Memory Usage: 412.8 MB
+2026-01-23 19:02:33,046 -   CPU Usage: 79.0%
+2026-01-23 19:02:36,045 - 
+================================================================================
+2026-01-23 19:02:36,046 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:36,046 -   Frames Processed: 90 (29.9 FPS)
+2026-01-23 19:02:36,047 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:36,047 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:36,047 -   Avg Detection Time: 14.58ms
+2026-01-23 19:02:36,047 -     - Gray Conversion: 1.14ms
+2026-01-23 19:02:36,047 -     - Marker Detection: 13.19ms
+2026-01-23 19:02:36,047 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:36,047 -   Memory Usage: 372.4 MB
+2026-01-23 19:02:36,047 -   CPU Usage: 99.6%
+2026-01-23 19:02:39,072 - 
+================================================================================
+2026-01-23 19:02:39,073 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:39,073 -   Frames Processed: 91 (30.1 FPS)
+2026-01-23 19:02:39,073 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:39,073 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:39,073 -   Avg Detection Time: 14.31ms
+2026-01-23 19:02:39,073 -     - Gray Conversion: 1.11ms
+2026-01-23 19:02:39,074 -     - Marker Detection: 12.95ms
+2026-01-23 19:02:39,074 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:39,074 -   Memory Usage: 413.0 MB
+2026-01-23 19:02:39,074 -   CPU Usage: 99.7%
+2026-01-23 19:02:42,075 - 
+================================================================================
+2026-01-23 19:02:42,076 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:42,076 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:02:42,076 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:42,076 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:42,076 -   Avg Detection Time: 14.23ms
+2026-01-23 19:02:42,076 -     - Gray Conversion: 1.08ms
+2026-01-23 19:02:42,076 -     - Marker Detection: 12.90ms
+2026-01-23 19:02:42,077 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:42,077 -   Memory Usage: 372.6 MB
+2026-01-23 19:02:42,077 -   CPU Usage: 79.7%
+2026-01-23 19:02:45,078 - 
+================================================================================
+2026-01-23 19:02:45,079 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:45,079 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:02:45,079 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:45,079 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:45,080 -   Avg Detection Time: 14.21ms
+2026-01-23 19:02:45,080 -     - Gray Conversion: 1.10ms
+2026-01-23 19:02:45,080 -     - Marker Detection: 12.85ms
+2026-01-23 19:02:45,080 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:45,080 -   Memory Usage: 372.6 MB
+2026-01-23 19:02:45,080 -   CPU Usage: 79.7%
+2026-01-23 19:02:48,078 - 
+================================================================================
+2026-01-23 19:02:48,078 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:48,078 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:02:48,079 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:48,079 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:48,079 -   Avg Detection Time: 14.15ms
+2026-01-23 19:02:48,079 -     - Gray Conversion: 1.10ms
+2026-01-23 19:02:48,079 -     - Marker Detection: 12.80ms
+2026-01-23 19:02:48,079 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:48,079 -   Memory Usage: 376.4 MB
+2026-01-23 19:02:48,079 -   CPU Usage: 109.7%
+2026-01-23 19:02:51,108 - 
+================================================================================
+2026-01-23 19:02:51,109 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:51,109 -   Frames Processed: 91 (30.0 FPS)
+2026-01-23 19:02:51,109 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:51,109 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:51,109 -   Avg Detection Time: 14.28ms
+2026-01-23 19:02:51,109 -     - Gray Conversion: 1.05ms
+2026-01-23 19:02:51,109 -     - Marker Detection: 12.99ms
+2026-01-23 19:02:51,109 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:51,110 -   Memory Usage: 377.7 MB
+2026-01-23 19:02:51,110 -   CPU Usage: 89.7%
+2026-01-23 19:02:54,110 - 
+================================================================================
+2026-01-23 19:02:54,111 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:54,111 -   Frames Processed: 90 (30.0 FPS)
+2026-01-23 19:02:54,111 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:54,111 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:54,111 -   Avg Detection Time: 14.59ms
+2026-01-23 19:02:54,111 -     - Gray Conversion: 1.02ms
+2026-01-23 19:02:54,111 -     - Marker Detection: 13.34ms
+2026-01-23 19:02:54,111 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:54,112 -   Memory Usage: 377.7 MB
+2026-01-23 19:02:54,112 -   CPU Usage: 109.7%
+2026-01-23 19:02:57,151 - 
+================================================================================
+2026-01-23 19:02:57,151 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:02:57,151 -   Frames Processed: 91 (29.9 FPS)
+2026-01-23 19:02:57,152 -   Frames Skipped (rate limit): 0
+2026-01-23 19:02:57,152 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:02:57,152 -   Avg Detection Time: 15.15ms
+2026-01-23 19:02:57,152 -     - Gray Conversion: 1.06ms
+2026-01-23 19:02:57,152 -     - Marker Detection: 13.86ms
+2026-01-23 19:02:57,152 -     - BBox Calculation: 0.00ms
+2026-01-23 19:02:57,152 -   Memory Usage: 377.7 MB
+2026-01-23 19:02:57,152 -   CPU Usage: 69.8%
+2026-01-23 19:03:00,215 - 
+================================================================================
+2026-01-23 19:03:00,215 - ArUco Detector Performance Stats (last 3.1s):
+2026-01-23 19:03:00,215 -   Frames Processed: 91 (29.7 FPS)
+2026-01-23 19:03:00,215 -   Frames Skipped (rate limit): 0
+2026-01-23 19:03:00,216 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:03:00,216 -   Avg Detection Time: 16.14ms
+2026-01-23 19:03:00,216 -     - Gray Conversion: 1.28ms
+2026-01-23 19:03:00,216 -     - Marker Detection: 14.60ms
+2026-01-23 19:03:00,216 -     - BBox Calculation: 0.00ms
+2026-01-23 19:03:00,216 -   Memory Usage: 377.7 MB
+2026-01-23 19:03:00,216 -   CPU Usage: 107.4%
+2026-01-23 19:03:03,240 - 
+================================================================================
+2026-01-23 19:03:03,241 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-23 19:03:03,241 -   Frames Processed: 92 (30.4 FPS)
+2026-01-23 19:03:03,241 -   Frames Skipped (rate limit): 0
+2026-01-23 19:03:03,241 -   Total Detections: 0 (0.0/sec)
+2026-01-23 19:03:03,241 -   Avg Detection Time: 15.45ms
+2026-01-23 19:03:03,242 -     - Gray Conversion: 1.27ms
+2026-01-23 19:03:03,242 -     - Marker Detection: 13.92ms
+2026-01-23 19:03:03,242 -     - BBox Calculation: 0.00ms
+2026-01-23 19:03:03,242 -   Memory Usage: 377.7 MB
+2026-01-23 19:03:03,242 -   CPU Usage: 109.6%
+2026-01-24 11:46:51,329 - 
+================================================================================
+2026-01-24 11:46:51,331 - ArUco Detector Performance Stats (last 13.9s):
+2026-01-24 11:46:51,331 -   Frames Processed: 1 (0.1 FPS)
+2026-01-24 11:46:51,331 -   Frames Skipped (rate limit): 0
+2026-01-24 11:46:51,331 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:46:51,331 -   Avg Detection Time: 17.70ms
+2026-01-24 11:46:51,331 -     - Gray Conversion: 0.79ms
+2026-01-24 11:46:51,331 -     - Marker Detection: 16.71ms
+2026-01-24 11:46:51,332 -     - BBox Calculation: 0.00ms
+2026-01-24 11:46:51,332 -   Memory Usage: 333.4 MB
+2026-01-24 11:46:51,332 -   CPU Usage: 139.5%
+2026-01-24 11:46:54,358 - 
+================================================================================
+2026-01-24 11:46:54,359 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:46:54,359 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:46:54,359 -   Frames Skipped (rate limit): 0
+2026-01-24 11:46:54,360 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:46:54,360 -   Avg Detection Time: 9.41ms
+2026-01-24 11:46:54,360 -     - Gray Conversion: 1.11ms
+2026-01-24 11:46:54,360 -     - Marker Detection: 8.09ms
+2026-01-24 11:46:54,360 -     - BBox Calculation: 0.00ms
+2026-01-24 11:46:54,360 -   Memory Usage: 361.1 MB
+2026-01-24 11:46:54,360 -   CPU Usage: 139.5%
+2026-01-24 11:46:57,366 - 
+================================================================================
+2026-01-24 11:46:57,366 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:46:57,367 -   Frames Processed: 91 (30.3 FPS)
+2026-01-24 11:46:57,367 -   Frames Skipped (rate limit): 0
+2026-01-24 11:46:57,367 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:46:57,367 -   Avg Detection Time: 9.40ms
+2026-01-24 11:46:57,367 -     - Gray Conversion: 1.14ms
+2026-01-24 11:46:57,367 -     - Marker Detection: 8.05ms
+2026-01-24 11:46:57,368 -     - BBox Calculation: 0.00ms
+2026-01-24 11:46:57,368 -   Memory Usage: 381.4 MB
+2026-01-24 11:46:57,368 -   CPU Usage: 129.6%
+2026-01-24 11:47:00,398 - 
+================================================================================
+2026-01-24 11:47:00,399 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:00,399 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:47:00,399 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:00,399 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:00,399 -   Avg Detection Time: 9.34ms
+2026-01-24 11:47:00,400 -     - Gray Conversion: 1.18ms
+2026-01-24 11:47:00,400 -     - Marker Detection: 7.91ms
+2026-01-24 11:47:00,400 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:00,400 -   Memory Usage: 406.8 MB
+2026-01-24 11:47:00,400 -   CPU Usage: 129.6%
+2026-01-24 11:47:03,399 - 
+================================================================================
+2026-01-24 11:47:03,400 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:03,400 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 11:47:03,400 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:03,401 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:03,401 -   Avg Detection Time: 8.86ms
+2026-01-24 11:47:03,401 -     - Gray Conversion: 1.15ms
+2026-01-24 11:47:03,401 -     - Marker Detection: 7.42ms
+2026-01-24 11:47:03,401 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:03,401 -   Memory Usage: 368.1 MB
+2026-01-24 11:47:03,402 -   CPU Usage: 139.5%
+2026-01-24 11:47:06,423 - 
+================================================================================
+2026-01-24 11:47:06,424 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:06,424 -   Frames Processed: 89 (29.4 FPS)
+2026-01-24 11:47:06,425 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:06,425 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:06,425 -   Avg Detection Time: 8.75ms
+2026-01-24 11:47:06,425 -     - Gray Conversion: 1.15ms
+2026-01-24 11:47:06,425 -     - Marker Detection: 7.33ms
+2026-01-24 11:47:06,425 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:06,425 -   Memory Usage: 406.0 MB
+2026-01-24 11:47:06,425 -   CPU Usage: 169.5%
+2026-01-24 11:47:09,443 - 
+================================================================================
+2026-01-24 11:47:09,443 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:09,444 -   Frames Processed: 92 (30.5 FPS)
+2026-01-24 11:47:09,444 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:09,444 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:09,444 -   Avg Detection Time: 9.95ms
+2026-01-24 11:47:09,444 -     - Gray Conversion: 1.12ms
+2026-01-24 11:47:09,444 -     - Marker Detection: 8.58ms
+2026-01-24 11:47:09,444 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:09,444 -   Memory Usage: 415.1 MB
+2026-01-24 11:47:09,444 -   CPU Usage: 129.6%
+2026-01-24 11:47:12,473 - 
+================================================================================
+2026-01-24 11:47:12,473 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:12,473 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:47:12,473 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:12,473 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:12,473 -   Avg Detection Time: 11.81ms
+2026-01-24 11:47:12,474 -     - Gray Conversion: 1.03ms
+2026-01-24 11:47:12,474 -     - Marker Detection: 10.53ms
+2026-01-24 11:47:12,474 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:12,474 -   Memory Usage: 418.7 MB
+2026-01-24 11:47:12,474 -   CPU Usage: 119.7%
+2026-01-24 11:47:15,505 - 
+================================================================================
+2026-01-24 11:47:15,506 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:15,506 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:47:15,506 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:15,506 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:15,506 -   Avg Detection Time: 14.35ms
+2026-01-24 11:47:15,506 -     - Gray Conversion: 1.01ms
+2026-01-24 11:47:15,506 -     - Marker Detection: 13.11ms
+2026-01-24 11:47:15,506 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:15,506 -   Memory Usage: 419.0 MB
+2026-01-24 11:47:15,506 -   CPU Usage: 109.7%
+2026-01-24 11:47:18,536 - 
+================================================================================
+2026-01-24 11:47:18,537 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:18,537 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:47:18,537 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:18,537 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:18,537 -   Avg Detection Time: 14.38ms
+2026-01-24 11:47:18,537 -     - Gray Conversion: 1.03ms
+2026-01-24 11:47:18,537 -     - Marker Detection: 13.12ms
+2026-01-24 11:47:18,537 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:18,537 -   Memory Usage: 419.0 MB
+2026-01-24 11:47:18,537 -   CPU Usage: 119.6%
+2026-01-24 11:47:21,544 - 
+================================================================================
+2026-01-24 11:47:21,544 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:21,545 -   Frames Processed: 90 (29.9 FPS)
+2026-01-24 11:47:21,545 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:21,545 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:21,545 -   Avg Detection Time: 14.04ms
+2026-01-24 11:47:21,545 -     - Gray Conversion: 1.08ms
+2026-01-24 11:47:21,545 -     - Marker Detection: 12.73ms
+2026-01-24 11:47:21,545 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:21,546 -   Memory Usage: 419.7 MB
+2026-01-24 11:47:21,546 -   CPU Usage: 119.6%
+2026-01-24 11:47:24,575 - 
+================================================================================
+2026-01-24 11:47:24,575 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:24,575 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:47:24,575 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:24,576 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:24,576 -   Avg Detection Time: 14.02ms
+2026-01-24 11:47:24,576 -     - Gray Conversion: 1.10ms
+2026-01-24 11:47:24,576 -     - Marker Detection: 12.67ms
+2026-01-24 11:47:24,576 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:24,576 -   Memory Usage: 419.7 MB
+2026-01-24 11:47:24,577 -   CPU Usage: 129.6%
+2026-01-24 11:47:27,602 - 
+================================================================================
+2026-01-24 11:47:27,602 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:27,603 -   Frames Processed: 91 (30.1 FPS)
+2026-01-24 11:47:27,603 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:27,603 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:27,603 -   Avg Detection Time: 13.85ms
+2026-01-24 11:47:27,603 -     - Gray Conversion: 1.05ms
+2026-01-24 11:47:27,603 -     - Marker Detection: 12.56ms
+2026-01-24 11:47:27,603 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:27,603 -   Memory Usage: 419.7 MB
+2026-01-24 11:47:27,603 -   CPU Usage: 119.7%
+2026-01-24 11:47:30,631 - 
+================================================================================
+2026-01-24 11:47:30,632 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:30,632 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:47:30,632 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:30,632 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:30,632 -   Avg Detection Time: 12.97ms
+2026-01-24 11:47:30,632 -     - Gray Conversion: 0.97ms
+2026-01-24 11:47:30,632 -     - Marker Detection: 11.77ms
+2026-01-24 11:47:30,632 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:30,633 -   Memory Usage: 419.7 MB
+2026-01-24 11:47:30,633 -   CPU Usage: 129.7%
+2026-01-24 11:47:33,637 - 
+================================================================================
+2026-01-24 11:47:33,638 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:33,638 -   Frames Processed: 90 (29.9 FPS)
+2026-01-24 11:47:33,638 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:33,638 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:33,638 -   Avg Detection Time: 12.29ms
+2026-01-24 11:47:33,638 -     - Gray Conversion: 1.10ms
+2026-01-24 11:47:33,638 -     - Marker Detection: 10.98ms
+2026-01-24 11:47:33,638 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:33,638 -   Memory Usage: 422.3 MB
+2026-01-24 11:47:33,639 -   CPU Usage: 119.6%
+2026-01-24 11:47:36,638 - 
+================================================================================
+2026-01-24 11:47:36,638 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:36,638 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 11:47:36,638 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:36,639 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:36,639 -   Avg Detection Time: 12.68ms
+2026-01-24 11:47:36,639 -     - Gray Conversion: 1.19ms
+2026-01-24 11:47:36,639 -     - Marker Detection: 11.26ms
+2026-01-24 11:47:36,639 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:36,640 -   Memory Usage: 424.9 MB
+2026-01-24 11:47:36,640 -   CPU Usage: 119.4%
+2026-01-24 11:47:39,644 - 
+================================================================================
+2026-01-24 11:47:39,644 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:39,644 -   Frames Processed: 90 (29.9 FPS)
+2026-01-24 11:47:39,644 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:39,644 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:39,645 -   Avg Detection Time: 13.75ms
+2026-01-24 11:47:39,645 -     - Gray Conversion: 1.15ms
+2026-01-24 11:47:39,645 -     - Marker Detection: 12.35ms
+2026-01-24 11:47:39,645 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:39,645 -   Memory Usage: 424.9 MB
+2026-01-24 11:47:39,645 -   CPU Usage: 119.7%
+2026-01-24 11:47:42,645 - 
+================================================================================
+2026-01-24 11:47:42,645 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:42,645 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 11:47:42,645 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:42,645 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:42,645 -   Avg Detection Time: 13.88ms
+2026-01-24 11:47:42,645 -     - Gray Conversion: 0.97ms
+2026-01-24 11:47:42,646 -     - Marker Detection: 12.68ms
+2026-01-24 11:47:42,646 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:42,646 -   Memory Usage: 424.9 MB
+2026-01-24 11:47:42,646 -   CPU Usage: 99.7%
+2026-01-24 11:47:45,672 - 
+================================================================================
+2026-01-24 11:47:45,672 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:45,672 -   Frames Processed: 91 (30.1 FPS)
+2026-01-24 11:47:45,672 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:45,672 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:45,672 -   Avg Detection Time: 13.39ms
+2026-01-24 11:47:45,673 -     - Gray Conversion: 0.98ms
+2026-01-24 11:47:45,673 -     - Marker Detection: 12.19ms
+2026-01-24 11:47:45,673 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:45,673 -   Memory Usage: 424.9 MB
+2026-01-24 11:47:45,673 -   CPU Usage: 119.6%
+2026-01-24 11:47:48,673 - 
+================================================================================
+2026-01-24 11:47:48,673 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:47:48,673 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 11:47:48,674 -   Frames Skipped (rate limit): 0
+2026-01-24 11:47:48,674 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:47:48,674 -   Avg Detection Time: 14.00ms
+2026-01-24 11:47:48,674 -     - Gray Conversion: 1.18ms
+2026-01-24 11:47:48,674 -     - Marker Detection: 12.55ms
+2026-01-24 11:47:48,674 -     - BBox Calculation: 0.00ms
+2026-01-24 11:47:48,674 -   Memory Usage: 424.9 MB
+2026-01-24 11:47:48,674 -   CPU Usage: 109.7%
+2026-01-24 11:58:01,879 - 
+================================================================================
+2026-01-24 11:58:01,880 - ArUco Detector Performance Stats (last 13.1s):
+2026-01-24 11:58:01,881 -   Frames Processed: 1 (0.1 FPS)
+2026-01-24 11:58:01,881 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:01,881 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:01,881 -   Avg Detection Time: 10.71ms
+2026-01-24 11:58:01,881 -     - Gray Conversion: 0.83ms
+2026-01-24 11:58:01,882 -     - Marker Detection: 9.60ms
+2026-01-24 11:58:01,882 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:01,882 -   Memory Usage: 330.1 MB
+2026-01-24 11:58:01,882 -   CPU Usage: 109.6%
+2026-01-24 11:58:04,882 - 
+================================================================================
+2026-01-24 11:58:04,883 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:58:04,883 -   Frames Processed: 91 (30.1 FPS)
+2026-01-24 11:58:04,883 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:04,883 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:04,884 -   Avg Detection Time: 9.67ms
+2026-01-24 11:58:04,884 -     - Gray Conversion: 1.18ms
+2026-01-24 11:58:04,884 -     - Marker Detection: 8.21ms
+2026-01-24 11:58:04,884 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:04,884 -   Memory Usage: 356.9 MB
+2026-01-24 11:58:04,884 -   CPU Usage: 79.4%
+2026-01-24 11:58:07,911 - 
+================================================================================
+2026-01-24 11:58:07,912 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:58:07,912 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:58:07,912 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:07,912 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:07,912 -   Avg Detection Time: 9.63ms
+2026-01-24 11:58:07,913 -     - Gray Conversion: 1.18ms
+2026-01-24 11:58:07,913 -     - Marker Detection: 8.18ms
+2026-01-24 11:58:07,913 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:07,913 -   Memory Usage: 402.7 MB
+2026-01-24 11:58:07,913 -   CPU Usage: 89.7%
+2026-01-24 11:58:10,912 - 
+================================================================================
+2026-01-24 11:58:10,912 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:58:10,913 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 11:58:10,913 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:10,913 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:10,913 -   Avg Detection Time: 9.66ms
+2026-01-24 11:58:10,913 -     - Gray Conversion: 1.19ms
+2026-01-24 11:58:10,913 -     - Marker Detection: 8.20ms
+2026-01-24 11:58:10,914 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:10,914 -   Memory Usage: 364.1 MB
+2026-01-24 11:58:10,914 -   CPU Usage: 99.6%
+2026-01-24 11:58:13,916 - 
+================================================================================
+2026-01-24 11:58:13,917 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:58:13,917 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 11:58:13,917 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:13,917 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:13,917 -   Avg Detection Time: 9.60ms
+2026-01-24 11:58:13,917 -     - Gray Conversion: 1.17ms
+2026-01-24 11:58:13,918 -     - Marker Detection: 8.17ms
+2026-01-24 11:58:13,918 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:13,918 -   Memory Usage: 403.2 MB
+2026-01-24 11:58:13,918 -   CPU Usage: 79.7%
+2026-01-24 11:58:16,947 - 
+================================================================================
+2026-01-24 11:58:16,948 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:58:16,948 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 11:58:16,948 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:16,948 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:16,948 -   Avg Detection Time: 9.38ms
+2026-01-24 11:58:16,949 -     - Gray Conversion: 1.11ms
+2026-01-24 11:58:16,949 -     - Marker Detection: 7.98ms
+2026-01-24 11:58:16,949 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:16,949 -   Memory Usage: 405.0 MB
+2026-01-24 11:58:16,949 -   CPU Usage: 89.7%
+2026-01-24 11:58:19,954 - 
+================================================================================
+2026-01-24 11:58:19,954 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:58:19,955 -   Frames Processed: 90 (29.9 FPS)
+2026-01-24 11:58:19,955 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:19,955 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:19,955 -   Avg Detection Time: 11.21ms
+2026-01-24 11:58:19,955 -     - Gray Conversion: 1.11ms
+2026-01-24 11:58:19,955 -     - Marker Detection: 9.82ms
+2026-01-24 11:58:19,955 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:19,955 -   Memory Usage: 427.3 MB
+2026-01-24 11:58:19,956 -   CPU Usage: 109.7%
+2026-01-24 11:58:22,958 - 
+================================================================================
+2026-01-24 11:58:22,958 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:58:22,958 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 11:58:22,958 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:22,959 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:22,959 -   Avg Detection Time: 18.01ms
+2026-01-24 11:58:22,959 -     - Gray Conversion: 1.02ms
+2026-01-24 11:58:22,959 -     - Marker Detection: 16.76ms
+2026-01-24 11:58:22,959 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:22,959 -   Memory Usage: 433.5 MB
+2026-01-24 11:58:22,959 -   CPU Usage: 79.7%
+2026-01-24 11:58:25,958 - 
+================================================================================
+2026-01-24 11:58:25,958 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 11:58:25,958 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 11:58:25,959 -   Frames Skipped (rate limit): 0
+2026-01-24 11:58:25,959 -   Total Detections: 0 (0.0/sec)
+2026-01-24 11:58:25,959 -   Avg Detection Time: 24.98ms
+2026-01-24 11:58:25,959 -     - Gray Conversion: 0.90ms
+2026-01-24 11:58:25,959 -     - Marker Detection: 23.87ms
+2026-01-24 11:58:25,959 -     - BBox Calculation: 0.00ms
+2026-01-24 11:58:25,959 -   Memory Usage: 434.2 MB
+2026-01-24 11:58:25,959 -   CPU Usage: 99.7%
+2026-01-24 12:07:10,333 - 
+================================================================================
+2026-01-24 12:07:10,334 - ArUco Detector Performance Stats (last 22.4s):
+2026-01-24 12:07:10,335 -   Frames Processed: 1 (0.0 FPS)
+2026-01-24 12:07:10,335 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:10,336 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:10,336 -   Avg Detection Time: 18.41ms
+2026-01-24 12:07:10,336 -     - Gray Conversion: 0.61ms
+2026-01-24 12:07:10,336 -     - Marker Detection: 17.59ms
+2026-01-24 12:07:10,336 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:10,336 -   Memory Usage: 340.2 MB
+2026-01-24 12:07:10,337 -   CPU Usage: 89.7%
+2026-01-24 12:07:13,337 - 
+================================================================================
+2026-01-24 12:07:13,338 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:13,338 -   Frames Processed: 89 (29.6 FPS)
+2026-01-24 12:07:13,338 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:13,338 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:13,338 -   Avg Detection Time: 9.35ms
+2026-01-24 12:07:13,338 -     - Gray Conversion: 1.15ms
+2026-01-24 12:07:13,338 -     - Marker Detection: 7.89ms
+2026-01-24 12:07:13,339 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:13,339 -   Memory Usage: 367.0 MB
+2026-01-24 12:07:13,339 -   CPU Usage: 99.6%
+2026-01-24 12:07:16,342 - 
+================================================================================
+2026-01-24 12:07:16,343 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:16,343 -   Frames Processed: 92 (30.6 FPS)
+2026-01-24 12:07:16,343 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:16,343 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:16,343 -   Avg Detection Time: 9.56ms
+2026-01-24 12:07:16,343 -     - Gray Conversion: 1.15ms
+2026-01-24 12:07:16,343 -     - Marker Detection: 8.15ms
+2026-01-24 12:07:16,343 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:16,344 -   Memory Usage: 367.0 MB
+2026-01-24 12:07:16,344 -   CPU Usage: 139.6%
+2026-01-24 12:07:19,375 - 
+================================================================================
+2026-01-24 12:07:19,375 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:19,375 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 12:07:19,375 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:19,376 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:19,376 -   Avg Detection Time: 9.86ms
+2026-01-24 12:07:19,376 -     - Gray Conversion: 1.21ms
+2026-01-24 12:07:19,376 -     - Marker Detection: 8.38ms
+2026-01-24 12:07:19,377 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:19,377 -   Memory Usage: 372.4 MB
+2026-01-24 12:07:19,377 -   CPU Usage: 129.5%
+2026-01-24 12:07:22,407 - 
+================================================================================
+2026-01-24 12:07:22,408 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:22,408 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 12:07:22,408 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:22,408 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:22,409 -   Avg Detection Time: 9.63ms
+2026-01-24 12:07:22,409 -     - Gray Conversion: 1.21ms
+2026-01-24 12:07:22,409 -     - Marker Detection: 8.13ms
+2026-01-24 12:07:22,409 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:22,409 -   Memory Usage: 372.4 MB
+2026-01-24 12:07:22,409 -   CPU Usage: 139.3%
+2026-01-24 12:07:25,409 - 
+================================================================================
+2026-01-24 12:07:25,409 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:25,409 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 12:07:25,410 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:25,410 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:25,410 -   Avg Detection Time: 9.77ms
+2026-01-24 12:07:25,410 -     - Gray Conversion: 1.28ms
+2026-01-24 12:07:25,410 -     - Marker Detection: 8.17ms
+2026-01-24 12:07:25,410 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:25,410 -   Memory Usage: 372.7 MB
+2026-01-24 12:07:25,410 -   CPU Usage: 99.2%
+2026-01-24 12:07:28,413 - 
+================================================================================
+2026-01-24 12:07:28,413 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:28,413 -   Frames Processed: 90 (29.9 FPS)
+2026-01-24 12:07:28,413 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:28,414 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:28,414 -   Avg Detection Time: 9.51ms
+2026-01-24 12:07:28,414 -     - Gray Conversion: 1.27ms
+2026-01-24 12:07:28,414 -     - Marker Detection: 7.95ms
+2026-01-24 12:07:28,414 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:28,414 -   Memory Usage: 372.7 MB
+2026-01-24 12:07:28,414 -   CPU Usage: 149.6%
+2026-01-24 12:07:31,440 - 
+================================================================================
+2026-01-24 12:07:31,440 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:31,440 -   Frames Processed: 91 (30.1 FPS)
+2026-01-24 12:07:31,441 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:31,441 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:31,441 -   Avg Detection Time: 8.97ms
+2026-01-24 12:07:31,441 -     - Gray Conversion: 1.12ms
+2026-01-24 12:07:31,441 -     - Marker Detection: 7.59ms
+2026-01-24 12:07:31,441 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:31,442 -   Memory Usage: 372.9 MB
+2026-01-24 12:07:31,442 -   CPU Usage: 109.4%
+2026-01-24 12:07:34,441 - 
+================================================================================
+2026-01-24 12:07:34,442 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:34,442 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 12:07:34,442 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:34,442 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:34,442 -   Avg Detection Time: 8.96ms
+2026-01-24 12:07:34,442 -     - Gray Conversion: 1.09ms
+2026-01-24 12:07:34,442 -     - Marker Detection: 7.61ms
+2026-01-24 12:07:34,443 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:34,443 -   Memory Usage: 372.9 MB
+2026-01-24 12:07:34,443 -   CPU Usage: 119.6%
+2026-01-24 12:07:37,447 - 
+================================================================================
+2026-01-24 12:07:37,447 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:37,447 -   Frames Processed: 90 (29.9 FPS)
+2026-01-24 12:07:37,447 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:37,447 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:37,447 -   Avg Detection Time: 9.26ms
+2026-01-24 12:07:37,447 -     - Gray Conversion: 1.10ms
+2026-01-24 12:07:37,448 -     - Marker Detection: 7.88ms
+2026-01-24 12:07:37,448 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:37,448 -   Memory Usage: 411.7 MB
+2026-01-24 12:07:37,448 -   CPU Usage: 59.8%
+2026-01-24 12:07:40,470 - 
+================================================================================
+2026-01-24 12:07:40,470 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:40,471 -   Frames Processed: 91 (30.1 FPS)
+2026-01-24 12:07:40,471 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:40,471 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:40,471 -   Avg Detection Time: 8.96ms
+2026-01-24 12:07:40,471 -     - Gray Conversion: 1.12ms
+2026-01-24 12:07:40,472 -     - Marker Detection: 7.57ms
+2026-01-24 12:07:40,472 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:40,472 -   Memory Usage: 413.5 MB
+2026-01-24 12:07:40,472 -   CPU Usage: 49.8%
+2026-01-24 12:07:43,475 - 
+================================================================================
+2026-01-24 12:07:43,475 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:43,476 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 12:07:43,477 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:43,477 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:43,478 -   Avg Detection Time: 8.09ms
+2026-01-24 12:07:43,478 -     - Gray Conversion: 1.09ms
+2026-01-24 12:07:43,478 -     - Marker Detection: 6.76ms
+2026-01-24 12:07:43,478 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:43,479 -   Memory Usage: 413.5 MB
+2026-01-24 12:07:43,479 -   CPU Usage: 99.6%
+2026-01-24 12:07:46,508 - 
+================================================================================
+2026-01-24 12:07:46,509 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:46,509 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 12:07:46,509 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:46,509 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:46,509 -   Avg Detection Time: 8.24ms
+2026-01-24 12:07:46,509 -     - Gray Conversion: 1.11ms
+2026-01-24 12:07:46,510 -     - Marker Detection: 6.89ms
+2026-01-24 12:07:46,510 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:46,510 -   Memory Usage: 413.5 MB
+2026-01-24 12:07:46,510 -   CPU Usage: 99.6%
+2026-01-24 12:07:49,510 - 
+================================================================================
+2026-01-24 12:07:49,510 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:49,511 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 12:07:49,511 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:49,511 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:49,511 -   Avg Detection Time: 8.97ms
+2026-01-24 12:07:49,511 -     - Gray Conversion: 1.15ms
+2026-01-24 12:07:49,511 -     - Marker Detection: 7.54ms
+2026-01-24 12:07:49,511 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:49,511 -   Memory Usage: 413.5 MB
+2026-01-24 12:07:49,511 -   CPU Usage: 109.6%
+2026-01-24 12:07:52,540 - 
+================================================================================
+2026-01-24 12:07:52,540 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:07:52,540 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 12:07:52,541 -   Frames Skipped (rate limit): 0
+2026-01-24 12:07:52,541 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:07:52,541 -   Avg Detection Time: 8.18ms
+2026-01-24 12:07:52,541 -     - Gray Conversion: 1.10ms
+2026-01-24 12:07:52,541 -     - Marker Detection: 6.82ms
+2026-01-24 12:07:52,541 -     - BBox Calculation: 0.00ms
+2026-01-24 12:07:52,541 -   Memory Usage: 416.3 MB
+2026-01-24 12:07:52,541 -   CPU Usage: 99.6%
+2026-01-24 12:12:19,866 - 
+================================================================================
+2026-01-24 12:12:19,867 - ArUco Detector Performance Stats (last 22.8s):
+2026-01-24 12:12:19,867 -   Frames Processed: 1 (0.0 FPS)
+2026-01-24 12:12:19,868 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:19,868 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:19,868 -   Avg Detection Time: 28.51ms
+2026-01-24 12:12:19,868 -     - Gray Conversion: 1.16ms
+2026-01-24 12:12:19,868 -     - Marker Detection: 27.15ms
+2026-01-24 12:12:19,869 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:19,869 -   Memory Usage: 338.1 MB
+2026-01-24 12:12:19,869 -   CPU Usage: 99.6%
+2026-01-24 12:12:22,898 - 
+================================================================================
+2026-01-24 12:12:22,898 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:22,899 -   Frames Processed: 92 (30.3 FPS)
+2026-01-24 12:12:22,899 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:22,899 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:22,900 -   Avg Detection Time: 9.22ms
+2026-01-24 12:12:22,900 -     - Gray Conversion: 1.16ms
+2026-01-24 12:12:22,900 -     - Marker Detection: 7.80ms
+2026-01-24 12:12:22,900 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:22,900 -   Memory Usage: 366.8 MB
+2026-01-24 12:12:22,901 -   CPU Usage: 89.7%
+2026-01-24 12:12:25,928 - 
+================================================================================
+2026-01-24 12:12:25,929 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:25,929 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 12:12:25,929 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:25,929 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:25,930 -   Avg Detection Time: 8.96ms
+2026-01-24 12:12:25,930 -     - Gray Conversion: 1.20ms
+2026-01-24 12:12:25,930 -     - Marker Detection: 7.51ms
+2026-01-24 12:12:25,930 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:25,930 -   Memory Usage: 371.7 MB
+2026-01-24 12:12:25,930 -   CPU Usage: 88.9%
+2026-01-24 12:12:28,929 - 
+================================================================================
+2026-01-24 12:12:28,931 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:28,932 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 12:12:28,932 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:28,933 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:28,934 -   Avg Detection Time: 9.05ms
+2026-01-24 12:12:28,934 -     - Gray Conversion: 1.22ms
+2026-01-24 12:12:28,935 -     - Marker Detection: 7.58ms
+2026-01-24 12:12:28,936 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:28,936 -   Memory Usage: 372.0 MB
+2026-01-24 12:12:28,936 -   CPU Usage: 79.3%
+2026-01-24 12:12:31,961 - 
+================================================================================
+2026-01-24 12:12:31,962 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:31,962 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 12:12:31,962 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:31,962 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:31,962 -   Avg Detection Time: 9.40ms
+2026-01-24 12:12:31,962 -     - Gray Conversion: 1.26ms
+2026-01-24 12:12:31,963 -     - Marker Detection: 7.89ms
+2026-01-24 12:12:31,963 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:31,963 -   Memory Usage: 415.1 MB
+2026-01-24 12:12:31,963 -   CPU Usage: 99.6%
+2026-01-24 12:12:34,962 - 
+================================================================================
+2026-01-24 12:12:34,963 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:34,963 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 12:12:34,963 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:34,963 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:34,964 -   Avg Detection Time: 9.45ms
+2026-01-24 12:12:34,964 -     - Gray Conversion: 1.26ms
+2026-01-24 12:12:34,964 -     - Marker Detection: 7.93ms
+2026-01-24 12:12:34,964 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:34,964 -   Memory Usage: 415.1 MB
+2026-01-24 12:12:34,964 -   CPU Usage: 99.6%
+2026-01-24 12:12:37,997 - 
+================================================================================
+2026-01-24 12:12:37,997 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:37,997 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 12:12:37,998 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:37,998 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:37,998 -   Avg Detection Time: 9.14ms
+2026-01-24 12:12:37,998 -     - Gray Conversion: 1.16ms
+2026-01-24 12:12:37,998 -     - Marker Detection: 7.70ms
+2026-01-24 12:12:37,998 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:37,999 -   Memory Usage: 416.4 MB
+2026-01-24 12:12:37,999 -   CPU Usage: 89.6%
+2026-01-24 12:12:41,003 - 
+================================================================================
+2026-01-24 12:12:41,003 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:41,003 -   Frames Processed: 90 (29.9 FPS)
+2026-01-24 12:12:41,003 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:41,004 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:41,004 -   Avg Detection Time: 8.89ms
+2026-01-24 12:12:41,004 -     - Gray Conversion: 1.13ms
+2026-01-24 12:12:41,004 -     - Marker Detection: 7.48ms
+2026-01-24 12:12:41,004 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:41,004 -   Memory Usage: 415.1 MB
+2026-01-24 12:12:41,004 -   CPU Usage: 119.5%
+2026-01-24 12:12:44,006 - 
+================================================================================
+2026-01-24 12:12:44,006 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:44,006 -   Frames Processed: 90 (30.0 FPS)
+2026-01-24 12:12:44,006 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:44,006 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:44,007 -   Avg Detection Time: 9.16ms
+2026-01-24 12:12:44,007 -     - Gray Conversion: 1.21ms
+2026-01-24 12:12:44,007 -     - Marker Detection: 7.67ms
+2026-01-24 12:12:44,007 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:44,007 -   Memory Usage: 418.7 MB
+2026-01-24 12:12:44,007 -   CPU Usage: 99.6%
+2026-01-24 12:12:47,030 - 
+================================================================================
+2026-01-24 12:12:47,030 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:47,031 -   Frames Processed: 91 (30.1 FPS)
+2026-01-24 12:12:47,031 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:47,031 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:47,031 -   Avg Detection Time: 8.78ms
+2026-01-24 12:12:47,031 -     - Gray Conversion: 1.18ms
+2026-01-24 12:12:47,031 -     - Marker Detection: 7.35ms
+2026-01-24 12:12:47,031 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:47,031 -   Memory Usage: 418.7 MB
+2026-01-24 12:12:47,031 -   CPU Usage: 129.5%
+2026-01-24 12:12:50,068 - 
+================================================================================
+2026-01-24 12:12:50,068 - ArUco Detector Performance Stats (last 3.0s):
+2026-01-24 12:12:50,069 -   Frames Processed: 91 (30.0 FPS)
+2026-01-24 12:12:50,069 -   Frames Skipped (rate limit): 0
+2026-01-24 12:12:50,069 -   Total Detections: 0 (0.0/sec)
+2026-01-24 12:12:50,069 -   Avg Detection Time: 8.47ms
+2026-01-24 12:12:50,069 -     - Gray Conversion: 1.16ms
+2026-01-24 12:12:50,069 -     - Marker Detection: 7.06ms
+2026-01-24 12:12:50,069 -     - BBox Calculation: 0.00ms
+2026-01-24 12:12:50,069 -   Memory Usage: 418.7 MB
+2026-01-24 12:12:50,069 -   CPU Usage: 109.5%

@@ -262,7 +262,7 @@ import psutil
 import os
 import logging
 from pathlib import Path
-from collections import defaultdict
+from collections import defaultdict, deque
 
 
 class ArucoFireDetector:
@@ -315,10 +315,10 @@ class ArucoFireDetector:
             "total_frames_processed": 0,
             "total_detections": 0,
             "frames_skipped": 0,
-            "detect_times": [],  # Detection processing times
-            "gray_conversion_times": [],
-            "marker_detection_times": [],
-            "bbox_calculation_times": [],
+            "detect_times": deque(maxlen=200),  # Bounded deque prevents memory leak
+            "gray_conversion_times": deque(maxlen=200),
+            "marker_detection_times": deque(maxlen=200),
+            "bbox_calculation_times": deque(maxlen=200),
             "last_stats_log_time": time.time()
         }
 
@@ -477,7 +477,7 @@ class ArucoFireDetector:
         current_time = time.time()
         elapsed = current_time - self.perf_stats["last_stats_log_time"]
 
-        if elapsed >= 10.0:  # Log every 10 seconds
+        if elapsed >= 3.0:  # Log every 3 seconds
             # Calculate averages
             avg_detect_time = np.mean(self.perf_stats["detect_times"]) if self.perf_stats["detect_times"] else 0
             avg_gray_time = np.mean(self.perf_stats["gray_conversion_times"]) if self.perf_stats["gray_conversion_times"] else 0
@@ -509,14 +509,10 @@ class ArucoFireDetector:
             print(f"📊 ArUco Stats: {fps:.1f} FPS | {detections_per_sec:.1f} det/s | "
                   f"{avg_detect_time*1000:.1f}ms avg | {mem_current:.1f}MB | {cpu_percent:.1f}% CPU")
 
-            # Reset counters
+            # Reset counters (deques auto-evict, no need to clear)
             self.perf_stats["total_frames_processed"] = 0
             self.perf_stats["total_detections"] = 0
             self.perf_stats["frames_skipped"] = 0
-            self.perf_stats["detect_times"].clear()
-            self.perf_stats["gray_conversion_times"].clear()
-            self.perf_stats["marker_detection_times"].clear()
-            self.perf_stats["bbox_calculation_times"].clear()
             self.perf_stats["last_stats_log_time"] = current_time
 
     def draw_detections(self, frame, detection_result):

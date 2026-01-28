@@ -40,7 +40,7 @@ RTSP_USE_TCP = True
 SIYI_SERVER_IP = "192.168.144.25"
 SIYI_SERVER_PORT = 37260
 USE_SIYI_CONTROL = SIYI_AVAILABLE and True  # set False to skip camera control even if siyi_sdk exists
-SHOW_VIDEO_PREVIEW = 1  # set True to show live video window (press 'q' to quit)
+SHOW_VIDEO_PREVIEW = 0  # set True to show live video window (press 'q' to quit)
 PRINT_FRAMES = False  # set True to print frame array to console
 
 
@@ -194,7 +194,7 @@ class SIYICamController:
     def is_available(self):
         return self.cam is not None
 
-    def setup_cam(self, yaw=0.0, pitch=-0.0):
+    def setup_cam(self, yaw=0.0, pitch=-90.0):
         if not self.cam:
             print("[WARN] SIYI control not available.")
             return False
@@ -221,12 +221,19 @@ def make_rtsp_pipeline(host: str, port: int, path: str, use_tcp: bool = True) ->
         return rtsp_url
     # Use the same pipeline string you provided. Adjust latency if you want.
     protocols = "tcp" if use_tcp else "udp"
+    # gst_pipeline = (
+    #     f"rtspsrc location={rtsp_url} protocols={protocols} latency=0 ! "
+    #     "rtph265depay ! h265parse ! nvv4l2decoder ! "
+    #     "nvvidconv ! video/x-raw, format=BGRx ! "
+    #     "videoconvert ! video/x-raw, format=BGR ! "
+    #     "appsink drop=True sync=false"
+    # )
+
     gst_pipeline = (
-        f"rtspsrc location={rtsp_url} protocols={protocols} latency=0 ! "
-        "rtph265depay ! h265parse ! nvv4l2decoder ! "
-        "nvvidconv ! video/x-raw, format=BGRx ! "
-        "videoconvert ! video/x-raw, format=BGR ! "
-        "appsink drop=True sync=false"
+        f"rtspsrc location=rtsp://192.168.144.25:8554/video2 protocols=tcp latency=100 ! "
+        "rtph265depay ! h265parse ! avdec_h265 ! "
+        "videoconvert ! video/x-raw,format=BGR ! "
+        "appsink drop=true sync=false"
     )
     return gst_pipeline
 

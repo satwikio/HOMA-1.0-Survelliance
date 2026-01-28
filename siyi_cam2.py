@@ -268,11 +268,14 @@ class SIYICam:
         # )
 
         gst_pipeline = (
-            f"rtspsrc location=rtsp://{self.server_ip}:8554/main.264 protocols=tcp latency=100 ! "
+            f"rtspsrc location=rtsp://192.168.144.25:8554/video1 protocols=tcp latency=100 ! "
             "rtph265depay ! h265parse ! avdec_h265 ! "
             "videoconvert ! video/x-raw,format=BGR ! "
             "appsink drop=true sync=false"
         )
+
+
+
 
         print("📡 Opening GStreamer pipeline...")
         self.cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)

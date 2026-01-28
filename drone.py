@@ -2545,7 +2545,7 @@ import grpc  # CRITICAL: Needed to catch MAVSDK crashes
 import psutil
 import logging
 from pathlib import Path
-from collections import defaultdict
+from collections import defaultdict, deque
 
 from aiortc import RTCPeerConnection, VideoStreamTrack, RTCSessionDescription
 from aiortc.sdp import candidate_from_sdp
@@ -2806,9 +2806,9 @@ class DroneClient:
         self.detection_perf_stats = {
             "frames_received": 0,
             "detections_sent": 0,
-            "frame_encode_times": [],
-            "websocket_send_times": [],
-            "total_process_times": [],
+            "frame_encode_times": deque(maxlen=200),  # Bounded deque prevents memory leak
+            "websocket_send_times": deque(maxlen=200),
+            "total_process_times": deque(maxlen=200),
             "last_stats_log_time": time.time()
         }
 
@@ -3168,11 +3168,13 @@ class DroneClient:
             # Run detection (timed internally in detector)
             result = self.detector.detect(frame_bgr, drone_lat=lat, drone_lon=lon, drone_alt=alt)
 
+
             if result and self.websocket:
                 # Step 1: Frame encoding
                 encode_start = time.time()
-                _, buffer = cv2.imencode('.jpg', frame_bgr, [cv2.IMWRITE_JPEG_QUALITY, 95])
+                _, buffer = cv2.imencode('.jpg', frame_bgr, [cv2.IMWRITE_JPEG_QUALITY, 85])  # Reduced from 95 to 85
                 frame_b64 = base64.b64encode(buffer).decode('utf-8')
+                del buffer  # Free JPEG buffer immediately
                 encode_time = time.time() - encode_start
                 self.detection_perf_stats["frame_encode_times"].append(encode_time)
 
@@ -3189,6 +3191,10 @@ class DroneClient:
                 await self.websocket.send(json.dumps(msg))
                 send_time = time.time() - send_start
                 self.detection_perf_stats["websocket_send_times"].append(send_time)
+
+                # Explicitly free memory after send
+                del frame_b64
+                del msg
 
                 # Track successful sends
                 self.detection_perf_stats["detections_sent"] += 1
@@ -3214,13 +3220,17 @@ class DroneClient:
 
         except Exception as e:
             print(f"❌ Detection processing error: {e}")
+            # Clean up any allocated memory even on error
+            import gc
+            gc.collect()
+
 
     def _log_detection_periodic_stats(self):
         """Log comprehensive detection processing stats every 10 seconds"""
         current_time = time.time()
         elapsed = current_time - self.detection_perf_stats["last_stats_log_time"]
 
-        if elapsed >= 10.0:  # Log every 10 seconds
+        if elapsed >= 3.0:  # Log every 3 seconds
             # Calculate averages
             avg_encode_time = np.mean(self.detection_perf_stats["frame_encode_times"]) if self.detection_perf_stats["frame_encode_times"] else 0
             avg_send_time = np.mean(self.detection_perf_stats["websocket_send_times"]) if self.detection_perf_stats["websocket_send_times"] else 0
@@ -3250,12 +3260,9 @@ class DroneClient:
                   f"Encode: {avg_encode_time*1000:.1f}ms | Send: {avg_send_time*1000:.1f}ms | "
                   f"{mem_current:.1f}MB | {cpu_percent:.1f}% CPU")
 
-            # Reset counters
+            # Reset counters (deques auto-evict, no need to clear)
             self.detection_perf_stats["frames_received"] = 0
             self.detection_perf_stats["detections_sent"] = 0
-            self.detection_perf_stats["frame_encode_times"].clear()
-            self.detection_perf_stats["websocket_send_times"].clear()
-            self.detection_perf_stats["total_process_times"].clear()
             self.detection_perf_stats["last_stats_log_time"] = current_time
 
 
