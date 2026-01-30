@@ -2541,6 +2541,7 @@ import aiohttp
 import numpy as np
 import base64
 import os
+import threading
 import grpc  # CRITICAL: Needed to catch MAVSDK crashes
 import psutil
 import logging
@@ -2570,9 +2571,11 @@ EXIT_CRITICAL_ERROR = 12
 
 # === Global Camera Instance ===
 # Initialize globally to share between threads
+# siyi_cam_ = SIYICam(telemetry_provider=lambda: TelemetrySnapshot().get())
 siyi_cam_ = SIYICam()
 siyi_cam_.setup_cam()
-# siyi_cam_.start_recording()
+siyi_cam_.start_recording()
+
 
 class VideoHealthMonitor:
     """
@@ -2750,6 +2753,36 @@ class WebcamVideoTrack(VideoStreamTrack):
             video_frame.time_base = time_base
             return video_frame
 
+
+class TelemetrySnapshot:
+    """
+    Thread-safe telemetry cache that updates at configurable rate.
+    Prevents redundant telemetry fetches for high-FPS frame processing.
+    """
+    def __init__(self, update_rate_hz=5):
+        self.update_interval = 1.0 / update_rate_hz
+        self.last_update = 0
+        self.snapshot = {}
+        self.lock = threading.Lock()
+        
+    def update(self, telemetry_dict):
+        """Called by telemetry loop to refresh snapshot"""
+        with self.lock:
+            self.snapshot = telemetry_dict.copy()
+            self.snapshot['captured_at'] = time.time()
+            self.last_update = time.time()
+    
+    def get(self):
+        """Returns latest telemetry snapshot (thread-safe)"""
+        with self.lock:
+            return self.snapshot.copy()
+    
+    def get_age_ms(self):
+        """Returns age of current snapshot in milliseconds"""
+        with self.lock:
+            return (time.time() - self.last_update) * 1000
+
+
 class DroneClient:
     def __init__(self):
         self.websocket = None
@@ -2788,7 +2821,9 @@ class DroneClient:
         
         from video_quality import BandwidthMonitor
         self.bandwidth_monitor = BandwidthMonitor(check_interval=5.0)
-
+        self.telemetry_snapshot = TelemetrySnapshot(update_rate_hz=5)
+        self.cam.set_telemetry_provider(lambda: self.telemetry_snapshot.get())
+    
         # Object detection
         if self.drone_type == "recon":
             self.detector = ArucoFireDetector(
@@ -3126,6 +3161,8 @@ class DroneClient:
                     if "num_satellites" in self.latest.get("gps_info", {}):
                          telemetry["num_satellites"] = self.latest["gps_info"]["num_satellites"]
                          telemetry["fix_type"] = self.latest["gps_info"]["fix_type"]
+
+                self.telemetry_snapshot.update(telemetry)
 
                 if self.websocket:
                     await self.websocket.send(json.dumps(telemetry))

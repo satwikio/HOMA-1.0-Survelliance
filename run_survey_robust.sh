@@ -20,8 +20,12 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 
 # Satwik laptop
-export BACKEND_URL="http://100.88.6.111:8001"  
-export WS_URL="ws://100.88.6.111:8001"
+# export BACKEND_URL="http://100.88.6.111:8001"  
+# export WS_URL="ws://100.88.6.111:8001"
+
+# Lakshya Laptop
+export BACKEND_URL="http://100.125.62.54:8001"  
+export WS_URL="ws://100.125.62.54:8001"
 
 
 # Run the auto-restart wrapper
