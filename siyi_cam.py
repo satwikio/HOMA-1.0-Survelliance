@@ -70,6 +70,8 @@
 import sys
 import os
 from time import sleep
+sys.path.insert(0, "/home/nanosuper/opencv_build/build/lib/python3/")
+
 import cv2
 
 # ---- Add parent directory to path ----
@@ -107,8 +109,8 @@ class SIYICam:
         sleep(0.5)
 
         # Disconnect SDK (you can keep connection open if you need control during stream)
-        self.cam.disconnect()
-        print("🔌 Camera disconnected from control interface.")
+        # self.cam.disconnect()
+        # print("🔌 Camera disconnected from control interface.")
 
     def stream_video(self):
         """Start RTSP stream using GStreamer and display via OpenCV"""
@@ -123,7 +125,7 @@ class SIYICam:
         gst_pipeline = (
             f"rtspsrc location=rtsp://{self.server_ip}:8554/main.264 protocols=tcp latency=100 ! "
             "rtph265depay ! h265parse ! avdec_h265 ! "
-            "videoconvert ! video/x-raw,format=BGR ! "
+            "videoconvert ! video/x-raw, format=BGR ! "
             "appsink drop=true sync=false"
         )
 

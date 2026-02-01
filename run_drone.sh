@@ -36,6 +36,7 @@ export SECRET_KEY="${SECRET_KEY:-drone_aus_123}"
 export BACKEND_URL="${BACKEND_URL:-http://localhost:8001}"
 export WS_URL="${WS_URL:-ws://localhost:8001}"
 export USE_DUMMY_TELEMETRY="${USE_DUMMY_TELEMETRY:-True}"
+export DETECTION_MODE="${DETECTION_MODE:-aruco}"
 
 # Log file based on drone ID
 LOG_FILE="${LOG_DIR}/${DRONE_ID}_$(date +%Y%m%d).log"
@@ -216,7 +217,8 @@ run_drone_script() {
         log_info "Script path: ${SCRIPT_PATH}"
 
         # Start the Python script and capture its PID
-        python3 "${SCRIPT_PATH}" &
+        # python3 "${SCRIPT_PATH}" &
+        python3 "${SCRIPT_PATH}" --mode "${DETECTION_MODE}" &
         SCRIPT_PID=$!
         echo ${SCRIPT_PID} > "${PID_FILE}"
 
@@ -335,6 +337,7 @@ log_info "Drone Type: ${DRONE_TYPE}"
 log_info "Backend URL: ${BACKEND_URL}"
 log_info "WebSocket URL: ${WS_URL}"
 log_info "Script: ${SCRIPT_PATH}"
+log_info "Detection Mode: ${DETECTION_MODE}"
 if [ "$VENV_ACTIVATED" = true ]; then
     log_success "Virtual environment activated: ${VIRTUAL_ENV}"
 else

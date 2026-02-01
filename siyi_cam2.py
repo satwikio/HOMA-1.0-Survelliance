@@ -350,7 +350,7 @@ class SIYICam:
             return
 
         # gst_pipeline = (
-        #     f"rtspsrc location=rtsp://{self.server_ip}:8554/main.264 protocols=tcp latency=10 ! "
+        #     f"rtspsrc location=rtsp://{self.server_ip}:8554/main.264 protocols=tcp latency=100 ! "
         #     "rtph265depay ! h265parse ! nvv4l2decoder ! "
         #     "nvvidconv ! video/x-raw, format=BGRx ! "
         #     "videoconvert ! video/x-raw, format=BGR ! "
