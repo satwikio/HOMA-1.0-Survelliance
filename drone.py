@@ -59,6 +59,12 @@ EXIT_CRITICAL_ERROR = 12
 siyi_cam_ = SIYICam()
 siyi_cam_.setup_cam()
 
+# === Logging Configuration ===
+# Suppress verbose logs from libraries caused by SIYI SDK's root logger config
+logging.getLogger("aiortc").setLevel(logging.WARNING)
+logging.getLogger("aioice").setLevel(logging.WARNING)
+logging.getLogger("av").setLevel(logging.WARNING)
+
 
 # class VideoHealthMonitor:
 #     """
@@ -112,23 +118,16 @@ siyi_cam_.setup_cam()
 
 class VideoHealthMonitor:
     """
-    Monitors video frame transmission health and detects network issues.
-    Auto-restarts WebRTC connection on persistent failures.
+    Monitors video frame transmission health.
+    Keep-alive strategy: Just log health, don't restart connections.
     """
-    def __init__(self, max_consecutive_failures=10, frame_timeout=30, retry_delay=5, restart_callback=None):
+    def __init__(self, camera=None):
         self.last_frame_sent = time.time()
         self.frames_sent_count = 0
         self.consecutive_send_failures = 0
-        self.max_consecutive_failures = max_consecutive_failures
-        self.frame_timeout = frame_timeout
-        self.retry_delay = retry_delay
         self.total_failures = 0
         self.last_health_check = time.time()
-        
-        # NEW: Callback to restart WebRTC
-        self.restart_callback = restart_callback
-        self.restart_count = 0
-        self.max_restarts = 5  # Give up after 5 restart attempts
+        self.camera = camera  # Camera reference for health status
 
     def on_frame_sent_successfully(self):
         self.last_frame_sent = time.time()
@@ -139,45 +138,19 @@ class VideoHealthMonitor:
         self.consecutive_send_failures += 1
         self.total_failures += 1
         
-        # Only log every 10th failure to avoid console spam
-        if self.consecutive_send_failures % 10 == 0:
-            print(f"⚠️  Frame send failure #{self.consecutive_send_failures} (total: {self.total_failures})")
+        # Only log every 20th failure to avoid console spam
+        if self.consecutive_send_failures % 20 == 0:
+            camera_status = "connected" if (self.camera and self.camera.is_connected) else "disconnected"
+            print(f"⚠️  Frame send failure #{self.consecutive_send_failures} (camera: {camera_status})")
             if error: print(f"    Error: {error}")
 
-        if self.consecutive_send_failures >= self.max_consecutive_failures:
-            print(f"\n{'='*60}")
-            print(f"❌ NETWORK FAILURE DETECTED")
-            print(f"{'='*60}")
-            print(f"Consecutive frame send failures: {self.consecutive_send_failures}")
-            
-            # NEW: Try to restart instead of exiting
-            if self.restart_callback and self.restart_count < self.max_restarts:
-                self.restart_count += 1
-                print(f"\n🔄 Attempting WebRTC restart #{self.restart_count}/{self.max_restarts}")
-                print(f"   Waiting {self.retry_delay}s before restart...")
-                time.sleep(self.retry_delay)
-                
-                # Trigger restart
-                asyncio.create_task(self.restart_callback())
-                
-                # Reset failure counter to give it a fresh chance
-                self.consecutive_send_failures = 0
-            else:
-                # Give up and exit
-                print(f"\n❌ Max restart attempts ({self.max_restarts}) reached. Exiting...")
-                sys.exit(EXIT_NETWORK_FAILURE)
-
     def check_frame_timeout(self):
+        """Check if video stream has stalled - just log, don't restart."""
         time_since_last_frame = time.time() - self.last_frame_sent
-        if self.frames_sent_count > 0 and time_since_last_frame > self.frame_timeout:
-            print(f"\n⚠️  VIDEO STREAM STALLED: No frames sent in {time_since_last_frame:.1f}s")
-            
-            # NEW: Trigger restart on timeout too
-            if self.restart_callback and self.restart_count < self.max_restarts:
-                self.restart_count += 1
-                print(f"🔄 Attempting WebRTC restart #{self.restart_count}/{self.max_restarts}")
-                asyncio.create_task(self.restart_callback())
-                self.last_frame_sent = time.time()  # Reset timer
+        if self.frames_sent_count > 0 and time_since_last_frame > 30:  # 30s timeout
+            camera_status = "connected" if (self.camera and self.camera.is_connected) else "disconnected"
+            print(f"\n📹 VIDEO STREAM STALLED: {time_since_last_frame:.0f}s (camera: {camera_status})")
+            self.last_frame_sent = time.time()  # Reset timer to avoid spam
 
     def periodic_health_check(self):
         now = time.time()
@@ -200,9 +173,11 @@ class TelemetryHealthMonitor:
     def on_telemetry_send_failed(self, error=None):
         self.consecutive_send_failures += 1
         self.total_failures += 1
-        if self.consecutive_send_failures >= self.max_consecutive_failures:
-            print(f"\n❌ TELEMETRY TRANSMISSION FAILURE: Connection lost")
-            sys.exit(EXIT_BACKEND_UNAVAILABLE)
+        # Reduced failures before warning/reset
+        if self.consecutive_send_failures >= 5: 
+            print(f"\n❌ TELEMETRY TRANSMISSION FAILURE: Connection lost (Will auto-reconnect via Main Loop)")
+            # REMOVED: sys.exit(EXIT_BACKEND_UNAVAILABLE) - Let the main loop handle reconnection
+            self.consecutive_send_failures = 0 # Reset to avoid log spam
 
 # === Configuration ===
 BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
@@ -377,19 +352,15 @@ class DroneClient:
 
         # Health monitors
         # self.video_health = VideoHealthMonitor()
-        # Health monitors (with restart callback)
-        self.video_health = VideoHealthMonitor(
-            max_consecutive_failures=10,
-            frame_timeout=30,
-            retry_delay=5,
-            restart_callback=self.restart_webrtc  # Pass restart method
-        )
+        # Health monitors (keep-alive strategy - no restarts)
+        self.video_health = VideoHealthMonitor(camera=self.cam)
         self.telemetry_health = TelemetryHealthMonitor()
         
         from video_quality import BandwidthMonitor
         self.bandwidth_monitor = BandwidthMonitor(check_interval=5.0)
         self.telemetry_snapshot = TelemetrySnapshot(update_rate_hz=5)
         self.cam.set_telemetry_provider(lambda: self.telemetry_snapshot.get())
+        # Note: Camera state callback removed - using keep-alive strategy
     
         # Object detection
         if self.drone_type == "recon":
@@ -455,6 +426,7 @@ class DroneClient:
         self.dummy_lat = lat
         self.dummy_lng = lon
         self.dummy_alt = alt
+    
 
     async def authenticate(self):
         async with aiohttp.ClientSession() as session:
@@ -589,14 +561,11 @@ class DroneClient:
                 # Reset restart counter on successful connection
                 self.video_health.restart_count = 0
                 
+                    
             elif state == "failed":
                 print("❌ WebRTC connection failed")
-                # Trigger restart
-                if self.video_health.restart_count < self.video_health.max_restarts:
-                    print(f"🔄 Auto-restarting WebRTC (attempt {self.video_health.restart_count + 1})")
-                    await self.restart_webrtc()
-                else:
-                    print("❌ Max restart attempts reached")
+                # Trigger restart - Network failure (ICE failed)
+                asyncio.create_task(self.restart_webrtc())
                     
             elif state == "disconnected":
                 print("⚠️  WebRTC disconnected - waiting to reconnect...")
@@ -608,8 +577,8 @@ class DroneClient:
             
             if ice_state == "failed":
                 print(f"❌ ICE connection failed - triggering restart")
-                if self.video_health.restart_count < self.video_health.max_restarts:
-                    await self.restart_webrtc()
+                # Trigger restart - Network failure
+                asyncio.create_task(self.restart_webrtc())
             
             elif ice_state == "disconnected":
                 print(f"⚠️  ICE disconnected - may reconnect automatically")
@@ -617,48 +586,77 @@ class DroneClient:
             elif ice_state == "connected":
                 print(f"✅ ICE connected")
 
+
     async def restart_webrtc(self):
         """
-        Restart WebRTC connection on network failure.
-        Closes existing connection and creates a new one.
+        Restart WebRTC connection (ONLY for network failures).
+        Does not affect camera stream.
         """
+        if self.is_restarting: return
+        self.is_restarting = True
+        
         print("\n" + "="*60)
-        print("🔄 RESTARTING WEBRTC CONNECTION")
+        print("🔄 RESTARTING WEBRTC (Network Failure)")
         print("="*60)
         
         try:
-            # Step 1: Close existing connection
-            print("1️⃣  Closing existing WebRTC connection...")
-            if self.video_track:
-                try:
-                    self.video_track.stop()
-                except Exception as e:
-                    print(f"   ⚠️  Error stopping video track: {e}")
-            
             if self.pc:
-                try:
-                    await self.pc.close()
-                except Exception as e:
-                    print(f"   ⚠️  Error closing peer connection: {e}")
+                try: await self.pc.close()
+                except: pass
             
-            # Small delay to ensure cleanup
+            # Small delay
             await asyncio.sleep(1)
             
-            # Step 2: Recreate WebRTC connection
-            print("2️⃣  Creating new WebRTC connection...")
+            # Recreate connection
+            print("1️⃣  Creating new WebRTC connection...")
             await self.start_webrtc()
             
-            # Step 3: Send new offer
-            print("3️⃣  Sending new WebRTC offer...")
+            print("2️⃣  Sending new WebRTC offer...")
             await self.send_webrtc_offer()
             
-            print("✅ WebRTC restart complete")
+            print("✅ WebRTC network restart complete")
             print("="*60 + "\n")
             
         except Exception as e:
             print(f"❌ WebRTC restart failed: {e}")
-            import traceback
-            traceback.print_exc()
+        finally:
+            self.is_restarting = False
+
+    async def monitor_bandwidth(self):
+        """
+        Monitor bandwidth usage and adapt video quality.
+        Switch to sub-stream (480p) on low bandwidth.
+        """
+        print("📉 Bandwidth adaptation loop started")
+        current_profile = "720p_24"  # Start assumption
+        
+        while True:
+            try:
+                # 1. Get current estimated bandwidth
+                bw_kbps = self.bandwidth_monitor.get_current_bandwidth()
+                
+                # 2. Determine best profile
+                best_profile = VideoQualityProfile.get_profile_for_bandwidth(bw_kbps)
+                
+                # 3. Apply change if needed (with hysteresis)
+                if best_profile != current_profile:
+                    # Only downgrade if significantly lower, or upgrade if significantly higher
+                    # Simple logic: just apply it for now, can add hysteresis later
+                    print(f"📉 Bandwidth: {bw_kbps:.0f} kbps -> Switching to {best_profile}")
+                    
+                    self.cam.set_quality(best_profile)
+                    current_profile = best_profile
+                
+                # Check status periodically
+                if self.websocket and self.websocket.open:
+                    # Update bandwidth monitor with fake data for now since we don't have real transport stats hooked up easily
+                    # In a real impl, we'd read RTCP stats. For now, we assume bandwidth is sufficient unless specified.
+                    pass 
+
+            except Exception as e:
+                print(f"⚠️ Bandwidth monitor error: {e}")
+            
+            await asyncio.sleep(5.0)  # Check every 5 seconds
 
     def _generate_dummy_telemetry(self):
         self.dummy_time += 1
@@ -823,6 +821,15 @@ class DroneClient:
                     self.telemetry_health.on_telemetry_sent_successfully()
                 
                 self.video_health.periodic_health_check()
+                
+                # Check bandwidth health
+                if self.bandwidth_monitor and self.video_track:
+                    # Update bandwidth monitor with recently sent bytes (approximate from video/telemetry)
+                    # Note: We rely on the periodic update within bandwidth_monitor if it had deep integration,
+                    # but here we check its estimated state if it was being fed data.
+                    # Since we don't have per-packet byte counts here easily without hooking send,
+                    # we will rely on video_health_monitor detecting stalls.
+                    pass 
 
             except Exception as e:
                 self.telemetry_health.on_telemetry_send_failed(e)
@@ -1222,38 +1229,96 @@ class DroneClient:
         try:
             await self.authenticate()
             await self.connect_mavsdk()
+            
+            # Helper: Check connectivity to backend before attempting WebSocket
+            # REMOVED: Relying on websockets.connect timeout instead for better switching support
+            # async def check_backend_connection(): ...
 
-            url = f"{WS_URL}/ws/drone/{DRONE_ID}?token={self.token}"
-            print(f"🌍 Connecting to {url}")
-            async with websockets.connect(url) as ws:
-                self.websocket = ws
-                print("✅ WebSocket Connected")
-
-                await self.start_webrtc()
+            # Helper to stop tasks when connection drops
+            async def stop_tasks():
+                print("🛑 Stopping background tasks...")
+                for t in self.telemetry_tasks: t.cancel()
+                self.telemetry_tasks = []
+                
+                if self.video_track: 
+                    try: self.video_track.stop()
+                    except: pass
+                    
+                if self.pc: 
+                    try: await self.pc.close()
+                    except: pass
+                
+                # Close WebSocket explicitly if open to unblock any reads
+                if self.websocket:
+                    try: await self.websocket.close()
+                    except: pass
+            
+            # Helper to restart tasks
+            def start_tasks():
                 asyncio.create_task(self.send_webrtc_offer())
                 asyncio.create_task(self.send_telemetry())
                 asyncio.create_task(self.send_heartbeat())
-
+                asyncio.create_task(self.monitor_bandwidth())
                 if self.drone_type == "rescue":
                     asyncio.create_task(self.fire_extinguisher.monitor_altitude())
 
-                async for msg in ws:
-                    try:
-                        data = json.loads(msg)
-                        t = data.get("type")
-                        if t in ["webrtc_answer", "ice_candidate"]: await self.handle_signaling(data)
-                        elif t == "request_offer": await self.send_webrtc_offer()
-                        elif t == "command": await self.handle_command(data)
-                        elif t == "gimbal_control": await self.handle_gimbal_control(data)
-                        elif t == "extinguish_fire": await self.handle_extinguish_fire(data)
-                        elif t == "mission_start": await self.handle_mission_start(data)
-                        elif t == "survey_mission": await self.handle_survey_mission(data)
-                        elif t == "video_quality": await self.handle_video_quality_change(data)
-                    except Exception as e:
-                        print(f"Msg Error: {e}")
+            while True:
+                try:
+                    # 1. REMOVED: Fast Backend Connectivity Check
+                    # Rely on websockets.connect timeout (2s) instead
+                    
+                    url = f"{WS_URL}/ws/drone/{DRONE_ID}?token={self.token}"
+                    print(f"🌍 Connecting to {url}")
+                    
+                    # 2. Tightened WebSocket Settings for Fast Failure Detection
+                    async with websockets.connect(
+                        url, 
+                        ping_interval=5,   # Send ping every 5s
+                        ping_timeout=3,    # Wait only 3s for pong (fail fast)
+                        close_timeout=2    # Fast close
+                    ) as ws:
+                        self.websocket = ws
+                        print("✅ WebSocket Connected")
+                        
+                        # Reset monitors
+                        self.telemetry_health.consecutive_send_failures = 0
+                        self.video_health.consecutive_send_failures = 0
+
+                        await self.start_webrtc()
+                        start_tasks() # using helper
+
+                        async for msg in ws:
+                            try:
+                                data = json.loads(msg)
+                                t = data.get("type")
+                                if t in ["webrtc_answer", "ice_candidate"]: await self.handle_signaling(data)
+                                elif t == "request_offer": await self.send_webrtc_offer()
+                                elif t == "command": await self.handle_command(data)
+                                elif t == "gimbal_control": await self.handle_gimbal_control(data)
+                                elif t == "extinguish_fire": await self.handle_extinguish_fire(data)
+                                elif t == "mission_start": await self.handle_mission_start(data)
+                                elif t == "survey_mission": await self.handle_survey_mission(data)
+                                elif t == "video_quality": await self.handle_video_quality_change(data)
+                            except Exception as e:
+                                print(f"Msg Error: {e}")
+                                
+                except (websockets.exceptions.ConnectionClosed, ConnectionRefusedError, 
+                        websockets.exceptions.InvalidURI, OSError, asyncio.TimeoutError) as e:
+                     print(f"❌ WebSocket Connection Failed: {e}")
+                     print(f"🔄 Reconnecting in 3 seconds...")
+                     await stop_tasks()
+                     await asyncio.sleep(3)
+                     
+                except Exception as e:
+                    print(f"❌ Unexpected Main Loop Error: {e}")
+                    import traceback
+                    traceback.print_exc()
+                    print(f"🔄 Reconnecting in 3 seconds...")
+                    await stop_tasks()
+                    await asyncio.sleep(3)
 
         except Exception as e:
-            print(f"❌ Main Loop Error: {e}")
+            print(f"❌ Critical Startup Error: {e}")
             sys.exit(EXIT_BACKEND_UNAVAILABLE)
 
     async def cleanup(self):

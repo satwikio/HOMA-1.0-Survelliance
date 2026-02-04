@@ -168,7 +168,7 @@ from siyi_sdk import SIYISDK
 
 
 class SIYICam:
-    def __init__(self, server_ip="192.168.144.25", port=37260, telemetry_provider=None):
+    def __init__(self, server_ip="192.168.144.25", port=37260, telemetry_provider=None, camera_state_callback=None):
         self.server_ip = server_ip
         self.cam = SIYISDK(server_ip=server_ip, port=port)
 
@@ -178,12 +178,31 @@ class SIYICam:
         self.frame_lock = threading.Lock()
         self.reader_thread = None
         self.telemetry_provider = telemetry_provider
+        
+        # --- Camera connection state tracking ---
+        self.is_connected = False
+        self.camera_state_callback = camera_state_callback  # Callback to notify drone.py
+        self.reconnect_attempts = 0
+        self.max_reconnect_attempts = 15  # Max attempts before cooldown (increased)
+        self.reconnect_backoff_base = 2.0  # Base delay for exponential backoff (reduced from 3.0)
+        self.cooldown_period = 30.0  # Cooldown after max attempts
+        self.last_reconnect_attempt = 0
+        
+        # --- Frame health tracking ---
+        self.last_frame_time = 0
+        self.frame_timeout = 1.0  # 1 second timeout for stale frames
+        self.reconnect_delay = 3.0  # Wait 3s before reconnecting (deprecated, using backoff)
 
         # --- Recording variables ---
         self.is_recording = False
         self.record_thread = None
+        self.is_recording = False
+        self.record_thread = None
         self.save_queue = queue.Queue()
         self.recording_path = ""
+        
+        # --- Stream Configuration ---
+        self.stream_name = "main.264"  # Default to main stream (HD)
 
     # ... [connect, move, zoom, setup_cam functions remain the same] ...
 
@@ -191,6 +210,21 @@ class SIYICam:
         """Set or update the telemetry provider callback"""
         self.telemetry_provider = provider
         print(f"📊 Telemetry provider {'updated' if provider else 'cleared'}")
+    
+    def set_camera_state_callback(self, callback):
+        """Set callback to notify when camera connection state changes"""
+        self.camera_state_callback = callback
+        print(f"📸 Camera state callback {'set' if callback else 'cleared'}")
+    
+    def _notify_camera_state_change(self, is_connected):
+        """Internal method to notify state changes"""
+        if self.is_connected != is_connected:
+            self.is_connected = is_connected
+            if self.camera_state_callback:
+                try:
+                    self.camera_state_callback(is_connected)
+                except Exception as e:
+                    print(f"⚠️ Camera state callback error: {e}")
 
     def connect(self):
         if not self.cam.connect():
@@ -342,68 +376,152 @@ class SIYICam:
         executor.shutdown(wait=True)
         print("✅ All frames saved to disk")
 
+    def set_quality(self, profile_name):
+        """
+        Switch stream quality dynamically.
+        Args:
+            profile_name: Profile name from VideoQualityProfile (e.g. "480p_24")
+        """
+        new_stream = "sub.264" if "480p" in profile_name else "main.264"
+        
+        if new_stream != self.stream_name:
+            print(f"🔄 Switching stream quality: {self.stream_name} -> {new_stream} ({profile_name})")
+            self.stream_name = new_stream
+            
+            # Trigger immediate reconnection with new stream
+            # We use a separate thread/task to avoid blocking usage
+            threading.Thread(target=self._reconnect_stream, daemon=True).start()
+        else:
+            print(f"ℹ️  Already using stream {self.stream_name} for profile {profile_name}")
+
 
     # ---------------- STREAM & CAPTURE ----------------
 
     def open_stream(self):
-        if self.cap is not None:
-            return
-
-        # gst_pipeline = (
-        #     f"rtspsrc location=rtsp://{self.server_ip}:8554/main.264 protocols=tcp latency=100 ! "
-        #     "rtph265depay ! h265parse ! nvv4l2decoder ! "
-        #     "nvvidconv ! video/x-raw, format=BGRx ! "
-        #     "videoconvert ! video/x-raw, format=BGR ! "
-        #     "appsink drop=true sync=false"
-        # )
+        """Open RTSP stream."""
+        if self.cap is not None and self.cap.isOpened():
+            return True
 
         gst_pipeline = (
-            f"rtspsrc location=rtsp://{self.server_ip}:8554/main.264 protocols=tcp latency=100 ! "
+            f"rtspsrc location=rtsp://{self.server_ip}:8554/{self.stream_name} protocols=tcp latency=100 timeout=3000000 ! "
             "rtph265depay ! h265parse ! avdec_h265 ! "
             "videoconvert ! video/x-raw,format=BGR ! "
             "appsink drop=true sync=false"
         )
 
-        # gst_pipeline = (
-        #     f"rtspsrc location=rtsp://192.168.144.25:8554/video1 protocols=tcp latency=100 ! "
-        #     "rtph265depay ! h265parse ! avdec_h265 ! "
-        #     "videoconvert ! video/x-raw,format=BGR ! "
-        #     "appsink drop=true sync=false"
-        # )
-
-
-
-
         print("📡 Opening GStreamer pipeline...")
-        self.cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)
+        try:
+            self.cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)
+            if not self.cap.isOpened():
+                print("❌ Failed to open RTSP stream")
+                self._notify_camera_state_change(False)
+                return False
+            print("✅ RTSP stream opened")
+            self._notify_camera_state_change(True)
+            return True
+        except Exception as e:
+            print(f"❌ Error opening stream: {e}")
+            self._notify_camera_state_change(False)
+            return False
 
-        if not self.cap.isOpened():
-            raise RuntimeError("❌ Failed to open RTSP stream")
+    def _reconnect_stream(self):
+        """Silent internal stream reconnection."""
+        if self.cap:
+            try:
+                self.cap.release()
+            except: pass
+            self.cap = None
+        
+        # Try to re-open
+        return self.open_stream()
+    
+
 
     def _reader_loop(self):
-        """Blocking frame reader (runs in background thread)."""
+        """
+        Keep-alive frame reader - stream stays open permanently.
+        GStreamer will auto-recover when camera reconnects.
+        """
+        consecutive_failures = 0
+        last_state_logged = None  # Track last logged state to avoid spam
+        
         while self.running:
-            ret, frame = self.cap.read()
-            if not ret:
-                time.sleep(0.01)
-                continue
-
-            # Update latest frame for display/processing
-            with self.frame_lock:
-                self.latest_frame = frame.copy()
-
-            # If recording is active, push a copy to the save queue
-            if self.is_recording:
-                # We use .copy() to ensure the frame isn't overwritten before being saved
-                try:
-                    telemetry = self.telemetry_provider() if self.telemetry_provider else {}
-
-                    self.save_queue.put_nowait({
-                        'frame':frame.copy(),
-                        'telemetry':telemetry
-                    })
-                except queue.Full:
-                    pass # Skip frame if disk I/O is too slow
+            try:
+                # Check if stream was never opened (startup failure)
+                if not self.cap or not self.cap.isOpened():
+                    if last_state_logged != "never_opened":
+                        print("⚠️  Camera stream not opened at startup")
+                        self._notify_camera_state_change(False)
+                        last_state_logged = "never_opened"
+                    time.sleep(1.0)
+                    continue
+                
+                # Try to read frame
+                ret, frame = self.cap.read()
+                
+                if not ret:
+                    # Read failed - camera likely disconnected
+                    consecutive_failures += 1
+                    
+                    # Log state change only once when transitioning to disconnected
+                    if consecutive_failures == 5 and last_state_logged != "disconnected":
+                        print(f"📸 Camera disconnected - keeping stream alive for auto-recovery")
+                        self._notify_camera_state_change(False)
+                        last_state_logged = "disconnected"
+                    
+                    # Clear stale frame
+                    with self.frame_lock:
+                        self.latest_frame = None
+                    
+                    # If we've failed too many times, trigger a silent internal reconnection
+                    # This is needed because OpenCV often can't recover from a broken pipe without re-initializing
+                    if consecutive_failures >= 15: # Wait ~1.5s before forcing reconnect
+                        time.sleep(1.0)
+                        self._reconnect_stream()
+                        # Don't reset failures yet, wait for successful read
+                    else:
+                         # Brief delay before next read attempt
+                        time.sleep(0.1)
+                    
+                    continue
+                
+                # Successful read - camera is working
+                if consecutive_failures > 0:
+                    # Log reconnection only if we were previously disconnected
+                    if last_state_logged == "disconnected":
+                        print(f"✅ Camera reconnected automatically (was down for {consecutive_failures} attempts)")
+                        self._notify_camera_state_change(True)
+                        last_state_logged = "connected"
+                    consecutive_failures = 0
+                
+                # Update frame
+                current_time = time.time()
+                with self.frame_lock:
+                    self.latest_frame = frame.copy()
+                    self.last_frame_time = current_time
+                
+                # If recording is active, push a copy to the save queue
+                if self.is_recording:
+                    try:
+                        telemetry = self.telemetry_provider() if self.telemetry_provider else {}
+                        self.save_queue.put_nowait({
+                            'frame': frame.copy(),
+                            'telemetry': telemetry
+                        })
+                    except queue.Full:
+                        pass  # Skip frame if disk I/O is too slow
+                        
+            except Exception as e:
+                # Unexpected error - log but keep stream alive
+                if last_state_logged != "error":
+                    print(f"⚠️  Camera read error: {e} (keeping stream alive)")
+                    last_state_logged = "error"
+                consecutive_failures += 1
+                with self.frame_lock:
+                    self.latest_frame = None
+                time.sleep(0.5)
+        
+        print("🛑 Frame reader thread stopped")
 
     def start(self):
         self.open_stream()
@@ -413,7 +531,14 @@ class SIYICam:
         print("▶️ Frame capture started")
 
     def get_frame(self):
+        """Get the latest frame, returns None if stale or unavailable."""
         with self.frame_lock:
+            # Check if frame is stale
+            if self.latest_frame is not None:
+                time_since_frame = time.time() - self.last_frame_time
+                if time_since_frame > self.frame_timeout:
+                    # Frame is stale, clear it
+                    self.latest_frame = None
             return self.latest_frame
 
     def stop(self):
