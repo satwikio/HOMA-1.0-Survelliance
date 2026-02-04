@@ -35,6 +35,7 @@ from go_align_drop_robust import go_align_drop, DroneController
 from siyi_cam2 import SIYICam
 from aruco_detector import ArucoFireDetector
 from fire_detection_test_model import FireDetector
+# from fire_detector_minimal import FireDetector
 from video_quality import VideoQualityProfile
 
 import argparse
@@ -57,15 +58,64 @@ EXIT_CRITICAL_ERROR = 12
 # siyi_cam_ = SIYICam(telemetry_provider=lambda: TelemetrySnapshot().get())
 siyi_cam_ = SIYICam()
 siyi_cam_.setup_cam()
-siyi_cam_.start_recording()
+
+
+# class VideoHealthMonitor:
+#     """
+#     Monitors video frame transmission health and detects network issues.
+#     Exits with specific error code if transmission fails persistently.
+#     """
+#     def __init__(self, max_consecutive_failures=10, frame_timeout=30, retry_delay=5):
+#         self.last_frame_sent = time.time()
+#         self.frames_sent_count = 0
+#         self.consecutive_send_failures = 0
+#         self.max_consecutive_failures = max_consecutive_failures
+#         self.frame_timeout = frame_timeout
+#         self.retry_delay = retry_delay
+#         self.total_failures = 0
+#         self.last_health_check = time.time()
+
+#     def on_frame_sent_successfully(self):
+#         self.last_frame_sent = time.time()
+#         self.frames_sent_count += 1
+#         self.consecutive_send_failures = 0
+
+#     def on_frame_send_failed(self, error=None):
+#         self.consecutive_send_failures += 1
+#         self.total_failures += 1
+        
+#         # Only log every 10th failure to avoid console spam
+#         if self.consecutive_send_failures % 10 == 0:
+#             print(f"⚠️  Frame send failure #{self.consecutive_send_failures} (total: {self.total_failures})")
+#             if error: print(f"    Error: {error}")
+
+#         if self.consecutive_send_failures >= self.max_consecutive_failures:
+#             print(f"\n{'='*60}")
+#             print(f"❌ NETWORK FAILURE DETECTED")
+#             print(f"{'='*60}")
+#             print(f"Consecutive frame send failures: {self.consecutive_send_failures}")
+#             print(f"\n🔄 Waiting {self.retry_delay}s before restart...")
+#             time.sleep(self.retry_delay)
+#             sys.exit(EXIT_NETWORK_FAILURE)
+
+#     def check_frame_timeout(self):
+#         time_since_last_frame = time.time() - self.last_frame_sent
+#         if self.frames_sent_count > 0 and time_since_last_frame > self.frame_timeout:
+#             print(f"\n⚠️  VIDEO STREAM STALLED: No frames sent in {time_since_last_frame:.1f}s")
+
+#     def periodic_health_check(self):
+#         now = time.time()
+#         if now - self.last_health_check > 10:
+#             self.last_health_check = now
+#             self.check_frame_timeout()
 
 
 class VideoHealthMonitor:
     """
     Monitors video frame transmission health and detects network issues.
-    Exits with specific error code if transmission fails persistently.
+    Auto-restarts WebRTC connection on persistent failures.
     """
-    def __init__(self, max_consecutive_failures=10, frame_timeout=30, retry_delay=5):
+    def __init__(self, max_consecutive_failures=10, frame_timeout=30, retry_delay=5, restart_callback=None):
         self.last_frame_sent = time.time()
         self.frames_sent_count = 0
         self.consecutive_send_failures = 0
@@ -74,6 +124,11 @@ class VideoHealthMonitor:
         self.retry_delay = retry_delay
         self.total_failures = 0
         self.last_health_check = time.time()
+        
+        # NEW: Callback to restart WebRTC
+        self.restart_callback = restart_callback
+        self.restart_count = 0
+        self.max_restarts = 5  # Give up after 5 restart attempts
 
     def on_frame_sent_successfully(self):
         self.last_frame_sent = time.time()
@@ -94,14 +149,35 @@ class VideoHealthMonitor:
             print(f"❌ NETWORK FAILURE DETECTED")
             print(f"{'='*60}")
             print(f"Consecutive frame send failures: {self.consecutive_send_failures}")
-            print(f"\n🔄 Waiting {self.retry_delay}s before restart...")
-            time.sleep(self.retry_delay)
-            sys.exit(EXIT_NETWORK_FAILURE)
+            
+            # NEW: Try to restart instead of exiting
+            if self.restart_callback and self.restart_count < self.max_restarts:
+                self.restart_count += 1
+                print(f"\n🔄 Attempting WebRTC restart #{self.restart_count}/{self.max_restarts}")
+                print(f"   Waiting {self.retry_delay}s before restart...")
+                time.sleep(self.retry_delay)
+                
+                # Trigger restart
+                asyncio.create_task(self.restart_callback())
+                
+                # Reset failure counter to give it a fresh chance
+                self.consecutive_send_failures = 0
+            else:
+                # Give up and exit
+                print(f"\n❌ Max restart attempts ({self.max_restarts}) reached. Exiting...")
+                sys.exit(EXIT_NETWORK_FAILURE)
 
     def check_frame_timeout(self):
         time_since_last_frame = time.time() - self.last_frame_sent
         if self.frames_sent_count > 0 and time_since_last_frame > self.frame_timeout:
             print(f"\n⚠️  VIDEO STREAM STALLED: No frames sent in {time_since_last_frame:.1f}s")
+            
+            # NEW: Trigger restart on timeout too
+            if self.restart_callback and self.restart_count < self.max_restarts:
+                self.restart_count += 1
+                print(f"🔄 Attempting WebRTC restart #{self.restart_count}/{self.max_restarts}")
+                asyncio.create_task(self.restart_callback())
+                self.last_frame_sent = time.time()  # Reset timer
 
     def periodic_health_check(self):
         now = time.time()
@@ -286,6 +362,7 @@ class DroneClient:
             time.sleep(2.0)
         except Exception as e:
             print(f"❌ Failed to start SIYI Camera: {e}")
+        self.record_mode = False
 
         # Dummy telemetry state
         self.dummy_lat = DUMMY_START_LAT
@@ -299,7 +376,14 @@ class DroneClient:
         self.drone_type = DRONE_TYPE
 
         # Health monitors
-        self.video_health = VideoHealthMonitor()
+        # self.video_health = VideoHealthMonitor()
+        # Health monitors (with restart callback)
+        self.video_health = VideoHealthMonitor(
+            max_consecutive_failures=10,
+            frame_timeout=30,
+            retry_delay=5,
+            restart_callback=self.restart_webrtc  # Pass restart method
+        )
         self.telemetry_health = TelemetryHealthMonitor()
         
         from video_quality import BandwidthMonitor
@@ -310,7 +394,9 @@ class DroneClient:
         # Object detection
         if self.drone_type == "recon":
             if DETECTION_MODE == "fire":
-                self.detector = FireDetector()
+                self.detector = FireDetector(
+                    detection_interval=0.05
+                    )
             else:            
                 self.detector = ArucoFireDetector(
                     dict_type=cv2.aruco.DICT_4X4_50,
@@ -491,6 +577,88 @@ class DroneClient:
                     }
                 }
                 await self.websocket.send(json.dumps(msg))
+                
+        @self.pc.on("connectionstatechange")
+        async def on_connection_state_change():
+            """Monitor WebRTC connection state and auto-restart on failure"""
+            state = self.pc.connectionState
+            print(f"🔗 WebRTC Connection State: {state}")
+            
+            if state == "connected":
+                print("✅ WebRTC connected successfully")
+                # Reset restart counter on successful connection
+                self.video_health.restart_count = 0
+                
+            elif state == "failed":
+                print("❌ WebRTC connection failed")
+                # Trigger restart
+                if self.video_health.restart_count < self.video_health.max_restarts:
+                    print(f"🔄 Auto-restarting WebRTC (attempt {self.video_health.restart_count + 1})")
+                    await self.restart_webrtc()
+                else:
+                    print("❌ Max restart attempts reached")
+                    
+            elif state == "disconnected":
+                print("⚠️  WebRTC disconnected - waiting to reconnect...")
+
+        @self.pc.on("iceconnectionstatechange")
+        async def on_ice_state_change():
+            """Monitor ICE connection state"""
+            ice_state = self.pc.iceConnectionState
+            
+            if ice_state == "failed":
+                print(f"❌ ICE connection failed - triggering restart")
+                if self.video_health.restart_count < self.video_health.max_restarts:
+                    await self.restart_webrtc()
+            
+            elif ice_state == "disconnected":
+                print(f"⚠️  ICE disconnected - may reconnect automatically")
+            
+            elif ice_state == "connected":
+                print(f"✅ ICE connected")
+
+    async def restart_webrtc(self):
+        """
+        Restart WebRTC connection on network failure.
+        Closes existing connection and creates a new one.
+        """
+        print("\n" + "="*60)
+        print("🔄 RESTARTING WEBRTC CONNECTION")
+        print("="*60)
+        
+        try:
+            # Step 1: Close existing connection
+            print("1️⃣  Closing existing WebRTC connection...")
+            if self.video_track:
+                try:
+                    self.video_track.stop()
+                except Exception as e:
+                    print(f"   ⚠️  Error stopping video track: {e}")
+            
+            if self.pc:
+                try:
+                    await self.pc.close()
+                except Exception as e:
+                    print(f"   ⚠️  Error closing peer connection: {e}")
+            
+            # Small delay to ensure cleanup
+            await asyncio.sleep(1)
+            
+            # Step 2: Recreate WebRTC connection
+            print("2️⃣  Creating new WebRTC connection...")
+            await self.start_webrtc()
+            
+            # Step 3: Send new offer
+            print("3️⃣  Sending new WebRTC offer...")
+            await self.send_webrtc_offer()
+            
+            print("✅ WebRTC restart complete")
+            print("="*60 + "\n")
+            
+        except Exception as e:
+            print(f"❌ WebRTC restart failed: {e}")
+            import traceback
+            traceback.print_exc()
 
     def _generate_dummy_telemetry(self):
         self.dummy_time += 1
@@ -832,7 +1000,15 @@ class DroneClient:
             elif cmd == "cancel_mission":
                 if self.drone_type == "rescue" and self.current_mission:
                     self.current_mission.cancel_mission()
-            
+            elif cmd == "start":
+                print("Started Local Recording")
+                self.record_mode = cmd
+                siyi_cam_.start_recording()
+            elif cmd == "stop":
+                print("Stopped Recording.")
+                self.record_mode = cmd
+                siyi_cam_.stop_recording()
+    
             # 3. Send Success Acknowledgement
             print(f"✅ Command '{cmd}' executed successfully")
             success_msg = {

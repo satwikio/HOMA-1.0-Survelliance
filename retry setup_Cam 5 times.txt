@@ -1,0 +1,9 @@
+retry setup_Cam 5 times
+restart wertc connection at all points of failures
+network issues - add bacdwitdh monitor - rstart network conncection
+frontend stuck on last frame - restart webrct
+
+mavsdk and rtsp should not retsrat everytime. unless hjardware issues.
+webrtc and ws should resrat and tryu autoconnecting on netwrok and bandwitdh isues.
+chain o frestart all the way upto frontend. 
+

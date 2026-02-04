@@ -211,7 +211,7 @@ class SIYICam:
         self.cam.requestFollowMode()
         sleep(1)
         target_yaw_deg = 0.0
-        target_pitch_deg = -90.0
+        target_pitch_deg = -0.0
         self.cam.requestSetAngles(target_yaw_deg, target_pitch_deg)
         sleep(1)
 
