@@ -183,6 +183,7 @@ class TelemetryHealthMonitor:
 BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 WS_URL = os.getenv("WS_URL", "ws://localhost:8000")
 DRONE_ID = os.getenv("DRONE_ID", "austin-recon-01")
+STREAM_TYPE = os.getenv("STREAM_TYPE", "direct")  # "direct" or "rf_relay"
 SECRET_KEY = os.getenv("SECRET_KEY", "drone_aus_123")
 DRONE_TYPE = os.getenv("DRONE_TYPE", "recon")
 USE_DUMMY_TELEMETRY = False
@@ -1267,8 +1268,8 @@ class DroneClient:
                     # 1. REMOVED: Fast Backend Connectivity Check
                     # Rely on websockets.connect timeout (2s) instead
                     
-                    url = f"{WS_URL}/ws/drone/{DRONE_ID}?token={self.token}"
-                    print(f"🌍 Connecting to {url}")
+                    url = f"{WS_URL}/ws/drone/{DRONE_ID}?token={self.token}&stream_type={STREAM_TYPE}"
+                    print(f"🌍 Connecting to {url} (stream: {STREAM_TYPE})")
                     
                     # 2. Tightened WebSocket Settings for Fast Failure Detection
                     async with websockets.connect(

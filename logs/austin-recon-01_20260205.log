@@ -1,0 +1,16 @@
+2026-02-05 11:53:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-02-05 11:53:19 [INFO] [0;34mDrone Auto-Restart Script[0m
+2026-02-05 11:53:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-02-05 11:53:19 [INFO] [0;34mDrone ID: austin-recon-01[0m
+2026-02-05 11:53:19 [INFO] [0;34mDrone Type: recon[0m
+2026-02-05 11:53:19 [INFO] [0;34mBackend URL: http://100.125.62.54:8001[0m
+2026-02-05 11:53:19 [INFO] [0;34mWebSocket URL: ws://100.125.62.54:8001[0m
+2026-02-05 11:53:19 [INFO] [0;34mScript: /Users/aditya/simhatel/HOMA-1.0-Survelliance/drone.py[0m
+2026-02-05 11:53:19 [INFO] [0;34mDetection Mode: aruco[0m
+2026-02-05 11:53:19 [WARN] [1;33mNo virtual environment activated[0m
+2026-02-05 11:53:19 [INFO] [0;34mLog: /Users/aditya/simhatel/HOMA-1.0-Survelliance/logs/austin-recon-01_20260205.log[0m
+2026-02-05 11:53:19 [INFO] [0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+2026-02-05 11:53:19 [INFO] [0;34mChecking if backend is available at http://100.125.62.54:8001...[0m
+2026-02-05 11:53:19 [INFO] [0;34mWebSocket URL: ws://100.125.62.54:8001[0m
+2026-02-05 11:53:32 [WARN] [1;33mShutdown signal received. Cleaning up...[0m
+2026-02-05 11:53:32 [SUCCESS] [0;32mCleanup complete. Exiting.[0m

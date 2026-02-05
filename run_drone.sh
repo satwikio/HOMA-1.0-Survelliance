@@ -32,15 +32,16 @@ LOG_DIR="${SCRIPT_DIR}/logs"
 # Drone configuration (read from environment or use defaults)
 export DRONE_ID="${DRONE_ID:-austin-recon-01}"
 export DRONE_TYPE="${DRONE_TYPE:-recon}"
+export STREAM_TYPE="${STREAM_TYPE:-direct}"  # "direct" or "rf_relay"
 export SECRET_KEY="${SECRET_KEY:-drone_aus_123}"
 export BACKEND_URL="${BACKEND_URL:-http://localhost:8001}"
 export WS_URL="${WS_URL:-ws://localhost:8001}"
 export USE_DUMMY_TELEMETRY="${USE_DUMMY_TELEMETRY:-True}"
 export DETECTION_MODE="${DETECTION_MODE:-aruco}"
 
-# Log file based on drone ID
-LOG_FILE="${LOG_DIR}/${DRONE_ID}_$(date +%Y%m%d).log"
-PID_FILE="${SCRIPT_DIR}/.drone_script_${DRONE_ID}.pid"
+# Log file and PID file based on drone ID AND stream type
+LOG_FILE="${LOG_DIR}/${DRONE_ID}_${STREAM_TYPE}_$(date +%Y%m%d).log"
+PID_FILE="${SCRIPT_DIR}/.drone_script_${DRONE_ID}_${STREAM_TYPE}.pid"
 
 # Activate virtual environment - try multiple locations
 VENV_ACTIVATED=false
@@ -334,6 +335,7 @@ log_info "Drone Auto-Restart Script"
 log_info "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 log_info "Drone ID: ${DRONE_ID}"
 log_info "Drone Type: ${DRONE_TYPE}"
+log_info "Stream Type: ${STREAM_TYPE}"
 log_info "Backend URL: ${BACKEND_URL}"
 log_info "WebSocket URL: ${WS_URL}"
 log_info "Script: ${SCRIPT_PATH}"
