@@ -405,7 +405,15 @@ class FireDetector:
         print("="*80 + "\n", flush=True)
         
         # ============ GPU OPTIMIZATION & INITIALIZATION ============
+        import gc
+
+        # ============ GPU OPTIMIZATION & INITIALIZATION ============
         try:
+            # Force cleanup before we even ask for CUDA context
+            gc.collect()
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+
             self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
             print(f"✅ Device selection: {self.device}", flush=True)
             
@@ -418,15 +426,18 @@ class FireDetector:
                 torch.backends.cudnn.enabled = True
                 
                 try:
-                    torch.cuda.set_per_process_memory_fraction(0.8)
-                    print("   ✅ GPU memory allocation: 80%", flush=True)
+                    # Reduced to 0.6 to minimize OOM on restart (fragmentation)
+                    torch.cuda.set_per_process_memory_fraction(0.6)
+                    print("   ✅ GPU memory allocation: 60%", flush=True)
                 except Exception as e:
                     print(f"   ⚠️  Could not set GPU memory fraction: {e}", flush=True)
+                    # Don't raise here, we can try to proceed
             else:
                 print("   ⚠️  WARNING: Running on CPU - will be VERY slow!", flush=True)
                 
         except Exception as e:
             print(f"❌ ERROR during GPU initialization: {e}", flush=True)
+            # If we fail here, fallback to CPU or crash
             raise
         
         # ============ MODEL LOADING WITH ERROR HANDLING ============
@@ -447,25 +458,39 @@ class FireDetector:
             print(f"❌ ERROR loading model: {e}", flush=True)
             raise
         
-        # ============ GPU WARM-UP ============
-        try:
-            print("\n🔥 Warming up GPU (this takes ~5 seconds)...", flush=True)
-            dummy = np.zeros((resize, resize, 3), dtype=np.uint8)
-            
-            for i in range(5):
-                _ = self.model(
-                    dummy, 
-                    device=self.device, 
-                    verbose=False,
-                    half=True if self.device == 'cuda' else False
-                )
-                print(f"   Warm-up iteration {i+1}/5 complete", flush=True)
-            
-            print("✅ GPU warm-up complete\n", flush=True)
-            
-        except Exception as e:
-            print(f"❌ ERROR during warm-up: {e}", flush=True)
-            raise
+        # ============ GPU WARM-UP (Robust) ============
+        if self.device == 'cuda':
+            try:
+                print("\n🔥 Warming up GPU (this takes ~5 seconds)...", flush=True)
+                dummy = np.zeros((resize, resize, 3), dtype=np.uint8)
+                
+                # Try warmup
+                for i in range(5):
+                    try:
+                        _ = self.model(
+                            dummy, 
+                            device=self.device, 
+                            verbose=False,
+                            half=True if self.device == 'cuda' else False
+                        )
+                        print(f"   Warm-up iteration {i+1}/5 complete", flush=True)
+                    except RuntimeError as e:
+                        if "out of memory" in str(e).lower() or "alloc" in str(e).lower():
+                             print(f"   ⚠️  Warmup OOM/Alloc error on iter {i+1}. Clearing cache...", flush=True)
+                             torch.cuda.empty_cache()
+                             # Stop warmup early if we are hitting limits, but don't crash the detector
+                             print(f"   ⚠️  Stopping warmup early to preserve stability.", flush=True)
+                             break
+                        else:
+                            raise e
+                
+                print("✅ GPU warm-up sequence finished\n", flush=True)
+                
+            except Exception as e:
+                print(f"⚠️  WARNING: GPU warm-up failed: {e}", flush=True)
+                print("    Skipping warmup. First detection might be slow.", flush=True)
+                # Do NOT raise here. Let it run.
+
         
         # ============ DETECTION CONFIGURATION ============
         self.detection_interval = detection_interval
@@ -952,7 +977,7 @@ if __name__ == "__main__":
     
     detector = FireDetector(
         model_path="yolov8n.pt",
-        detection_interval=0.5,
+        detection_interval=0.03,
         conf_threshold=0.4,
         resize=416,
         log_interval=3.0

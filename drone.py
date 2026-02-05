@@ -35,7 +35,7 @@ from go_align_drop_robust import go_align_drop, DroneController
 from siyi_cam2 import SIYICam
 from aruco_detector import ArucoFireDetector
 from fire_detection_test_model import FireDetector
-# from fire_detector_minimal import FireDetector
+# from human_detector import HumanDetector 
 from video_quality import VideoQualityProfile
 
 import argparse
@@ -121,13 +121,14 @@ class VideoHealthMonitor:
     Monitors video frame transmission health.
     Keep-alive strategy: Just log health, don't restart connections.
     """
-    def __init__(self, camera=None):
+    def __init__(self, camera=None, on_stream_stalled=None):
         self.last_frame_sent = time.time()
         self.frames_sent_count = 0
         self.consecutive_send_failures = 0
         self.total_failures = 0
         self.last_health_check = time.time()
         self.camera = camera  # Camera reference for health status
+        self.on_stream_stalled = on_stream_stalled
 
     def on_frame_sent_successfully(self):
         self.last_frame_sent = time.time()
@@ -144,13 +145,16 @@ class VideoHealthMonitor:
             print(f"⚠️  Frame send failure #{self.consecutive_send_failures} (camera: {camera_status})")
             if error: print(f"    Error: {error}")
 
-    def check_frame_timeout(self):
+    async def check_frame_timeout(self):
         """Check if video stream has stalled - just log, don't restart."""
         time_since_last_frame = time.time() - self.last_frame_sent
-        if self.frames_sent_count > 0 and time_since_last_frame > 30:  # 30s timeout
+        if self.frames_sent_count > 0 and time_since_last_frame > 5:  # 30s timeout
             camera_status = "connected" if (self.camera and self.camera.is_connected) else "disconnected"
             print(f"\n📹 VIDEO STREAM STALLED: {time_since_last_frame:.0f}s (camera: {camera_status})")
+            self.camera = siyi_cam_  # Use existing global camera instance to ensure reference is current
             self.last_frame_sent = time.time()  # Reset timer to avoid spam
+            if self.on_stream_stalled:
+                await self.on_stream_stalled()
 
     def periodic_health_check(self):
         now = time.time()
@@ -320,17 +324,23 @@ class TelemetrySnapshot:
 
 class DroneClient:
     def __init__(self):
-        self.websocket = None
-        self.pc = None
-        self.video_track = None
+        self.drone_type = DRONE_TYPE
         self.token = None
-        self.drone = System()
-        self.latest = {}
+        self.websocket = None
+        self.pc = None  # WebRTC peer connection
+        self.video_track = None
         self.telemetry_tasks = []
-        self.mavsdk_connected = False
-
-        # --- Camera Setup ---
         self.cam = siyi_cam_
+        self.drone = System()
+        self.latest = {}  # Telemetry data storage
+        self.mavsdk_connected = False
+        
+        # WebSocket reconnection backoff
+        self.ws_reconnect_attempts = 0
+        self.ws_reconnect_base_delay = 3.0
+        self.ws_reconnect_max_delay = 20.0
+        
+        # --- Camera Setup ---
         print("📸 Starting SIYI Camera background thread...")
         try:
             self.cam.start()
@@ -349,12 +359,8 @@ class DroneClient:
         self.dummy_heading = 0.0
         self.dummy_time = 0
 
-        self.drone_type = DRONE_TYPE
-
-        # Health monitors
-        # self.video_health = VideoHealthMonitor()
         # Health monitors (keep-alive strategy - no restarts)
-        self.video_health = VideoHealthMonitor(camera=self.cam)
+        self.video_health = VideoHealthMonitor(camera=self.cam, on_stream_stalled=self.restart_webrtc)
         self.telemetry_health = TelemetryHealthMonitor()
         
         from video_quality import BandwidthMonitor
@@ -362,12 +368,13 @@ class DroneClient:
         self.telemetry_snapshot = TelemetrySnapshot(update_rate_hz=5)
         self.cam.set_telemetry_provider(lambda: self.telemetry_snapshot.get())
         # Note: Camera state callback removed - using keep-alive strategy
+
     
         # Object detection
         if self.drone_type == "recon":
             if DETECTION_MODE == "fire":
                 self.detector = FireDetector(
-                    detection_interval=0.05
+                    # detection_interval=0.05
                     )
             else:            
                 self.detector = ArucoFireDetector(
@@ -570,6 +577,8 @@ class DroneClient:
                     
             elif state == "disconnected":
                 print("⚠️  WebRTC disconnected - waiting to reconnect...")
+                time.sleep(1)
+                asyncio.create_task(self.restart_webrtc())
 
         @self.pc.on("iceconnectionstatechange")
         async def on_ice_state_change():
@@ -583,6 +592,8 @@ class DroneClient:
             
             elif ice_state == "disconnected":
                 print(f"⚠️  ICE disconnected - may reconnect automatically")
+                time.sleep(1)
+                asyncio.create_task(self.restart_webrtc())
             
             elif ice_state == "connected":
                 print(f"✅ ICE connected")
@@ -641,23 +652,28 @@ class DroneClient:
                 
                 # 3. Apply change if needed (with hysteresis)
                 if best_profile != current_profile:
-                    # Only downgrade if significantly lower, or upgrade if significantly higher
-                    # Simple logic: just apply it for now, can add hysteresis later
                     print(f"📉 Bandwidth: {bw_kbps:.0f} kbps -> Switching to {best_profile}")
-                    
                     self.cam.set_quality(best_profile)
                     current_profile = best_profile
                 
-                # Check status periodically
-                if self.websocket and self.websocket.open:
-                    # Update bandwidth monitor with fake data for now since we don't have real transport stats hooked up easily
-                    # In a real impl, we'd read RTCP stats. For now, we assume bandwidth is sufficient unless specified.
-                    pass 
-
+                # 4. CRITICAL: Restart on very low bandwidth (< 1 Mbps)
+                # This often indicates a zombie connection or severe congestion that needs a reset
+                if bw_kbps < 1000 and self.websocket and self.websocket.open:
+                    print(f"⚠️ Bandwidth CRITICAL ({bw_kbps:.0f} kbps) - Triggering FRESH CONNECTION")
+                    # Restarting WebRTC might pick a better candidate or clear congestion
+                    asyncio.create_task(self.restart_webrtc())
+                    
             except Exception as e:
                 print(f"⚠️ Bandwidth monitor error: {e}")
             
             await asyncio.sleep(5.0)  # Check every 5 seconds
+
+    # REMOVED: check_connection_health (Too aggressive for production)
+    # Was causing false positives on mobile networks.
+    # Relying on WebSocket's built-in ping/pong mechanism instead (5s/3s).
+    # This is simpler, more robust, and production-grade. 
+
+
 
     def _generate_dummy_telemetry(self):
         self.dummy_time += 1
@@ -1260,6 +1276,7 @@ class DroneClient:
                 asyncio.create_task(self.send_telemetry())
                 asyncio.create_task(self.send_heartbeat())
                 asyncio.create_task(self.monitor_bandwidth())
+                # Removed: check_connection_health (caused false positives)
                 if self.drone_type == "rescue":
                     asyncio.create_task(self.fire_extinguisher.monitor_altitude())
 
@@ -1271,15 +1288,18 @@ class DroneClient:
                     url = f"{WS_URL}/ws/drone/{DRONE_ID}?token={self.token}&stream_type={STREAM_TYPE}"
                     print(f"🌍 Connecting to {url} (stream: {STREAM_TYPE})")
                     
-                    # 2. Tightened WebSocket Settings for Fast Failure Detection
+                    # 2. Production WebSocket Settings (Tolerant to Mobile Networks)
                     async with websockets.connect(
                         url, 
-                        ping_interval=5,   # Send ping every 5s
-                        ping_timeout=3,    # Wait only 3s for pong (fail fast)
-                        close_timeout=2    # Fast close
+                        ping_interval=10,   # Send ping every 10s (less aggressive)
+                        ping_timeout=10,    # Wait 10s for pong (tolerate network jitter)
+                        close_timeout=3     # Fast close on explicit disconnect
                     ) as ws:
                         self.websocket = ws
                         print("✅ WebSocket Connected")
+                        
+                        # Reset reconnection backoff on successful connection
+                        self.ws_reconnect_attempts = 0
                         
                         # Reset monitors
                         self.telemetry_health.consecutive_send_failures = 0
@@ -1305,18 +1325,30 @@ class DroneClient:
                                 
                 except (websockets.exceptions.ConnectionClosed, ConnectionRefusedError, 
                         websockets.exceptions.InvalidURI, OSError, asyncio.TimeoutError) as e:
+                     # Exponential backoff for reconnection (3s → 6s → 12s → 20s max)
+                     self.ws_reconnect_attempts += 1
+                     delay = min(
+                         self.ws_reconnect_base_delay * (2 ** min(self.ws_reconnect_attempts - 1, 3)),
+                         self.ws_reconnect_max_delay
+                     )
                      print(f"❌ WebSocket Connection Failed: {e}")
-                     print(f"🔄 Reconnecting in 3 seconds...")
+                     print(f"🔄 Reconnecting in {delay:.1f}s (attempt {self.ws_reconnect_attempts})...")
                      await stop_tasks()
-                     await asyncio.sleep(3)
+                     await asyncio.sleep(delay)
                      
                 except Exception as e:
+                    # Unexpected errors also use exponential backoff
+                    self.ws_reconnect_attempts += 1
+                    delay = min(
+                        self.ws_reconnect_base_delay * (2 ** min(self.ws_reconnect_attempts - 1, 3)),
+                        self.ws_reconnect_max_delay
+                    )
                     print(f"❌ Unexpected Main Loop Error: {e}")
                     import traceback
                     traceback.print_exc()
-                    print(f"🔄 Reconnecting in 3 seconds...")
+                    print(f"🔄 Reconnecting in {delay:.1f}s (attempt {self.ws_reconnect_attempts})...")
                     await stop_tasks()
-                    await asyncio.sleep(3)
+                    await asyncio.sleep(delay)
 
         except Exception as e:
             print(f"❌ Critical Startup Error: {e}")

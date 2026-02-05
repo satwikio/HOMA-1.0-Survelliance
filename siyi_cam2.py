@@ -165,12 +165,136 @@ parent_directory = os.path.dirname(current)
 sys.path.append(parent_directory)
 
 from siyi_sdk import SIYISDK
+try:
+    from siyi_sdk.siyi_message import COMMAND
+except ImportError:
+    # Fallback if specific path fails (e.g. running from source)
+    try:
+        from siyi_message import COMMAND
+    except ImportError:
+        print("⚠️  Could not import COMMAND from siyi_message. Using headers.")
 
+class SafeSIYISDK(SIYISDK):
+    """
+    Wrapper around SIYISDK to suppress infinite warning loops when camera is disconnected.
+    Also adds robustness to the receive loop.
+    """
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._last_error_log_time = 0
+        self._error_log_interval = 10.0  # Log errors at most once every 10 seconds
+        self._consecutive_errors = 0
+
+    def bufferCallback(self):
+        """
+        Overridden to catch 'Bad file descriptor' errors preventing log spam.
+        And preventing CPU spin on persistent errors.
+        """
+        try:
+            buff, addr = self._socket.recvfrom(self._BUFF_SIZE)
+        except Exception as e:
+            # Handle Bad file descriptor specifically to avoid infinite spam
+            err_str = str(e)
+            
+            # Check if it's the specific error we want to suppress
+            is_bad_fd = "[Errno 9] Bad file descriptor" in err_str
+            
+            now = time.time()
+            if now - self._last_error_log_time > self._error_log_interval:
+                if is_bad_fd:
+                    # Log fully if interval passed
+                    self._logger.warning("%s. Did not receive message within %s second(s) (suppressed partial logs)", e, self._rcv_wait_t)
+                else:
+                    self._logger.error(f"[bufferCallback] {e}")
+                
+                self._last_error_log_time = now
+                self._consecutive_errors = 0
+            else:
+                self._consecutive_errors += 1
+            
+            # Prevent CPU spin if we are hitting immediate errors
+            if self._consecutive_errors > 5:
+                time.sleep(0.1)
+            
+            return
+
+        # --- Re-implementation of message parsing/dispatching from base class ---
+        
+        buff_str = buff.hex()
+        # self._logger.debug("Buffer: %s", buff_str) 
+
+        # 10 bytes: STX+CTRL+Data_len+SEQ+CMD_ID+CRC16
+        #            2 + 1  +    2   + 2 +   1  + 2
+        MINIMUM_DATA_LENGTH = 10*2
+        HEADER = '5566'
+
+        # Go through the buffer
+        while(len(buff_str) >= MINIMUM_DATA_LENGTH):
+            if buff_str[0:4] != HEADER:
+                # Remove the 1st element and continue 
+                tmp = buff_str[1:]
+                buff_str = tmp
+                continue
+
+            # Now we got minimum amount of data. Check if we have enough
+            low_b = buff_str[6:8] # low byte
+            high_b = buff_str[8:10] # high byte
+            data_len_hex = high_b + low_b
+            data_len = int('0x' + data_len_hex, base=16)
+            char_len = data_len * 2
+
+            # Check if there is enough data (including payload)
+            if(len(buff_str) < (MINIMUM_DATA_LENGTH + char_len)):
+                # No useful data
+                buff_str = ''
+                break
+            
+            packet = buff_str[0:MINIMUM_DATA_LENGTH + char_len]
+            buff_str = buff_str[MINIMUM_DATA_LENGTH + char_len:]
+
+            # Finally decode the packet!
+            val = self._in_msg.decodeMsg(packet)
+            if val is None:
+                continue
+            
+            data, data_len, cmd_id, seq = val[0], val[1], val[2], val[3]
+
+            # Use COMMAND class for ID matching
+            if cmd_id == COMMAND.ACQUIRE_FW_VER:
+                self.parseFirmwareMsg(data, seq)
+            elif cmd_id == COMMAND.ACQUIRE_HW_ID:
+                self.parseHardwareIDMsg(data, seq)
+            elif cmd_id == COMMAND.ACQUIRE_GIMBAL_INFO:
+                self.parseGimbalInfoMsg(data, seq)
+            elif cmd_id == COMMAND.ACQUIRE_GIMBAL_ATT:
+                self.parseAttitudeMsg(data, seq)
+            elif cmd_id == COMMAND.FUNC_FEEDBACK_INFO:
+                self.parseFunctionFeedbackMsg(data, seq)
+            elif cmd_id == COMMAND.GIMBAL_SPEED:
+                self.parseGimbalSpeedMsg(data, seq)
+            elif cmd_id == COMMAND.AUTO_FOCUS:
+                self.parseAutoFocusMsg(data, seq)
+            elif cmd_id == COMMAND.MANUAL_FOCUS:
+                self.parseManualFocusMsg(data, seq)
+            elif cmd_id == COMMAND.MANUAL_ZOOM:
+                self.parseZoomMsg(data, seq)
+            elif cmd_id == COMMAND.CENTER:
+                self.parseGimbalCenterMsg(data, seq)
+            elif cmd_id == COMMAND.SET_GIMBAL_ATTITUDE:
+                self.parseSetGimbalAnglesMsg(data, seq)
+            elif cmd_id == COMMAND.SET_DATA_STREAM:
+                self.parseRequestStreamMsg()
+            elif cmd_id == COMMAND.CURRENT_ZOOM_VALUE:
+                self.parseCurrentZoomLevelMsg(data, seq)
+            else:
+                pass
+                # self._logger.warning("CMD ID is not recognized")
 
 class SIYICam:
     def __init__(self, server_ip="192.168.144.25", port=37260, telemetry_provider=None, camera_state_callback=None):
         self.server_ip = server_ip
-        self.cam = SIYISDK(server_ip=server_ip, port=port)
+        # Use SafeSIYISDK instead of standard SIYISDK
+        self.cam = SafeSIYISDK(server_ip=server_ip, port=port)
 
         self.cap = None
         self.running = False
