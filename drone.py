@@ -118,15 +118,15 @@ logging.getLogger("av").setLevel(logging.WARNING)
 class VideoHealthMonitor:
     """
     Monitors video frame transmission health.
-    Keep-alive strategy: Just log health, don't restart connections.
+    If no frames sent for 2s → triggers reconnection.
     """
-    def __init__(self, camera=None):
+    def __init__(self, camera=None, websocket_ref=None):
         self.last_frame_sent = time.time()
         self.frames_sent_count = 0
         self.consecutive_send_failures = 0
         self.total_failures = 0
-        self.last_health_check = time.time()
-        self.camera = camera  # Camera reference for health status
+        self.camera = camera
+        self.websocket_ref = websocket_ref  # Function that returns current websocket
 
     def on_frame_sent_successfully(self):
         self.last_frame_sent = time.time()
@@ -136,26 +136,32 @@ class VideoHealthMonitor:
     def on_frame_send_failed(self, error=None):
         self.consecutive_send_failures += 1
         self.total_failures += 1
-        
-        # Only log every 20th failure to avoid console spam
         if self.consecutive_send_failures % 20 == 0:
             camera_status = "connected" if (self.camera and self.camera.is_connected) else "disconnected"
             print(f"⚠️  Frame send failure #{self.consecutive_send_failures} (camera: {camera_status})")
             if error: print(f"    Error: {error}")
 
-    def check_frame_timeout(self):
-        """Check if video stream has stalled - just log, don't restart."""
+    async def check_and_trigger_reconnect(self):
+        """If no frames sent for 2s, force reconnection by closing WebSocket."""
         time_since_last_frame = time.time() - self.last_frame_sent
-        if self.frames_sent_count > 0 and time_since_last_frame > 30:  # 30s timeout
-            camera_status = "connected" if (self.camera and self.camera.is_connected) else "disconnected"
-            print(f"\n📹 VIDEO STREAM STALLED: {time_since_last_frame:.0f}s (camera: {camera_status})")
-            self.last_frame_sent = time.time()  # Reset timer to avoid spam
 
-    def periodic_health_check(self):
-        now = time.time()
-        if now - self.last_health_check > 10:
-            self.last_health_check = now
-            self.check_frame_timeout()
+        # Only check after we've sent at least one frame
+        if self.frames_sent_count > 0 and time_since_last_frame > 2.0:
+            camera_status = "connected" if (self.camera and self.camera.is_connected) else "disconnected"
+            print(f"\n📹 NO FRAMES SENT for {time_since_last_frame:.1f}s (camera: {camera_status})")
+            print("🔄 Forcing reconnection...")
+
+            # Close WebSocket to trigger main loop reconnection
+            if self.websocket_ref:
+                ws = self.websocket_ref()
+                if ws:
+                    try:
+                        await ws.close()
+                    except:
+                        pass
+
+            # Reset to avoid repeated triggers
+            self.last_frame_sent = time.time()
 
 class TelemetryHealthMonitor:
     """Monitors telemetry transmission health."""
@@ -351,9 +357,10 @@ class DroneClient:
         self.drone_type = DRONE_TYPE
 
         # Health monitors
-        # self.video_health = VideoHealthMonitor()
-        # Health monitors (keep-alive strategy - no restarts)
-        self.video_health = VideoHealthMonitor(camera=self.cam)
+        self.video_health = VideoHealthMonitor(
+            camera=self.cam,
+            websocket_ref=lambda: self.websocket
+        )
         self.telemetry_health = TelemetryHealthMonitor()
         
         self.telemetry_snapshot = TelemetrySnapshot(update_rate_hz=5)
@@ -578,123 +585,23 @@ class DroneClient:
                 print(f"✅ ICE connected")
 
 
-    async def monitor_bandwidth(self):
+    async def monitor_frame_health(self):
         """
-        Measures actual video throughput via WebRTC getStats().
-        State machine: GOOD → SLOW → force reconnect.
-        Quality switching skipped for now — logs state only.
+        Lightweight frame health monitor.
+        Just logs periodic status - actual timeout check runs in send_telemetry().
         """
-        DOWNGRADE_THRESHOLD = 1500   # Kbps: below this for 5s → SLOW
-        UPGRADE_THRESHOLD   = 2500   # Kbps: above this for 5s → back to GOOD
-        RECONNECT_THRESHOLD = 500    # Kbps: below this for 10s → force reconnect
-        HYSTERESIS_WINDOW   = 5.0    # seconds before state transition
-        RECONNECT_WINDOW    = 10.0   # seconds below reconnect threshold
-
-        state = "GOOD"
-        last_bytes_sent   = None
-        last_measure_time = None
-        last_log_time     = 0
-
-        # Hysteresis start-timestamps (None = not timing yet)
-        slow_since      = None
-        upgrade_since   = None
-        dead_slow_since = None
-
-        print("📉 Bandwidth monitor started")
-        await asyncio.sleep(3)  # let WebRTC establish first
+        print("📹 Frame health monitor started")
+        await asyncio.sleep(10)  # Initial delay
 
         while True:
             try:
-                # Skip if WebRTC not connected
-                if not self.pc or self.pc.connectionState != "connected":
-                    last_bytes_sent = last_measure_time = None
-                    slow_since = upgrade_since = dead_slow_since = None
-                    await asyncio.sleep(2.0)
-                    continue
-
-                now = time.time()
-                stats = await self.pc.getStats()
-
-                # Sum bytesSent across all outbound-rtp tracks
-                current_bytes_sent = 0
-                for stat in stats.values():
-                    if hasattr(stat, 'type') and stat.type == "outbound-rtp":
-                        current_bytes_sent += getattr(stat, 'bytesSent', 0)
-
-                # First reading — store baseline only
-                if last_bytes_sent is None:
-                    last_bytes_sent   = current_bytes_sent
-                    last_measure_time = now
-                    await asyncio.sleep(2.0)
-                    continue
-
-                elapsed = now - last_measure_time
-                if elapsed < 1.5:
-                    await asyncio.sleep(2.0)
-                    continue
-
-                # No video data flowing yet — wait
-                if current_bytes_sent == 0:
-                    last_measure_time = now
-                    await asyncio.sleep(2.0)
-                    continue
-
-                # --- Throughput (Kbps) ---
-                throughput_kbps = ((current_bytes_sent - last_bytes_sent) * 8) / (elapsed * 1000)
-                last_bytes_sent   = current_bytes_sent
-                last_measure_time = now
-
-                # --- Periodic log every 10s ---
-                if now - last_log_time >= 10:
-                    print(f"📶 Throughput: {throughput_kbps:.0f} Kbps | State: {state}")
-                    last_log_time = now
-
-                # --- State machine ---
-                if state == "GOOD":
-                    if throughput_kbps < DOWNGRADE_THRESHOLD:
-                        if slow_since is None:
-                            slow_since = now
-                        elif now - slow_since >= HYSTERESIS_WINDOW:
-                            state = "SLOW"
-                            slow_since = None
-                            print(f"📉 → SLOW  ({throughput_kbps:.0f} Kbps sustained {HYSTERESIS_WINDOW}s)")
-                    else:
-                        slow_since = None  # speed recovered, reset timer
-
-                elif state == "SLOW":
-                    if throughput_kbps < RECONNECT_THRESHOLD:
-                        # Heading towards forced reconnect
-                        upgrade_since = None
-                        if dead_slow_since is None:
-                            dead_slow_since = now
-                        elif now - dead_slow_since >= RECONNECT_WINDOW:
-                            print(f"💀 {throughput_kbps:.0f} Kbps for {RECONNECT_WINDOW}s — forcing reconnect")
-                            if self.websocket:
-                                try: await self.websocket.close()
-                                except: pass
-                            break  # exit monitor; main loop reconnects and restarts it
-
-                    elif throughput_kbps >= UPGRADE_THRESHOLD:
-                        # Recovering
-                        dead_slow_since = None
-                        if upgrade_since is None:
-                            upgrade_since = now
-                        elif now - upgrade_since >= HYSTERESIS_WINDOW:
-                            state = "GOOD"
-                            upgrade_since = None
-                            print(f"📈 → GOOD  ({throughput_kbps:.0f} Kbps sustained {HYSTERESIS_WINDOW}s)")
-                    else:
-                        # Between thresholds — reset upgrade timer only
-                        upgrade_since = None
-                        if throughput_kbps >= RECONNECT_THRESHOLD:
-                            dead_slow_since = None
-
+                time_since = time.time() - self.video_health.last_frame_sent
+                if self.video_health.frames_sent_count > 0:
+                    print(f"📹 Frames sent: {self.video_health.frames_sent_count} | Last: {time_since:.1f}s ago")
             except Exception as e:
-                print(f"⚠️ Bandwidth monitor error: {e}")
+                print(f"⚠️ Frame health monitor error: {e}")
 
-            await asyncio.sleep(2.0)
-
-        print("📉 Bandwidth monitor exited (reconnect triggered)")
+            await asyncio.sleep(10.0)
 
     def _generate_dummy_telemetry(self):
         self.dummy_time += 1
@@ -857,8 +764,9 @@ class DroneClient:
                 if self.websocket:
                     await self.websocket.send(json.dumps(telemetry))
                     self.telemetry_health.on_telemetry_sent_successfully()
-                
-                self.video_health.periodic_health_check()
+
+                # Check if frames are actually being sent (2s timeout)
+                await self.video_health.check_and_trigger_reconnect()
 
             except Exception as e:
                 self.telemetry_health.on_telemetry_send_failed(e)
@@ -1282,7 +1190,7 @@ class DroneClient:
                     asyncio.create_task(self.send_webrtc_offer()),
                     asyncio.create_task(self.send_telemetry()),
                     asyncio.create_task(self.send_heartbeat()),
-                    asyncio.create_task(self.monitor_bandwidth()),
+                    asyncio.create_task(self.monitor_frame_health()),
                 ]
                 if self.drone_type == "rescue":
                     self._bg_tasks.append(asyncio.create_task(self.fire_extinguisher.monitor_altitude()))
